@@ -61,11 +61,11 @@
 <meta property="og:description" content="一.简介前几天利用Github和Hexo搭建了一个属于自己的博客，为了方便更多的人学习！将具体流程写下来！主要分4步：软件安装，Github配置，Hexo配置，域名绑定。
 二.软件安装1.安装node.js百度一下nodejs官网，找到DOWNLOADS点击，找到符合自己电脑系统的版本。点击下载，安装！
 2.安装Git下载安装Git，用法：在Windows下，打开Git Bash，其他系统下面则打">
-<meta property="og:image" content="http://yoursite.com/../../img/source/_posts/blog-hexo/1.png">
+<meta property="og:image" content="http://yoursite.com/source/_posts/blog-hexo/1.png">
 <meta property="og:image" content="http://yoursite.com/../../img/source/_posts/blog-hexo/2.png">
 <meta property="og:image" content="http://yoursite.com/../../img/source/_posts/blog-hexo/3.png">
 <meta property="og:image" content="http://yoursite.com/../../img/source/_posts/blog-hexo.png">
-<meta property="og:updated_time" content="2016-01-03T04:37:42.109Z">
+<meta property="og:updated_time" content="2016-01-03T04:40:00.882Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github和Hexo搭建属于自己的博客">
 <meta name="twitter:description" content="一.简介前几天利用Github和Hexo搭建了一个属于自己的博客，为了方便更多的人学习！将具体流程写下来！主要分4步：软件安装，Github配置，Hexo配置，域名绑定。
@@ -274,7 +274,7 @@
 <h1 id="u4E8C-_u8F6F_u4EF6_u5B89_u88C5"><a href="#u4E8C-_u8F6F_u4EF6_u5B89_u88C5" class="headerlink" title="二.软件安装"></a>二.软件安装</h1><h2 id="1-_u5B89_u88C5node-js"><a href="#1-_u5B89_u88C5node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h2><p>百度一下nodejs官网，找到DOWNLOADS点击，找到符合自己电脑系统的版本。点击下载，安装！</p>
 <h2 id="2-_u5B89_u88C5Git"><a href="#2-_u5B89_u88C5Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h2><p>下载安装Git，用法：在Windows下，打开Git Bash，其他系统下面则打开终端（Terminal）。</p>
 <h1 id="u4E09-Github_u914D_u7F6E"><a href="#u4E09-Github_u914D_u7F6E" class="headerlink" title="三.Github配置"></a>三.Github配置</h1><h2 id="1-_u6CE8_u518CGithub_u5E10_u53F7"><a href="#1-_u6CE8_u518CGithub_u5E10_u53F7" class="headerlink" title="1.注册Github帐号"></a>1.注册Github帐号</h2><p>已经有Github帐号跳过此步，首先进入Github进行注册，用户名、邮箱和密码之后都需要用到，自己记好。</p>
-<h2 id="2-_u521B_u5EFArepository"><a href="#2-_u521B_u5EFArepository" class="headerlink" title="2.创建repository"></a>2.创建repository</h2><p>在自己的Github下创建repository<br><img src="/../../img/source/_posts/blog-hexo/1.png" alt="blog-hexo"><br>命名方式：你的Github账号.github.io</p>
+<h2 id="2-_u521B_u5EFArepository"><a href="#2-_u521B_u5EFArepository" class="headerlink" title="2.创建repository"></a>2.创建repository</h2><p>在自己的Github下创建repository<br><img src="/source/_posts/blog-hexo/1.png" alt="img"><br>命名方式：你的Github账号.github.io</p>
 <h2 id="3-_u914D_u7F6E_SSH_keys"><a href="#3-_u914D_u7F6E_SSH_keys" class="headerlink" title="3.配置 SSH keys"></a>3.配置 SSH keys</h2><p>下面内容参考：<a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/" target="_blank" rel="external">http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/</a></p>
 <p>###我们如何让本地git项目与远程的github建立联系呢？用SSH keys。<br>打开git bash<br>首先我们检查你电脑上现有的ssh key：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"$ cd ~/.ssh"</span></span><br></pre></td></tr></table></figure></p>
 <p>如果提示：No such file or directory 说明你是第一次使用git.<br>生成新的SSH Key:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"邮件地址@youremail.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure></p>
