@@ -302,7 +302,7 @@
 <p>中间会提示输入账号，密码<br>如此完成！<br>在浏览器上输入：你的githun账号.github.io就可以访问你的博客了<br>但是如果你有自己的域名并且要绑定的话，请看第五步</p>
 <h1 id="u4E94-_u57DF_u540D_u7ED1_u5B9A"><a href="#u4E94-_u57DF_u540D_u7ED1_u5B9A" class="headerlink" title="五.域名绑定"></a>五.域名绑定</h1><h2 id="1-_u8D2D_u4E70_u57DF_u540D"><a href="#1-_u8D2D_u4E70_u57DF_u540D" class="headerlink" title="1.购买域名"></a>1.购买域名</h2><p>购买域名比较简单，此处不再介绍，我的是万维的：www.bestzhangjin.com</p>
 <h2 id="2-_u5C06_u72EC_u7ACB_u57DF_u540D_u4E0E_GitHub_Pages__u7684_u7A7A_u95F4_u7ED1_u5B9A"><a href="#2-_u5C06_u72EC_u7ACB_u57DF_u540D_u4E0E_GitHub_Pages__u7684_u7A7A_u95F4_u7ED1_u5B9A" class="headerlink" title="2.将独立域名与 GitHub Pages 的空间绑定"></a>2.将独立域名与 GitHub Pages 的空间绑定</h2><p>###DNS 设置<br>注册DNSpod，添加域名，如下图设置。<br><img src="/../../img/source/_posts/blog-hexo/3.png" alt="blog-hexo"><br>其中A的两条记录指向的ip地址是github Pages的提供的ip<br>192.30.252.153<br>192.30.252.154<br>如博客不能登录，有可能是 github 更改了空间服务的 ip 地址，记得及时到在GitHub Pages查看最新的ip即可<br>www 指定的记录是你在 github 注册的仓库</p>
-<p>###去阿里云（因为阿里云、万维合作–我在阿里云买的域名）修改 DNS 地址<br>进入阿里云找到域名修改DNS 地址<br><img src="file:///blog/blog/img/source/_posts/blog-hexo/4.png" alt="blog-hexo"></p>
+<p>###去阿里云（因为阿里云、万维合作–我在阿里云买的域名）修改 DNS 地址<br>进入阿里云找到域名修改DNS 地址<br><img src="https://portal.qiniu.com/bucket/zhangjin4415/resource/4.png" alt="blog-hexo"></p>
 <p>###CNAME文件上传<br>在hexo文件的source目录下创建一个名字为CNAME的文件<br>文件内容：<br><a href="http://beastzhangjin.com" target="_blank" rel="external">http://beastzhangjin.com</a><br>每个人的不一样———为自己的域名<br>然后执行仿照第三步hexo配置，输入hexo g hexo d上传即可<br>浏览器上输入你的域名就可以访问你的博客了！</p>
 
             
