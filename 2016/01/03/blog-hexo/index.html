@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+<html class="theme-next ">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -21,18 +21,14 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
+<link href="//font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="//main.css?v=" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo," />
@@ -43,8 +39,6 @@
 
 
 
-
-      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
 
@@ -76,9 +70,9 @@
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    scheme: '',
+    sidebar: '',
+    motion: 
   };
 </script>
 
@@ -131,63 +125,6 @@
 <nav class="site-nav">
   
 
-  
-    <ul id="menu" class="menu ">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-
-      
-      
-    </ul>
   
 
   
@@ -377,42 +314,33 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/avatar.jpeg" alt="Jin Zhang" itemprop="image"/>
+          <img class="site-author-image" src="//default_avatar.jpg" alt="Jin Zhang" itemprop="image"/>
           <p class="site-author-name" itemprop="name">Jin Zhang</p>
         </div>
         <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/archives">
+            <a href="/">
               <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
-            <a href="/categories">
+            
               <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">分类</span>
-              </a>
+              
           </div>
 
           <div class="site-state-item site-state-tags">
-            <a href="/tags">
+            
               <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">标签</span>
-              </a>
+              
           </div>
 
         </nav>
@@ -432,23 +360,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00-_u7B80_u4ECB"><span class="nav-number">1.</span> <span class="nav-text">一.简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E8C-_u8F6F_u4EF6_u5B89_u88C5"><span class="nav-number">2.</span> <span class="nav-text">二.软件安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u5B89_u88C5node-js"><span class="nav-number">2.1.</span> <span class="nav-text">1.安装node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u5B89_u88C5Git"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装Git</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E09-Github_u914D_u7F6E"><span class="nav-number">3.</span> <span class="nav-text">三.Github配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u6CE8_u518CGithub_u5E10_u53F7"><span class="nav-number">3.1.</span> <span class="nav-text">1.注册Github帐号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u521B_u5EFArepository"><span class="nav-number">3.2.</span> <span class="nav-text">2.创建repository</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u914D_u7F6E_SSH_keys"><span class="nav-number">3.3.</span> <span class="nav-text">3.配置 SSH keys</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u56DB-Hexo_u914D_u7F6E"><span class="nav-number">4.</span> <span class="nav-text">四.Hexo配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-hexo_u5E38_u7528_u547D_u4EE4_u4ECB_u7ECD"><span class="nav-number">4.1.</span> <span class="nav-text">1.hexo常用命令介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u5B89_u88C5hexo"><span class="nav-number">4.2.</span> <span class="nav-text">2.安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u914D_u7F6EHexo"><span class="nav-number">4.3.</span> <span class="nav-text">3.配置Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E94-_u57DF_u540D_u7ED1_u5B9A"><span class="nav-number">5.</span> <span class="nav-text">五.域名绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u8D2D_u4E70_u57DF_u540D"><span class="nav-number">5.1.</span> <span class="nav-text">1.购买域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u5C06_u72EC_u7ACB_u57DF_u540D_u4E0E_GitHub_Pages__u7684_u7A7A_u95F4_u7ED1_u5B9A"><span class="nav-number">5.2.</span> <span class="nav-text">2.将独立域名与 GitHub Pages 的空间绑定</span></a></li></ol></li></ol></div>
-            
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
-          </div>
-        </section>
       
 
     </div>
@@ -477,7 +388,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT
   </a>
 </div>
 
@@ -489,7 +400,7 @@
     <div class="back-to-top"></div>
   </div>
 
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="//jquery/index.js?v=2.1.3"></script>
 
   
   
@@ -504,23 +415,20 @@
   
 
   
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+  <script type="text/javascript" src="//helpers.js?v="></script>
+  <script type="text/javascript" src="//velocity/velocity.min.js"></script>
+<script type="text/javascript" src="//velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="//motion.js?v=" id="motion.global"></script>
 
 
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="//fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="//jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
   
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+<script type="text/javascript" src="//bootstrap.scrollspy.js?v=" id="bootstrap.scrollspy.custom"></script>
 
 
 <script type="text/javascript" id="sidebar.toc.highlight">
@@ -681,7 +589,7 @@
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  <script type="text/javascript" src="//bootstrap.js"></script>
 
   
   
