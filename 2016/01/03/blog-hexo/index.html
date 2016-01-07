@@ -359,26 +359,16 @@
         
 
 
-        <% if (!index && post.comments && config.duoshuo_shortname){ %>
-  <section id="comments">
-   <!-- 多说评论框 start -->
-<div id="ds-thread" class="ds-thread" data-thread-key="<%= post.path %>" data-title="<%= post.title %>" data-url="<%= post.permalink %>"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"zhangjin"};
-true(function() {
-truetruevar ds = document.createElement('script');
-truetrueds.type = 'text/javascript';ds.async = true;
-truetrueds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-truetrueds.charset = 'UTF-8';
-truetrue(document.getElementsByTagName('head')[0] 
-truetrue || document.getElementsByTagName('body')[0]).appendChild(ds);
-true})();
-true</script>
-<!-- 多说公共JS代码 end -->
-  </section>
-  <% } %>
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/01/03/blog-hexo/"
+           data-title="Github和Hexo搭建属于自己的博客" data-url="http://yoursite.com/2016/01/03/blog-hexo/">
+      </div>
+    
+  </div>
+
+
       </div>
 
       
