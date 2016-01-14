@@ -53,16 +53,16 @@
 
 
 
-<meta name="description" content="主要内容：新建页面，文章摘要，添加评论框">
+<meta name="description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo用法讲解">
 <meta property="og:url" content="http://yoursite.com/2016/01/07/hexo-use/index.html">
 <meta property="og:site_name" content="做最好的自己">
-<meta property="og:description" content="主要内容：新建页面，文章摘要，添加评论框">
-<meta property="og:updated_time" content="2016-01-14T02:05:25.688Z">
+<meta property="og:description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能">
+<meta property="og:updated_time" content="2016-01-14T14:57:09.715Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo用法讲解">
-<meta name="twitter:description" content="主要内容：新建页面，文章摘要，添加评论框">
+<meta name="twitter:description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能">
 
 
 
@@ -269,7 +269,7 @@
       
 
       
-        <span itemprop="articleBody"><p>主要内容：新建页面，文章摘要，添加评论框<br><a id="more"></a></p>
+        <span itemprop="articleBody"><p>主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能<br><a id="more"></a></p>
 <h1 id="u4E00-_u65B0_u5EFA_u9875_u9762"><a href="#u4E00-_u65B0_u5EFA_u9875_u9762" class="headerlink" title="一.新建页面"></a>一.新建页面</h1><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">"新建页面的文件名"</span></span><br></pre></td></tr></table></figure>
 <h1 id="u4E8C-_u6587_u7AE0_u6458_u8981"><a href="#u4E8C-_u6587_u7AE0_u6458_u8981" class="headerlink" title="二.文章摘要"></a>二.文章摘要</h1><p>在需要显示摘要的地方添加如下代码即可：RSS订阅功能</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">以上是摘要...<span class="comment">&lt;!--more--&gt;</span>...以下是余下全文</span><br></pre></td></tr></table></figure>
@@ -277,8 +277,9 @@
 <p>打开主题下的_config.yml加上<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">duoshuo_shortname</span>: <span class="string">bestzhangjin</span></span><br></pre></td></tr></table></figure></p>
 <p>其中bestzhangjin是我在多说的二级域名</p>
 <h1 id="u56DB-RSS_u8BA2_u9605_u529F_u80FD"><a href="#u56DB-RSS_u8BA2_u9605_u529F_u80FD" class="headerlink" title="四.RSS订阅功能"></a>四.RSS订阅功能</h1><p>RSS插件安装：<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-feed</span><br></pre></td></tr></table></figure></p>
-<p>RSS功能开启：<br>博客根目录下的_config.yml：<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span>: <span class="string">hexo-generator-feed</span></span><br></pre></td></tr></table></figure></p>
-<p>配置主题中RSS地址:<br>修改主题文件夹themes中的 _config.yml文件<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">rss:</span> <span class="string">http:</span><span class="comment">//zhangjin4415.github.io/atom.xml</span></span><br></pre></td></tr></table></figure></p>
+<p>RSS功能开启：<br>博客根目录下的_config.yml：<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span>: <span class="string">hexo-generator-feed</span></span><br><span class="line"></span><br><span class="line"><span class="crmsh"><span class="comment"># feed</span></span><br><span class="line">feed:</span><br><span class="line">  <span class="operator">type</span>: feed </span><br><span class="line">  path: atom.<span class="keyword">xml</span> </span><br><span class="line">  <span class="title">limit</span>: <span class="number">20</span></span></span><br></pre></td></tr></table></figure></p>
+<p>重新布置到博客之后在博客上就可以看到RSS按钮，别人可以订阅你的博客了</p>
+<p>下面在Chrome浏览器添加RSS Feed Reader，以便你可以订阅别人的博客<br>打开Chrome浏览器，点击设置，拓展程序，查找输入：RSS Feed Reader，找到后添加即可，然后再浏览器右上角可以看到一个对应的图标，点击图标可以添加</p>
 </span>
       
     </div>
