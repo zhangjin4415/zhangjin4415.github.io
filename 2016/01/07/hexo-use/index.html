@@ -59,7 +59,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/01/07/hexo-use/index.html">
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能">
-<meta property="og:updated_time" content="2016-01-14T14:57:09.715Z">
+<meta property="og:updated_time" content="2016-01-15T06:36:38.737Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo用法讲解">
 <meta name="twitter:description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能">
@@ -280,7 +280,14 @@
 <p>RSS功能开启：<br>博客根目录下的_config.yml：<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span>: <span class="string">hexo-generator-feed</span></span><br><span class="line"></span><br><span class="line"><span class="crmsh"><span class="comment"># feed</span></span><br><span class="line">feed:</span><br><span class="line">  <span class="operator">type</span>: feed </span><br><span class="line">  path: atom.<span class="keyword">xml</span> </span><br><span class="line">  <span class="title">limit</span>: <span class="number">20</span></span></span><br></pre></td></tr></table></figure></p>
 <p>重新布置到博客之后在博客上就可以看到RSS按钮，别人可以订阅你的博客了</p>
 <p>下面在Chrome浏览器添加RSS Feed Reader，以便你可以订阅别人的博客<br>打开Chrome浏览器，点击设置，拓展程序，查找输入：RSS Feed Reader，找到后添加即可，然后再浏览器右上角可以看到一个对应的图标，点击图标可以添加</p>
-</span>
+<h1 id="u4E94-sitemap_u63D2_u4EF6"><a href="#u4E94-sitemap_u63D2_u4EF6" class="headerlink" title="五.sitemap插件"></a>五.sitemap插件</h1><h2 id="1-sitemap_u4ECB_u7ECD"><a href="#1-sitemap_u4ECB_u7ECD" class="headerlink" title="1.sitemap介绍"></a>1.sitemap介绍</h2><p>Sitemap 可方便网站管理员通知搜索引擎他们网站上有哪些可供抓取的网页。最简单的 Sitemap 形式，就是XML 文件，在其中列出网站中的网址以及关于每个网址的其他元数据（上次更新的时间、更改的频率以及相对于网站上其他网址的重要程度为何等），以便搜索引擎可以更加智能地抓取网站。<br>Google、雅虎、和微软都支持一个被称为xml网站地图（xml Sitemaps）的协议，而百度Sitemap是指百度支持的收录标准，在原有协议上做出了扩展。</p>
+<h2 id="2-sitemap_u5B89_u88C5"><a href="#2-sitemap_u5B89_u88C5" class="headerlink" title="2.sitemap安装"></a>2.sitemap安装</h2><p>Git bash下输入命令：<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-generator-sitemap</span><br></pre></td></tr></table></figure></p>
+<p>根目录下的_config.xml添加内容：<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span>: <span class="string">hexo-generator-sitemap</span></span><br><span class="line"></span><br><span class="line"><span class="avrasm"><span class="preprocessor">#sitemap</span></span><br><span class="line"><span class="label">sitemap:</span></span><br><span class="line">  path: sitemap.xml</span></span><br></pre></td></tr></table></figure></p>
+<p>输入如下命令：</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p>在博客上可以看到</p>
+<h2 id="3-_u5411google_u63D0_u4EA4sitemap"><a href="#3-_u5411google_u63D0_u4EA4sitemap" class="headerlink" title="3.向google提交sitemap"></a>3.向google提交sitemap</h2></span>
       
     </div>
 
@@ -451,7 +458,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00-_u65B0_u5EFA_u9875_u9762"><span class="nav-number">1.</span> <span class="nav-text">一.新建页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E8C-_u6587_u7AE0_u6458_u8981"><span class="nav-number">2.</span> <span class="nav-text">二.文章摘要</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E09-_u6DFB_u52A0_u8BC4_u8BBA_u6846"><span class="nav-number">3.</span> <span class="nav-text">三.添加评论框</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u56DB-RSS_u8BA2_u9605_u529F_u80FD"><span class="nav-number">4.</span> <span class="nav-text">四.RSS订阅功能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00-_u65B0_u5EFA_u9875_u9762"><span class="nav-number">1.</span> <span class="nav-text">一.新建页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E8C-_u6587_u7AE0_u6458_u8981"><span class="nav-number">2.</span> <span class="nav-text">二.文章摘要</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E09-_u6DFB_u52A0_u8BC4_u8BBA_u6846"><span class="nav-number">3.</span> <span class="nav-text">三.添加评论框</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u56DB-RSS_u8BA2_u9605_u529F_u80FD"><span class="nav-number">4.</span> <span class="nav-text">四.RSS订阅功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E94-sitemap_u63D2_u4EF6"><span class="nav-number">5.</span> <span class="nav-text">五.sitemap插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-sitemap_u4ECB_u7ECD"><span class="nav-number">5.1.</span> <span class="nav-text">1.sitemap介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-sitemap_u5B89_u88C5"><span class="nav-number">5.2.</span> <span class="nav-text">2.sitemap安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u5411google_u63D0_u4EA4sitemap"><span class="nav-number">5.3.</span> <span class="nav-text">3.向google提交sitemap</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
