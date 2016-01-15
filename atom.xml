@@ -48,7 +48,7 @@
     <link href="http://yoursite.com/2016/01/03/blog-hexo/"/>
     <id>http://yoursite.com/2016/01/03/blog-hexo/</id>
     <published>2016-01-03T02:19:50.000Z</published>
-    <updated>2016-01-14T01:07:06.198Z</updated>
+    <updated>2016-01-15T05:50:46.489Z</updated>
     <content type="html"><![CDATA[<p>主要内容：hexo环境搭建，相关软件安装，Github配置，域名绑定<br><a id="more"></a></p>
 <h1 id="u4E00-_u7B80_u4ECB"><a href="#u4E00-_u7B80_u4ECB" class="headerlink" title="一.简介"></a>一.简介</h1><p>前几天利用Github和Hexo搭建了一个属于自己的博客，为了方便更多的人学习！将具体流程写下来！主要分4步：软件安装，Github配置，Hexo配置，域名绑定。</p>
 <h1 id="u4E8C-_u8F6F_u4EF6_u5B89_u88C5"><a href="#u4E8C-_u8F6F_u4EF6_u5B89_u88C5" class="headerlink" title="二.软件安装"></a>二.软件安装</h1><h2 id="1-_u5B89_u88C5node-js"><a href="#1-_u5B89_u88C5node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h2><p>百度一下nodejs官网，找到DOWNLOADS点击，找到符合自己电脑系统的版本。点击下载，安装！</p>
@@ -88,9 +88,35 @@
     
     </summary>
     
+      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
+    
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
       <category term="博客" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[android studio（APP）常见问题与解决方法]]></title>
+    <link href="http://yoursite.com/2016/01/03/android_studio_question/"/>
+    <id>http://yoursite.com/2016/01/03/android_studio_question/</id>
+    <published>2016-01-03T02:19:50.000Z</published>
+    <updated>2016-01-15T05:49:39.917Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：ADB，<br><a id="more"></a></p>
+<h1 id="u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019"><a href="#u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019" class="headerlink" title="一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’"></a>一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’</h1><p>解决：cmd下：<br>F:\Android\sdk\platform-tools&gt;adb kill-server<br>F:\Android\sdk\platform-tools&gt;adb start-server</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：ADB，<br>]]>
+    
+    </summary>
+    
+      <category term="APP" scheme="http://yoursite.com/tags/APP/"/>
+    
+      <category term="android studio" scheme="http://yoursite.com/tags/android-studio/"/>
+    
+      <category term="常见问题" scheme="http://yoursite.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="APP" scheme="http://yoursite.com/categories/APP/"/>
     
   </entry>
   
