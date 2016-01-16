@@ -36,7 +36,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="APP,Android studio,常见问题," />
+  <meta name="keywords" content="APP,Android studio," />
 
 
 
@@ -54,16 +54,16 @@
 
 
 
-<meta name="description" content="主要内容：ADB，">
+<meta name="description" content="主要内容：路径修改">
 <meta property="og:type" content="article">
-<meta property="og:title" content="android studio（APP）常见问题与解决方法">
-<meta property="og:url" content="http://www.bestzhangjin.com/2016/01/15/android_studio_question/index.html">
+<meta property="og:title" content="Android studio配置常识">
+<meta property="og:url" content="http://www.bestzhangjin.com/2016/01/16/android_studio_view/index.html">
 <meta property="og:site_name" content="做最好的自己">
-<meta property="og:description" content="主要内容：ADB，">
-<meta property="og:updated_time" content="2016-01-16T02:08:06.308Z">
+<meta property="og:description" content="主要内容：路径修改">
+<meta property="og:updated_time" content="2016-01-16T02:27:49.606Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="android studio（APP）常见问题与解决方法">
-<meta name="twitter:description" content="主要内容：ADB，">
+<meta name="twitter:title" content="Android studio配置常识">
+<meta name="twitter:description" content="主要内容：路径修改">
 
 
 
@@ -75,7 +75,7 @@
   };
 </script>
 
-  <title> android studio（APP）常见问题与解决方法 | 做最好的自己 </title>
+  <title> Android studio配置常识 | 做最好的自己 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -215,7 +215,7 @@
             
             
               
-                android studio（APP）常见问题与解决方法
+                Android studio配置常识
               
             
           </h1>
@@ -224,8 +224,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-15T13:51:52+08:00" content="2016-01-15">
-              2016-01-15
+            <time itemprop="dateCreated" datetime="2016-01-16T09:29:12+08:00" content="2016-01-16">
+              2016-01-16
             </time>
           </span>
 
@@ -250,8 +250,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/15/android_studio_question/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/15/android_studio_question/" itemprop="commentsCount"></span>
+                <a href="/2016/01/16/android_studio_view/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/16/android_studio_view/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -270,8 +270,10 @@
       
 
       
-        <span itemprop="articleBody"><p>主要内容：ADB，<br><a id="more"></a></p>
-<h1 id="u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019"><a href="#u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019" class="headerlink" title="一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’"></a>一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’</h1><p>解决：cmd下：<br>F:\Android\sdk\platform-tools&gt;adb kill-server<br>F:\Android\sdk\platform-tools&gt;adb start-server</p>
+        <span itemprop="articleBody"><p>主要内容：路径修改<br><a id="more"></a></p>
+<h1 id="u4E00-_u8DEF_u5F84_u95EE_u9898"><a href="#u4E00-_u8DEF_u5F84_u95EE_u9898" class="headerlink" title="一.路径问题"></a>一.路径问题</h1><h2 id="u9879_u76EE_u8DEF_u5F84_uFF1A"><a href="#u9879_u76EE_u8DEF_u5F84_uFF1A" class="headerlink" title="项目路径："></a>项目路径：</h2><p>查看当前项目的路径：navigate-&gt;File path<br>注意：Android Studio的project相当于eclipse的workspace，Android Studio的module相当于eclipse的project，android Stduio，把一个项目比喻成一个工程的一个个模块，外部的依赖也是一个个模块，这样一个项目的结构就很清晰明了。当然也有一个缺点，就是一个窗口只能打开一个project,不能像eclipse那样一次一个窗口打开多个项目。</p>
+<h2 id="SDK/JDK_u8DEF_u5F84"><a href="#SDK/JDK_u8DEF_u5F84" class="headerlink" title="SDK/JDK路径"></a>SDK/JDK路径</h2><p>查看和修改：Fiew-&gt;project strcture或者View-&gt;open module settings-&gt;SDK Location<br>打开会发现SDK/JDK路径设置</p>
+<h1 id="u4E8C-_u4FEE_u6539_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29"><a href="#u4E8C-_u4FEE_u6539_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29" class="headerlink" title="二.修改工程名(apk名称)"></a>二.修改工程名(apk名称)</h1><p>项目右键-&gt;refactor-&gt;rename</p>
 </span>
       
     </div>
@@ -284,8 +286,6 @@
           
             <a href="/tags/Android-studio/" rel="tag">#Android studio</a>
           
-            <a href="/tags/常见问题/" rel="tag">#常见问题</a>
-          
         </div>
       
 
@@ -293,17 +293,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/07/hexo-use/" rel="next" title="hexo用法讲解">
-                <i class="fa fa-chevron-left"></i> hexo用法讲解
+              <a href="/2016/01/15/android_studio_question/" rel="next" title="android studio（APP）常见问题与解决方法">
+                <i class="fa fa-chevron-left"></i> android studio（APP）常见问题与解决方法
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/16/android_studio_view/" rel="prev" title="Android studio配置常识">
-                Android studio配置常识 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -318,10 +314,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/01/15/android_studio_question/"
-     data-title="android studio（APP）常见问题与解决方法"
+        <div class="ds-share flat" data-thread-key="2016/01/16/android_studio_view/"
+     data-title="Android studio配置常识"
      data-content=""
-     data-url="http://www.bestzhangjin.com/2016/01/15/android_studio_question/">
+     data-url="http://www.bestzhangjin.com/2016/01/16/android_studio_view/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -349,8 +345,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/15/android_studio_question/"
-           data-title="android studio（APP）常见问题与解决方法" data-url="http://www.bestzhangjin.com/2016/01/15/android_studio_question/">
+      <div class="ds-thread" data-thread-key="2016/01/16/android_studio_view/"
+           data-title="Android studio配置常识" data-url="http://www.bestzhangjin.com/2016/01/16/android_studio_view/">
       </div>
     
   </div>
@@ -447,7 +443,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019"><span class="nav-number">1.</span> <span class="nav-text">一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00-_u8DEF_u5F84_u95EE_u9898"><span class="nav-number">1.</span> <span class="nav-text">一.路径问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u9879_u76EE_u8DEF_u5F84_uFF1A"><span class="nav-number">1.1.</span> <span class="nav-text">项目路径：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SDK/JDK_u8DEF_u5F84"><span class="nav-number">1.2.</span> <span class="nav-text">SDK/JDK路径</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E8C-_u4FEE_u6539_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29"><span class="nav-number">2.</span> <span class="nav-text">二.修改工程名(apk名称)</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
