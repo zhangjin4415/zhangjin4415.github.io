@@ -54,16 +54,16 @@
 
 
 
-<meta name="description" content="主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT">
+<meta name="description" content="主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="android studio（APP）常见问题与解决方法">
 <meta property="og:url" content="http://www.bestzhangjin.com/2016/01/15/android_studio_question/index.html">
 <meta property="og:site_name" content="做最好的自己">
-<meta property="og:description" content="主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT">
-<meta property="og:updated_time" content="2016-01-16T03:38:13.331Z">
+<meta property="og:description" content="主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题">
+<meta property="og:updated_time" content="2016-01-22T04:13:13.111Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="android studio（APP）常见问题与解决方法">
-<meta name="twitter:description" content="主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT">
+<meta name="twitter:description" content="主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题">
 
 
 
@@ -270,10 +270,11 @@
       
 
       
-        <span itemprop="articleBody"><p>主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT<br><a id="more"></a></p>
+        <span itemprop="articleBody"><p>主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题<br><a id="more"></a></p>
 <h1 id="u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019"><a href="#u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019" class="headerlink" title="一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’"></a>一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’</h1><p>解决：cmd下：<br>F:\Android\sdk\platform-tools&gt;adb kill-server<br>F:\Android\sdk\platform-tools&gt;adb start-server</p>
 <p>二.android studio运行出现This AVD’s configuration is missing a kernel file!!</p>
-<h2 id="ANDROID_SDK_ROOT_is_undefined"><a href="#ANDROID_SDK_ROOT_is_undefined" class="headerlink" title="ANDROID_SDK_ROOT is undefined"></a>ANDROID_SDK_ROOT is undefined</h2><p>解决：这种错误一般由于Android studio的模拟器错误，将模拟器重新配置使之能够运行起来再利用它运行程序</p>
+<h1 id="ANDROID_SDK_ROOT_is_undefined"><a href="#ANDROID_SDK_ROOT_is_undefined" class="headerlink" title="ANDROID_SDK_ROOT is undefined"></a>ANDROID_SDK_ROOT is undefined</h1><p>解决：这种错误一般由于Android studio的模拟器错误，将模拟器重新配置使之能够运行起来再利用它运行程序</p>
+<h1 id="u4E09-Android_studio_u627E_u4E0D_u5230_u7C7Bactionbaractivity_u6216_u8005AppCompatActivity"><a href="#u4E09-Android_studio_u627E_u4E0D_u5230_u7C7Bactionbaractivity_u6216_u8005AppCompatActivity" class="headerlink" title="三.Android studio找不到类actionbaractivity或者AppCompatActivity"></a>三.Android studio找不到类actionbaractivity或者AppCompatActivity</h1><p>注意：actionbaractivity已经过时，现在一般选择AppCompatActivity<br>  解决：这是因为因为没有导入android-support-v7-appcompat包而导致我找不到相应的类，导入android-support-v7-appcompat.jar包就可以<br>    解压android-support-v7-appcompat.jar包可以查看是不是有对应的类，没有的话建议重新下载版本高一点的包<br>操作步骤：<br>    右键-&gt;open module settings弹出窗口，上面选择Dependencies<br>    点击加号”+”,选择Library dependency<br>    选择appcompat-v7,点击ok</p>
 </span>
       
     </div>
@@ -449,7 +450,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019"><span class="nav-number">1.</span> <span class="nav-text">一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ANDROID_SDK_ROOT_is_undefined"><span class="nav-number">1.1.</span> <span class="nav-text">ANDROID_SDK_ROOT is undefined</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019"><span class="nav-number">1.</span> <span class="nav-text">一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ANDROID_SDK_ROOT_is_undefined"><span class="nav-number">2.</span> <span class="nav-text">ANDROID_SDK_ROOT is undefined</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E09-Android_studio_u627E_u4E0D_u5230_u7C7Bactionbaractivity_u6216_u8005AppCompatActivity"><span class="nav-number">3.</span> <span class="nav-text">三.Android studio找不到类actionbaractivity或者AppCompatActivity</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
