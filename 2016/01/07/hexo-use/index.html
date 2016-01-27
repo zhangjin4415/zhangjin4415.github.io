@@ -61,7 +61,7 @@
 <meta property="og:url" content="http://www.bestzhangjin.com/2016/01/07/hexo-use/index.html">
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能，站点地图sitemap插件">
-<meta property="og:updated_time" content="2016-01-27T08:20:41.719Z">
+<meta property="og:updated_time" content="2016-01-27T08:27:14.363Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo用法讲解">
 <meta name="twitter:description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能，站点地图sitemap插件">
@@ -295,8 +295,8 @@
 <h1 id="u516D-_u767E_u5EA6_u7AD9_u70B9_u5730_u56FEbaidusitemap_u63D2_u4EF6"><a href="#u516D-_u767E_u5EA6_u7AD9_u70B9_u5730_u56FEbaidusitemap_u63D2_u4EF6" class="headerlink" title="六.百度站点地图baidusitemap插件"></a>六.百度站点地图baidusitemap插件</h1><h2 id="1-_u5B89_u88C5"><a href="#1-_u5B89_u88C5" class="headerlink" title="1.安装"></a>1.安装</h2><p>国内用户需要安装插件 hexo-generator-baidu-sitemap, 是为百度量身打造的. 安装<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-generator-baidu-sitemap <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
 <p>根目录下_config.yml<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">baidusitemap</span>:</span><br><span class="line">  <span class="attribute">path</span>: baidusitemap.xml</span><br></pre></td></tr></table></figure></p>
 <p>利用hexo g,hexo d生成并上传，在你的github项目里面可以看到多了一个文件baidusitemap.xml</p>
-<h2 id="2-_u4E0A_u4F20baidusitemap-xml"><a href="#2-_u4E0A_u4F20baidusitemap-xml" class="headerlink" title="2.上传baidusitemap.xml"></a>2.上传baidusitemap.xml</h2><p>进入百度站长平台：<a href="http://zhanzhang.baidu.com/dashboard/index" target="_blank" rel="external">http://zhanzhang.baidu.com/dashboard/index</a><br>点击添加站点，输入自己的网址，如我的：www.bestzhangjin.com<br>此处有三种方法，我选择的是HTML标签验证<br>将百度提供的如下的代码：</p>
-<p><meta name="baidu-site-verification" content="Si------"><br>将代码复制到blog\themes\hexo-theme-next\layout_partials\head.swig中(有的是对应目录下的head.ejs)<br>利用hexo g,hexo d布置上去<br>点击完成验证<br>验证号以后就可以在 链接提交-&gt;Sitemap 里面提交 Sitemap 了</p>
+<h2 id="2-_u4E0A_u4F20baidusitemap-xml"><a href="#2-_u4E0A_u4F20baidusitemap-xml" class="headerlink" title="2.上传baidusitemap.xml"></a>2.上传baidusitemap.xml</h2><p>进入百度站长平台：<a href="http://zhanzhang.baidu.com/dashboard/index" target="_blank" rel="external">http://zhanzhang.baidu.com/dashboard/index</a><br>点击添加站点，输入自己的网址，如我的：www.bestzhangjin.com<br>此处有三种方法，我选择的是HTML标签验证<br>将得到百度提供的如下的代码：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta <span class="property">name</span>=<span class="string">"baidu-site-verification"</span> content=<span class="string">"Si------"</span> /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>将代码复制到blog\themes\hexo-theme-next\layout_partials\head.swig中(有的是对应目录下的head.ejs)<br>利用hexo g,hexo d布置上去<br>点击完成验证<br>验证号以后就可以在 链接提交-&gt;Sitemap 里面提交 Sitemap 了</p>
 </span>
       
     </div>
