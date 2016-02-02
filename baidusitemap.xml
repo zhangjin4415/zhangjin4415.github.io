@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://www.bestzhangjin.com/2016/02/02/java_use/</loc>
+    <lastmod>2016-02-02T04:51:26.597Z</lastmod>
+    <data>
+        <display>
+        <title>JAVA教程</title>
+        <pubTime>2016-02-02T04:22:14.000Z</pubTime>
+        
+        <tag>JAVA</tag>
+         
+         
+           
+             
+              <breadCrumb title="JAVA" url="http://www.bestzhangjin.com/categories/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/27/MySql/</loc>
+    <lastmod>2016-01-28T09:53:58.027Z</lastmod>
+    <data>
+        <display>
+        <title>MySql</title>
+        <pubTime>2016-01-27T10:00:00.000Z</pubTime>
+        
+        <tag>MySql</tag>
+         
+        <tag>数据库</tag>
+         
+         
+           
+             
+              <breadCrumb title="MySql" url="http://www.bestzhangjin.com/categories/MySql/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.bestzhangjin.com/2016/01/07/hexo-use/</loc>
     <lastmod>2016-01-27T08:27:14.363Z</lastmod>
     <data>
