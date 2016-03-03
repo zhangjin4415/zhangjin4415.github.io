@@ -55,16 +55,16 @@
 
 
 
-<meta name="description" content="主要内容：MYSQL">
+<meta name="description" content="主要内容：安装与配置MYSQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySql">
 <meta property="og:url" content="http://www.bestzhangjin.com/2016/01/27/MySql/index.html">
 <meta property="og:site_name" content="做最好的自己">
-<meta property="og:description" content="主要内容：MYSQL">
-<meta property="og:updated_time" content="2016-01-28T09:53:58.027Z">
+<meta property="og:description" content="主要内容：安装与配置MYSQL">
+<meta property="og:updated_time" content="2016-02-19T02:57:35.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySql">
-<meta name="twitter:description" content="主要内容：MYSQL">
+<meta name="twitter:description" content="主要内容：安装与配置MYSQL">
 
 
 
@@ -271,19 +271,26 @@
       
 
       
-        <span itemprop="articleBody"><p>主要内容：MYSQL<br><a id="more"></a></p>
-<h1 id="u4E00_u3001_u7B80_u4ECB"><a href="#u4E00_u3001_u7B80_u4ECB" class="headerlink" title="一、简介"></a>一、简介</h1><p>MYSQL是一个开源的关系型数据库管理系统，分社区版和企业版。<br>下载地址：<a href="http://dev.mysql.com/downloads/mysql/" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/</a><br>我选择Windows (x86, 64-bit), ZIP Archive下载—-自己根据自己电脑版本下载</p>
-<h1 id="u4E8C_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL"><a href="#u4E8C_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL" class="headerlink" title="二、安装与配置MYSQL"></a>二、安装与配置MYSQL</h1><h2 id="1-_u914D_u7F6E"><a href="#1-_u914D_u7F6E" class="headerlink" title="1.配置"></a>1.配置</h2><p>将下载文件解压到你的目录，配置环境变量：path：E:\mysql-5.7.10-winx64\bin<br>每个人根据自己的解压目录而定<br>配置完环境变量之后先别忙着启动mysql，我们还需要修改一下配置文件<br>E:\mysql-5.7.10-winx64\my-default.ini<br>在其中修改或添加配置：<br>basedir=E:\mysql-5.7.10-winx64（mysql所在目录）<br>datadir=E:\mysql-5.7.10-winx64\data （mysql所在目录\data）</p>
+        <span itemprop="articleBody"><p>主要内容：安装与配置MYSQL<br><a id="more"></a></p>
+<h1 id="u4E00_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL"><a href="#u4E00_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL" class="headerlink" title="一、安装与配置MYSQL"></a>一、安装与配置MYSQL</h1><p>MYSQL是一个开源的关系型数据库管理系统，分社区版和企业版。<br>下载地址：<a href="http://dev.mysql.com/downloads/mysql/" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/</a><br>我选择Windows (x86, 64-bit), ZIP Archive下载—-自己根据自己电脑版本下载</p>
+<h2 id="1-_u914D_u7F6E"><a href="#1-_u914D_u7F6E" class="headerlink" title="1.配置"></a>1.配置</h2><p>将下载文件解压到你的目录，配置环境变量：path：E:\mysql-5.7.10-winx64\bin<br>每个人根据自己的解压目录而定<br>配置完环境变量之后先别忙着启动mysql，我们还需要修改一下配置文件<br>E:\mysql-5.7.10-winx64\my-default.ini<br>在其中修改或添加配置：<br>basedir=E:\mysql-5.7.10-winx64（mysql所在目录）<br>datadir=E:\mysql-5.7.10-winx64\data （mysql所在目录\data）</p>
 <h2 id="2-_u5B89_u88C5_u670D_u52A1"><a href="#2-_u5B89_u88C5_u670D_u52A1" class="headerlink" title="2.安装服务"></a>2.安装服务</h2><p>以管理员身份运行cmd（一定要用管理员身份运行，不然权限不够），<br>备注：管理员身份运行cmd<br>方法一：C:\Windows\System32目录下的cmd.exe右键管理员运行<br>方法二：点击左下角的“开始菜单”图标按钮，弹出的菜单列表中的“搜索程序和文件”框里输入cmd，输入后不要回车哦,然后在上面显示的列表中找到cmd字样的程序，紧接着在那个程序上单击鼠标右键并在弹出的菜单中选择“以管理员身份运行”，win10在Cortana中搜索。</p>
 <p>进入mysql的bin文件夹，输入mysqld -install(如果不用管理员身份运行，将会因为权限不够而出现错误：Install/Remove of the Service Denied）<br>安装成功后就要启动服务了，继续在cmd中输入:net start mysql（如图）,服务启动成功！</p>
-<p>可能错误分析：<br>1.MySQL 服务正在启动 ..MySQL 服务无法启动。<br>解决：切换到目录E:\mysql-5.7.10-winx64&gt;<br>执行bin\mysqld –defaults-file=my-default.ini –initialize-insecure<br>之后再执行net start mysql服务器启动<br>备注：如果目录没有data文件夹，不用自己创建，主要my-default.ini配置好了后会自己创建的</p>
+<p>可能错误分析：<br>（1）.MySQL 服务正在启动 ..MySQL 服务无法启动。<br>解决：切换到目录E:\mysql-5.7.10-winx64&gt;<br>执行bin\mysqld –defaults-file=my-default.ini –initialize-insecure<br>之后再执行net start mysql服务器启动<br>备注：如果目录没有data文件夹，不用自己创建，主要my-default.ini配置好了后会自己创建的</p>
+<p>（2）net start mysql 发生系统错误 5。  拒绝访问。<br>解决：权限不够，切换到管理员模式就可以启动了。在开始菜单的搜索框张收入cmd，然后右键单击，并选择以管理员身份运行！</p>
 <h2 id="3-_u8FDB_u5165MYSQL"><a href="#3-_u8FDB_u5165MYSQL" class="headerlink" title="3.进入MYSQL"></a>3.进入MYSQL</h2><p>dos下：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">mysql</span> -u root -p</span><br></pre></td></tr></table></figure></p>
 <p>Enter password那里，初始密码为空，直接回车就行,显示<br>mysql&gt;<br>如此则进入了MYSQL</p>
-<h1 id="u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><a href="#u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL" class="headerlink" title="三、DOS下操作数据库MYSQL"></a>三、DOS下操作数据库MYSQL</h1><h2 id="1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><a href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F" class="headerlink" title="1.服务的启动与停止及版本信息"></a>1.服务的启动与停止及版本信息</h2><p>启动<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">net</span> <span class="built_in">start</span> mysql</span><br></pre></td></tr></table></figure></p>
+<h1 id="u4E8C_u3001_u6570_u636E_u7C7B_u578B"><a href="#u4E8C_u3001_u6570_u636E_u7C7B_u578B" class="headerlink" title="二、数据类型"></a>二、数据类型</h1><h1 id="u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><a href="#u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL" class="headerlink" title="三、DOS下操作数据库MYSQL"></a>三、DOS下操作数据库MYSQL</h1><h2 id="1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><a href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F" class="headerlink" title="1.服务的启动与停止及版本信息"></a>1.服务的启动与停止及版本信息</h2><p>启动<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">net</span> <span class="built_in">start</span> mysql</span><br></pre></td></tr></table></figure></p>
 <p>停止<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net <span class="literal">stop</span> mysql</span><br></pre></td></tr></table></figure></p>
+<p>卸载<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc <span class="keyword">delete</span> mysql</span><br></pre></td></tr></table></figure></p>
 <p>备注：所有的windows服务都可以通过net start/stop启动停止</p>
 <p>版本信息<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">mysql</span> -V</span><br></pre></td></tr></table></figure></p>
-<h2 id="2-_u767B_u5F55_u4E0E_u9000_u51FA"><a href="#2-_u767B_u5F55_u4E0E_u9000_u51FA" class="headerlink" title="2.登录与退出"></a>2.登录与退出</h2><p>登录<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">mysql</span> -u root -p</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-_u767B_u5F55_u4E0E_u9000_u51FA"><a href="#2-_u767B_u5F55_u4E0E_u9000_u51FA" class="headerlink" title="2.登录与退出"></a>2.登录与退出</h2><p>登录：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql -<span class="keyword">u</span> root -p</span><br><span class="line">MYSQL提示符：\<span class="keyword">D</span>--完整的日期  \<span class="keyword">d</span>--当前数据库 \<span class="keyword">h</span>--服务器名称 \<span class="keyword">u</span>--当前用户</span><br></pre></td></tr></table></figure></p>
+<p>退出：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br><span class="line">quit</span><br><span class="line">\<span class="literal">q</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="3-_u5E38_u7528_u547D_u4EE4"><a href="#3-_u5E38_u7528_u547D_u4EE4" class="headerlink" title="3.常用命令"></a>3.常用命令</h2><figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> VERSION();<span class="comment">-----------显示当前服务器版本</span></span><br><span class="line"><span class="keyword">SELECT</span> NOW();<span class="comment">---------------显示当前日期时间</span></span><br><span class="line"><span class="keyword">SELECT</span> USER();<span class="comment">--------------显示当前用户</span></span><br><span class="line">shell&gt;mysql -uroot -proot <span class="comment">--prompt------修改MySQL提示符：连接客户端时通过参数指定</span></span><br><span class="line">mysql&gt;prompt 提示符<span class="comment">----------修改MySQL提示符：连接客户端后通过prompt修改</span></span><br><span class="line">eg：prompt \u@\h \d&gt;</span><br></pre></td></tr></table></figure>
+<p>备注：规范用大写——–虽然小写也可以运行<br>MYSQL语句的规范：<br>关键字和函数名称全部大写，数据库名称、表名称、字段名称全部小写，SQL语句必须以分号结尾</p>
+<h2 id="4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4"><a href="#4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4" class="headerlink" title="4.数据库操作命令"></a>4.数据库操作命令</h2><p>创建数据库：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> &#123;<span class="keyword">DATABASE</span>|<span class="keyword">SCHEMA</span>&#125; [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] db_name [<span class="keyword">DEFAULT</span>] CHARAACTER <span class="keyword">SET</span> [=] charset_name</span><br><span class="line">如：</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> <span class="keyword">test</span>;</span></span><br></pre></td></tr></table></figure></p>
+<p>查看当前服务器下的数据表列表：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SHOW</span> &#123;<span class="keyword">DATABASES</span>|SCHEMAS&#125; [<span class="keyword">LINK</span> <span class="string">'pattern'</span> | <span class="keyword">WHERE</span> expr]</span><br><span class="line">如：</span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">DATABASES</span>;</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><a href="#u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316" class="headerlink" title="四、数据库界面化"></a>四、数据库界面化</h1><p>上面安装的mysql没有界面，可以在dos下操作，如果你想要界面化的话可以自己找相关界面化软件，这里用Navicat for MySQL！<br>自己安装好软件Navicat for MySQL！<br>打开软件，点击连接，随便输入一个连接名，密码这里不用输入（因为初始数据库没有密码，如果你的MYSQL数据库加了密码的话输入即可）<br>点击确定即可看见数据库了，里面有MYSQL自带的数据表</p>
 <h1 id="u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2"><a href="#u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2" class="headerlink" title="五、MYSQL相关查询"></a>五、MYSQL相关查询</h1><h2 id="1-_u53C2_u6570"><a href="#1-_u53C2_u6570" class="headerlink" title="1.参数"></a>1.参数</h2></span>
       
@@ -312,8 +319,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/02/02/java_use/" rel="prev" title="JAVA教程">
-                JAVA教程 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/02/02/java_use/" rel="prev" title="JAVA学习篇">
+                JAVA学习篇 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -405,21 +412,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -458,7 +465,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00_u3001_u7B80_u4ECB"><span class="nav-number">1.</span> <span class="nav-text">一、简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E8C_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL"><span class="nav-number">2.</span> <span class="nav-text">二、安装与配置MYSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u914D_u7F6E"><span class="nav-number">2.1.</span> <span class="nav-text">1.配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u5B89_u88C5_u670D_u52A1"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u8FDB_u5165MYSQL"><span class="nav-number">2.3.</span> <span class="nav-text">3.进入MYSQL</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><span class="nav-number">3.</span> <span class="nav-text">三、DOS下操作数据库MYSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><span class="nav-number">3.1.</span> <span class="nav-text">1.服务的启动与停止及版本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u767B_u5F55_u4E0E_u9000_u51FA"><span class="nav-number">3.2.</span> <span class="nav-text">2.登录与退出</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><span class="nav-number">4.</span> <span class="nav-text">四、数据库界面化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2"><span class="nav-number">5.</span> <span class="nav-text">五、MYSQL相关查询</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u53C2_u6570"><span class="nav-number">5.1.</span> <span class="nav-text">1.参数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL"><span class="nav-number">1.</span> <span class="nav-text">一、安装与配置MYSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u914D_u7F6E"><span class="nav-number">1.1.</span> <span class="nav-text">1.配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u5B89_u88C5_u670D_u52A1"><span class="nav-number">1.2.</span> <span class="nav-text">2.安装服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u8FDB_u5165MYSQL"><span class="nav-number">1.3.</span> <span class="nav-text">3.进入MYSQL</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E8C_u3001_u6570_u636E_u7C7B_u578B"><span class="nav-number">2.</span> <span class="nav-text">二、数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><span class="nav-number">3.</span> <span class="nav-text">三、DOS下操作数据库MYSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><span class="nav-number">3.1.</span> <span class="nav-text">1.服务的启动与停止及版本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u767B_u5F55_u4E0E_u9000_u51FA"><span class="nav-number">3.2.</span> <span class="nav-text">2.登录与退出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u5E38_u7528_u547D_u4EE4"><span class="nav-number">3.3.</span> <span class="nav-text">3.常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4"><span class="nav-number">3.4.</span> <span class="nav-text">4.数据库操作命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><span class="nav-number">4.</span> <span class="nav-text">四、数据库界面化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2"><span class="nav-number">5.</span> <span class="nav-text">五、MYSQL相关查询</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u53C2_u6570"><span class="nav-number">5.1.</span> <span class="nav-text">1.参数</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
