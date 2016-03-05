@@ -3,6 +3,51 @@
 
 
     
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/04/jsp/</loc>
+    <lastmod>2016-03-04T10:54:44.481Z</lastmod>
+    <data>
+        <display>
+        <title>JSP网站开发</title>
+        <pubTime>2016-03-04T10:53:03.000Z</pubTime>
+        
+        <tag>JSP</tag>
+         
+        <tag>网站开发</tag>
+         
+         
+           
+             
+              <breadCrumb title="JSP网站开发" url="http://www.bestzhangjin.com/categories/JSP%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/04/aliyun/</loc>
+    <lastmod>2016-03-04T09:51:30.440Z</lastmod>
+    <data>
+        <display>
+        <title>阿里云ECS（linux）搭建web环境</title>
+        <pubTime>2016-03-04T01:15:00.000Z</pubTime>
+        
+        <tag>服务器</tag>
+         
+        <tag>阿里云</tag>
+         
+         
+           
+             
+              <breadCrumb title="阿里云服务器" url="http://www.bestzhangjin.com/categories/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://www.bestzhangjin.com/2016/02/02/java_use/</loc>
     <lastmod>2016-03-03T07:30:35.964Z</lastmod>
@@ -278,7 +323,6 @@
     </data>
     </url>
 
-    
     
     
 </urlset>

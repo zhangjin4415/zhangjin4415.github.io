@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.bestzhangjin.com/about/index.html</loc>
+    <lastmod>2016-03-05T03:42:52.269Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/04/jsp/</loc>
+    <lastmod>2016-03-04T10:54:44.481Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/04/aliyun/</loc>
+    <lastmod>2016-03-04T09:51:30.440Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.bestzhangjin.com/2016/02/02/java_use/</loc>
     <lastmod>2016-03-03T07:30:35.964Z</lastmod>
   </url>
@@ -64,11 +79,6 @@
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/01/yuandan/</loc>
     <lastmod>2016-01-14T01:08:27.235Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/about/index.html</loc>
-    <lastmod>2016-01-04T02:55:35.605Z</lastmod>
   </url>
   
   <url>

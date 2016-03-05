@@ -1,0 +1,744 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="google-site-verification" content="SxtUWZeCB1kdMgucSmFlZL9HwwJmgQHGcp9w_p4Xtgc" />
+<meta name="baidu-site-verification" content="Sil1fR2zak" />
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="服务器,阿里云," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="做最好的自己" type="application/atom+xml" />
+
+
+
+
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="主要内容：阿里云ECS（linux）搭建web环境">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿里云ECS（linux）搭建web环境">
+<meta property="og:url" content="http://www.bestzhangjin.com/2016/03/04/aliyun/index.html">
+<meta property="og:site_name" content="做最好的自己">
+<meta property="og:description" content="主要内容：阿里云ECS（linux）搭建web环境">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/aliyun/3.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/aliyun/4.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/aliyun/5.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/aliyun/1.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/aliyun/2.png">
+<meta property="og:updated_time" content="2016-03-04T09:51:30.440Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="阿里云ECS（linux）搭建web环境">
+<meta name="twitter:description" content="主要内容：阿里云ECS（linux）搭建web环境">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> 阿里云ECS（linux）搭建web环境 | 做最好的自己 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">做最好的自己</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                阿里云ECS（linux）搭建web环境
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-03-04T09:15:00+08:00" content="2016-03-04">
+              2016-03-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/阿里云服务器/" itemprop="url" rel="index">
+                    <span itemprop="name">阿里云服务器</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/04/aliyun/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/04/aliyun/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>主要内容：阿里云ECS（linux）搭建web环境<br><a id="more"></a></p>
+<h1 id="1-_u963F_u91CC_u4E91ECS_u4ECB_u7ECD"><a href="#1-_u963F_u91CC_u4E91ECS_u4ECB_u7ECD" class="headerlink" title="1.阿里云ECS介绍"></a>1.阿里云ECS介绍</h1><p>阿里云，阿里巴巴集团旗下云计算品牌，全球卓越的云计算技术和服务提供商。创立于2009年，在杭州、北京、硅谷等地设有研发中心和运营机构。<br>云服务器ECS：一种简单高效，处理能力可弹性伸缩的计算服务。助您快速构建更稳定、安全的应用。提升运维效率，降低IT成本，使您更专注于核心业务创新。</p>
+<h1 id="2-_u8FDE_u63A5_u670D_u52A1_u5668_u3001_u5411_u670D_u52A1_u5668_u4E0A_u4F20_u6587_u4EF6"><a href="#2-_u8FDE_u63A5_u670D_u52A1_u5668_u3001_u5411_u670D_u52A1_u5668_u4E0A_u4F20_u6587_u4EF6" class="headerlink" title="2.连接服务器、向服务器上传文件"></a>2.连接服务器、向服务器上传文件</h1><p>(1)连接到服务器<br>连接到服务器的SSH工具有很多，这里介绍SSH Secure Shell Client和putty两种软件的用法.选择自己喜欢的一种就可以（本文选择SSH Secure Shell Client）<br>A.SSH Secure Shell Client<br>下载安装.SSH Secure Shell Client<br>打开界面点击profiles-&gt;add profiles输入你要远程的机器的名字（随便输入即可）<br>之后点击profiles-&gt;你要远程的主机名：<br><img src="/img/aliyun/3.png" alt="image"><br>在HostName里输入Linux主机地址<br>UserName输入账号（一般root）<br>Port输入端口(一般22)<br>点击connection之后输入服务器主机密码即可连接成功</p>
+<p>传送文件:<br>点击如下图标new file transfer window:<br><img src="/img/aliyun/4.png" alt="image"><br><img src="/img/aliyun/5.png" alt="image"><br>从左侧本地文件目录拖放文件到右侧窗口则完成文件上传</p>
+<p>B.putty<br>下载软件putty,打开后只是填写你的服务器ip地址(图中00000000位置)：<br><img src="/img/aliyun/1.png" alt="putty"><br>点击打开，输入服务器的用户名密码就连接成功:<br><img src="/img/aliyun/2.png" alt="putty"></p>
+<p>(2)更新source-list到最新的源信息：<br><figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-<span class="built_in">get</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="3-Web_u73AF_u5883_u642D_u5EFA"><a href="#3-Web_u73AF_u5883_u642D_u5EFA" class="headerlink" title="3.Web环境搭建"></a>3.Web环境搭建</h1><h2 id="3-1_Web_u73AF_u5883_u4ECB_u7ECD"><a href="#3-1_Web_u73AF_u5883_u4ECB_u7ECD" class="headerlink" title="3.1 Web环境介绍"></a>3.1 Web环境介绍</h2><p>本文采用JSP技术创建的网页需要jdk（java）环境，服务器采用tomcat.</p>
+<h2 id="3-2_jdk_u5B89_u88C5"><a href="#3-2_jdk_u5B89_u88C5" class="headerlink" title="3.2 jdk安装"></a>3.2 jdk安装</h2><p>(1)JDK版本介绍<br>Java SE Development Kit 8u74：jdk java开发环境 jdk自带了前边的jre<br>Java SE Development Kit 8u74 Demos and Samples：是jre，是java运行环境<br>eclipse也是属于java程序 只要有了java运行环境以后就能运行的 但是没有jdk的话不能编译java程序 还是个摆设.<br>本文采用后者，因为服务器上运行即可，不需要编译环境.<br>官网下载：<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a><br>选择Java SE Development Kit 8u74的Linux x64版:jdk-8u74-linux-x64.tar.gz下载</p>
+<p>(2)安装<br>解压：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvzf jdk-<span class="number">8u</span>74-linux-x64.gz</span><br></pre></td></tr></table></figure></p>
+<p>jdk所在位置:/home/java/jdk1.8.0_74<br>配置环境变量:<br>vi ~/.bashrc在后面添加如下代码：<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/home/java/jdk1.<span class="number">8.0_74</span></span><br><span class="line">export JAVA_BIN=<span class="variable">$JAVA</span>_HOME/bin</span><br><span class="line">export JAVA_LIB=<span class="variable">$JAVA</span>_HOME/lib</span><br><span class="line">export CLASSPATH=.:<span class="variable">$JAVA</span>_LIB/tools.jar:<span class="variable">$JAVA</span>_LIB/dt.jar</span><br><span class="line">export PATH=<span class="variable">$JAVA</span>_BIN:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure></p>
+<p>我们在进行编辑完成之后，可以使用source命令来生效。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>之后输入java -version弹出java版本安装成功</p>
+<h2 id="3-3_tomcat_u5B89_u88C5"><a href="#3-3_tomcat_u5B89_u88C5" class="headerlink" title="3.3 tomcat安装"></a>3.3 tomcat安装</h2><p>(1)下载<br>官网下载：<a href="http://tomcat.apache.org/download-80.cgi" target="_blank" rel="external">http://tomcat.apache.org/download-80.cgi</a><br>本文下载的是apache-tomcat-8.0.32.tar.gz<br>tomcat需要java环境，所以先安装了jdk</p>
+<p>(2)安装<br>解压：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">tar</span> <span class="tag">-xvzf</span> <span class="tag">apache-tomcat-8</span><span class="class">.0</span><span class="class">.32</span><span class="class">.tar</span><span class="class">.gz</span></span><br></pre></td></tr></table></figure></p>
+<p>解压得到文件夹:apache-tomcat-8.0.32<br>当解压成功以后，我们直接进入到tomcat bin目录中。<br>输入 ./startup.sh启动Tomcat，假如显示Tomcat started，则表明启动成功。<br>tomcat默认是8080端口。<br>所以浏览器上输入地址：<a href="http://你的服务器地址:8080/就可以访问到默认的tomcat主页面了" target="_blank" rel="external">http://你的服务器地址:8080/就可以访问到默认的tomcat主页面了</a></p>
+<p>(3)更改tomcat的8080端口为80端口<br>找到tomcat的安装目录下的conf下的server.xml将8080改为80<br>找到如下一段：<br><!-- A "Connector" represents an endpoint by which requests are received  
+         and responses are returned. Documentation at :  
+         Java HTTP Connector: /docs/config/http.html (blocking & non-blocking)  
+         Java AJP  Connector: /docs/config/ajp.html  
+         APR (HTTP/AJP) Connector: /docs/apr.html  
+         Define a non-SSL HTTP/1.1 Connector on port 8080  
+    --></p>
+<connectorport="8080"protocol="http 1.1"="" connectiontimeout="20000" redirectport="8443" uriencoding="UTF-8">
+
+<p>把那上面port=”8080”里面的8080改成80就可以了.保存后，记的重启下tomcat，这样就可以了。<br>现在直接<a href="http://你的服务器ip地址/就可以访问了" target="_blank" rel="external">http://你的服务器ip地址/就可以访问了</a></p>
+<h1 id="4-_u670D_u52A1_u5668ip_u4E0E_u57DF_u540D_u7ED1_u5B9A"><a href="#4-_u670D_u52A1_u5668ip_u4E0E_u57DF_u540D_u7ED1_u5B9A" class="headerlink" title="4.服务器ip与域名绑定"></a>4.服务器ip与域名绑定</h1><p>我在阿里云处买的万维网域名。设置比较简单。<br>登录阿里云，点击域名-&gt;解析-&gt;设置网站解析-&gt;输入ip地址提交即可。<br>然后输入你的域名就可以访问服务器。</p>
+<h1 id="5-_u4E0A_u4F20_u7F51_u7AD9"><a href="#5-_u4E0A_u4F20_u7F51_u7AD9" class="headerlink" title="5.上传网站"></a>5.上传网站</h1><p>将编写好的网站传入服务器上的tomcat对应目录下就可以实现访问。</p>
+</connectorport="8080"protocol="http></span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/服务器/" rel="tag">#服务器</a>
+          
+            <a href="/tags/阿里云/" rel="tag">#阿里云</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/26/ubuntu_soft/" rel="next" title="Ubuntu()之应用软件安装篇">
+                <i class="fa fa-chevron-left"></i> Ubuntu()之应用软件安装篇
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/04/jsp/" rel="prev" title="JSP网站开发">
+                JSP网站开发 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/03/04/aliyun/"
+     data-title="阿里云ECS（linux）搭建web环境"
+     data-content=""
+     data-url="http://www.bestzhangjin.com/2016/03/04/aliyun/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/04/aliyun/"
+           data-title="阿里云ECS（linux）搭建web环境" data-url="http://www.bestzhangjin.com/2016/03/04/aliyun/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/avatar.jpeg" alt="Jin Zhang" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Jin Zhang</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">天高任鸟飞，海阔凭鱼跃。</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-_u963F_u91CC_u4E91ECS_u4ECB_u7ECD"><span class="nav-number">1.</span> <span class="nav-text">1.阿里云ECS介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-_u8FDE_u63A5_u670D_u52A1_u5668_u3001_u5411_u670D_u52A1_u5668_u4E0A_u4F20_u6587_u4EF6"><span class="nav-number">2.</span> <span class="nav-text">2.连接服务器、向服务器上传文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Web_u73AF_u5883_u642D_u5EFA"><span class="nav-number">3.</span> <span class="nav-text">3.Web环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1_Web_u73AF_u5883_u4ECB_u7ECD"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 Web环境介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2_jdk_u5B89_u88C5"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 jdk安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3_tomcat_u5B89_u88C5"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 tomcat安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-_u670D_u52A1_u5668ip_u4E0E_u57DF_u540D_u7ED1_u5B9A"><span class="nav-number">4.</span> <span class="nav-text">4.服务器ip与域名绑定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-_u4E0A_u4F20_u7F51_u7AD9"><span class="nav-number">5.</span> <span class="nav-text">5.上传网站</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin Zhang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"bestzhangjin"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>

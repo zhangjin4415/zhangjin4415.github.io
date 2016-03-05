@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.bestzhangjin.com/"/>
-  <updated>2016-02-26T08:29:29.037Z</updated>
+  <updated>2016-03-04T10:54:44.481Z</updated>
   <id>http://www.bestzhangjin.com/</id>
   
   <author>
@@ -13,6 +13,74 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[JSP网站开发]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/04/jsp/"/>
+    <id>http://www.bestzhangjin.com/2016/03/04/jsp/</id>
+    <published>2016-03-04T10:53:03.000Z</published>
+    <updated>2016-03-04T10:54:44.481Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：JSP网站开发<br><a id="more"></a></p>
+<h1 id="1-_u4ECB_u7ECD"><a href="#1-_u4ECB_u7ECD" class="headerlink" title="1.介绍"></a>1.介绍</h1><h1 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h1>]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：JSP网站开发<br>]]>
+    
+    </summary>
+    
+      <category term="JSP" scheme="http://www.bestzhangjin.com/tags/JSP/"/>
+    
+      <category term="网站开发" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="JSP网站开发" scheme="http://www.bestzhangjin.com/categories/JSP%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[阿里云ECS（linux）搭建web环境]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/04/aliyun/"/>
+    <id>http://www.bestzhangjin.com/2016/03/04/aliyun/</id>
+    <published>2016-03-04T01:15:00.000Z</published>
+    <updated>2016-03-04T09:51:30.440Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：阿里云ECS（linux）搭建web环境<br><a id="more"></a></p>
+<h1 id="1-_u963F_u91CC_u4E91ECS_u4ECB_u7ECD"><a href="#1-_u963F_u91CC_u4E91ECS_u4ECB_u7ECD" class="headerlink" title="1.阿里云ECS介绍"></a>1.阿里云ECS介绍</h1><p>阿里云，阿里巴巴集团旗下云计算品牌，全球卓越的云计算技术和服务提供商。创立于2009年，在杭州、北京、硅谷等地设有研发中心和运营机构。<br>云服务器ECS：一种简单高效，处理能力可弹性伸缩的计算服务。助您快速构建更稳定、安全的应用。提升运维效率，降低IT成本，使您更专注于核心业务创新。</p>
+<h1 id="2-_u8FDE_u63A5_u670D_u52A1_u5668_u3001_u5411_u670D_u52A1_u5668_u4E0A_u4F20_u6587_u4EF6"><a href="#2-_u8FDE_u63A5_u670D_u52A1_u5668_u3001_u5411_u670D_u52A1_u5668_u4E0A_u4F20_u6587_u4EF6" class="headerlink" title="2.连接服务器、向服务器上传文件"></a>2.连接服务器、向服务器上传文件</h1><p>(1)连接到服务器<br>连接到服务器的SSH工具有很多，这里介绍SSH Secure Shell Client和putty两种软件的用法.选择自己喜欢的一种就可以（本文选择SSH Secure Shell Client）<br>A.SSH Secure Shell Client<br>下载安装.SSH Secure Shell Client<br>打开界面点击profiles-&gt;add profiles输入你要远程的机器的名字（随便输入即可）<br>之后点击profiles-&gt;你要远程的主机名：<br><img src="/img/aliyun/3.png" alt="image"><br>在HostName里输入Linux主机地址<br>UserName输入账号（一般root）<br>Port输入端口(一般22)<br>点击connection之后输入服务器主机密码即可连接成功</p>
+<p>传送文件:<br>点击如下图标new file transfer window:<br><img src="/img/aliyun/4.png" alt="image"><br><img src="/img/aliyun/5.png" alt="image"><br>从左侧本地文件目录拖放文件到右侧窗口则完成文件上传</p>
+<p>B.putty<br>下载软件putty,打开后只是填写你的服务器ip地址(图中00000000位置)：<br><img src="/img/aliyun/1.png" alt="putty"><br>点击打开，输入服务器的用户名密码就连接成功:<br><img src="/img/aliyun/2.png" alt="putty"></p>
+<p>(2)更新source-list到最新的源信息：<br><figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-<span class="built_in">get</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="3-Web_u73AF_u5883_u642D_u5EFA"><a href="#3-Web_u73AF_u5883_u642D_u5EFA" class="headerlink" title="3.Web环境搭建"></a>3.Web环境搭建</h1><h2 id="3-1_Web_u73AF_u5883_u4ECB_u7ECD"><a href="#3-1_Web_u73AF_u5883_u4ECB_u7ECD" class="headerlink" title="3.1 Web环境介绍"></a>3.1 Web环境介绍</h2><p>本文采用JSP技术创建的网页需要jdk（java）环境，服务器采用tomcat.</p>
+<h2 id="3-2_jdk_u5B89_u88C5"><a href="#3-2_jdk_u5B89_u88C5" class="headerlink" title="3.2 jdk安装"></a>3.2 jdk安装</h2><p>(1)JDK版本介绍<br>Java SE Development Kit 8u74：jdk java开发环境 jdk自带了前边的jre<br>Java SE Development Kit 8u74 Demos and Samples：是jre，是java运行环境<br>eclipse也是属于java程序 只要有了java运行环境以后就能运行的 但是没有jdk的话不能编译java程序 还是个摆设.<br>本文采用后者，因为服务器上运行即可，不需要编译环境.<br>官网下载：<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a><br>选择Java SE Development Kit 8u74的Linux x64版:jdk-8u74-linux-x64.tar.gz下载</p>
+<p>(2)安装<br>解压：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvzf jdk-<span class="number">8u</span>74-linux-x64.gz</span><br></pre></td></tr></table></figure></p>
+<p>jdk所在位置:/home/java/jdk1.8.0_74<br>配置环境变量:<br>vi ~/.bashrc在后面添加如下代码：<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/home/java/jdk1.<span class="number">8.0_74</span></span><br><span class="line">export JAVA_BIN=<span class="variable">$JAVA</span>_HOME/bin</span><br><span class="line">export JAVA_LIB=<span class="variable">$JAVA</span>_HOME/lib</span><br><span class="line">export CLASSPATH=.:<span class="variable">$JAVA</span>_LIB/tools.jar:<span class="variable">$JAVA</span>_LIB/dt.jar</span><br><span class="line">export PATH=<span class="variable">$JAVA</span>_BIN:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure></p>
+<p>我们在进行编辑完成之后，可以使用source命令来生效。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>之后输入java -version弹出java版本安装成功</p>
+<h2 id="3-3_tomcat_u5B89_u88C5"><a href="#3-3_tomcat_u5B89_u88C5" class="headerlink" title="3.3 tomcat安装"></a>3.3 tomcat安装</h2><p>(1)下载<br>官网下载：<a href="http://tomcat.apache.org/download-80.cgi" target="_blank" rel="external">http://tomcat.apache.org/download-80.cgi</a><br>本文下载的是apache-tomcat-8.0.32.tar.gz<br>tomcat需要java环境，所以先安装了jdk</p>
+<p>(2)安装<br>解压：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">tar</span> <span class="tag">-xvzf</span> <span class="tag">apache-tomcat-8</span><span class="class">.0</span><span class="class">.32</span><span class="class">.tar</span><span class="class">.gz</span></span><br></pre></td></tr></table></figure></p>
+<p>解压得到文件夹:apache-tomcat-8.0.32<br>当解压成功以后，我们直接进入到tomcat bin目录中。<br>输入 ./startup.sh启动Tomcat，假如显示Tomcat started，则表明启动成功。<br>tomcat默认是8080端口。<br>所以浏览器上输入地址：<a href="http://你的服务器地址:8080/就可以访问到默认的tomcat主页面了" target="_blank" rel="external">http://你的服务器地址:8080/就可以访问到默认的tomcat主页面了</a></p>
+<p>(3)更改tomcat的8080端口为80端口<br>找到tomcat的安装目录下的conf下的server.xml将8080改为80<br>找到如下一段：<br><!-- A "Connector" represents an endpoint by which requests are received  
+         and responses are returned. Documentation at :  
+         Java HTTP Connector: /docs/config/http.html (blocking & non-blocking)  
+         Java AJP  Connector: /docs/config/ajp.html  
+         APR (HTTP/AJP) Connector: /docs/apr.html  
+         Define a non-SSL HTTP/1.1 Connector on port 8080  
+    --></p>
+<connectorport="8080"protocol="http 1.1"="" connectiontimeout="20000" redirectport="8443" uriencoding="UTF-8">
+
+<p>把那上面port=”8080”里面的8080改成80就可以了.保存后，记的重启下tomcat，这样就可以了。<br>现在直接<a href="http://你的服务器ip地址/就可以访问了" target="_blank" rel="external">http://你的服务器ip地址/就可以访问了</a></p>
+<h1 id="4-_u670D_u52A1_u5668ip_u4E0E_u57DF_u540D_u7ED1_u5B9A"><a href="#4-_u670D_u52A1_u5668ip_u4E0E_u57DF_u540D_u7ED1_u5B9A" class="headerlink" title="4.服务器ip与域名绑定"></a>4.服务器ip与域名绑定</h1><p>我在阿里云处买的万维网域名。设置比较简单。<br>登录阿里云，点击域名-&gt;解析-&gt;设置网站解析-&gt;输入ip地址提交即可。<br>然后输入你的域名就可以访问服务器。</p>
+<h1 id="5-_u4E0A_u4F20_u7F51_u7AD9"><a href="#5-_u4E0A_u4F20_u7F51_u7AD9" class="headerlink" title="5.上传网站"></a>5.上传网站</h1><p>将编写好的网站传入服务器上的tomcat对应目录下就可以实现访问。</p>
+</connectorport="8080"protocol="http>]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：阿里云ECS（linux）搭建web环境<br>]]>
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://www.bestzhangjin.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="阿里云" scheme="http://www.bestzhangjin.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+      <category term="阿里云服务器" scheme="http://www.bestzhangjin.com/categories/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Ubuntu()之应用软件安装篇]]></title>
@@ -1574,6 +1642,32 @@
   </entry>
   
   <entry>
+    <title><![CDATA[android studio（APP）常见问题与解决方法]]></title>
+    <link href="http://www.bestzhangjin.com/2016/01/15/android_studio_question/"/>
+    <id>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</id>
+    <published>2016-01-15T05:51:52.000Z</published>
+    <updated>2016-01-22T04:17:04.459Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题<br><a id="more"></a></p>
+<h1 id="u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019"><a href="#u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019" class="headerlink" title="一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’"></a>一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’</h1><p>解决：cmd下：<br>F:\Android\sdk\platform-tools&gt;adb kill-server<br>F:\Android\sdk\platform-tools&gt;adb start-server</p>
+<h1 id="u4E8C-android_studio_u8FD0_u884C_u51FA_u73B0This_AVD_u2019s_configuration_is_missing_a_kernel_file_2CANDROID_SDK_ROOT_is_undefined"><a href="#u4E8C-android_studio_u8FD0_u884C_u51FA_u73B0This_AVD_u2019s_configuration_is_missing_a_kernel_file_2CANDROID_SDK_ROOT_is_undefined" class="headerlink" title="二.android studio运行出现This AVD’s configuration is missing a kernel file,ANDROID_SDK_ROOT is undefined"></a>二.android studio运行出现This AVD’s configuration is missing a kernel file,ANDROID_SDK_ROOT is undefined</h1><p>解决：这种错误一般由于Android studio的模拟器错误，将模拟器重新配置使之能够运行起来再利用它运行程序</p>
+<h1 id="u4E09-Android_studio_u627E_u4E0D_u5230_u7C7Bactionbaractivity_u6216_u8005AppCompatActivity"><a href="#u4E09-Android_studio_u627E_u4E0D_u5230_u7C7Bactionbaractivity_u6216_u8005AppCompatActivity" class="headerlink" title="三.Android studio找不到类actionbaractivity或者AppCompatActivity"></a>三.Android studio找不到类actionbaractivity或者AppCompatActivity</h1><p>注意：actionbaractivity已经过时，现在一般选择AppCompatActivity<br>  解决：这是因为因为没有导入android-support-v7-appcompat包而导致我找不到相应的类，导入android-support-v7-appcompat.jar包就可以<br>    解压android-support-v7-appcompat.jar包可以查看是不是有对应的类，没有的话建议重新下载版本高一点的包<br>操作步骤：<br>    右键-&gt;open module settings弹出窗口，上面选择Dependencies<br>    点击加号”+”,选择Library dependency<br>    选择appcompat-v7,点击ok</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题<br>]]>
+    
+    </summary>
+    
+      <category term="APP" scheme="http://www.bestzhangjin.com/tags/APP/"/>
+    
+      <category term="Android studio" scheme="http://www.bestzhangjin.com/tags/Android-studio/"/>
+    
+      <category term="常见问题" scheme="http://www.bestzhangjin.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="APP" scheme="http://www.bestzhangjin.com/categories/APP/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Myeclipse搭建安卓环境（APP）及常见问题与解决方法]]></title>
     <link href="http://www.bestzhangjin.com/2016/01/15/myeclipse_APP_question/"/>
     <id>http://www.bestzhangjin.com/2016/01/15/myeclipse_APP_question/</id>
@@ -1597,32 +1691,6 @@
       <category term="常见问题" scheme="http://www.bestzhangjin.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     
       <category term="Myeclipse" scheme="http://www.bestzhangjin.com/categories/Myeclipse/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[android studio（APP）常见问题与解决方法]]></title>
-    <link href="http://www.bestzhangjin.com/2016/01/15/android_studio_question/"/>
-    <id>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</id>
-    <published>2016-01-15T05:51:52.000Z</published>
-    <updated>2016-01-22T04:17:04.459Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题<br><a id="more"></a></p>
-<h1 id="u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019"><a href="#u4E00-android_studio_u8FD0_u884C_u51FA_u73B0ADB_not_responding-_If_you_u2019d_like_to_retry_2C_then_please_manually_kill__u201Cadb-exe_u201D_and_click__u2018Restart_u2019" class="headerlink" title="一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’"></a>一.android studio运行出现ADB not responding. If you’d like to retry, then please manually kill “adb.exe” and click ‘Restart’</h1><p>解决：cmd下：<br>F:\Android\sdk\platform-tools&gt;adb kill-server<br>F:\Android\sdk\platform-tools&gt;adb start-server</p>
-<h1 id="u4E8C-android_studio_u8FD0_u884C_u51FA_u73B0This_AVD_u2019s_configuration_is_missing_a_kernel_file_2CANDROID_SDK_ROOT_is_undefined"><a href="#u4E8C-android_studio_u8FD0_u884C_u51FA_u73B0This_AVD_u2019s_configuration_is_missing_a_kernel_file_2CANDROID_SDK_ROOT_is_undefined" class="headerlink" title="二.android studio运行出现This AVD’s configuration is missing a kernel file,ANDROID_SDK_ROOT is undefined"></a>二.android studio运行出现This AVD’s configuration is missing a kernel file,ANDROID_SDK_ROOT is undefined</h1><p>解决：这种错误一般由于Android studio的模拟器错误，将模拟器重新配置使之能够运行起来再利用它运行程序</p>
-<h1 id="u4E09-Android_studio_u627E_u4E0D_u5230_u7C7Bactionbaractivity_u6216_u8005AppCompatActivity"><a href="#u4E09-Android_studio_u627E_u4E0D_u5230_u7C7Bactionbaractivity_u6216_u8005AppCompatActivity" class="headerlink" title="三.Android studio找不到类actionbaractivity或者AppCompatActivity"></a>三.Android studio找不到类actionbaractivity或者AppCompatActivity</h1><p>注意：actionbaractivity已经过时，现在一般选择AppCompatActivity<br>  解决：这是因为因为没有导入android-support-v7-appcompat包而导致我找不到相应的类，导入android-support-v7-appcompat.jar包就可以<br>    解压android-support-v7-appcompat.jar包可以查看是不是有对应的类，没有的话建议重新下载版本高一点的包<br>操作步骤：<br>    右键-&gt;open module settings弹出窗口，上面选择Dependencies<br>    点击加号”+”,选择Library dependency<br>    选择appcompat-v7,点击ok</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题<br>]]>
-    
-    </summary>
-    
-      <category term="APP" scheme="http://www.bestzhangjin.com/tags/APP/"/>
-    
-      <category term="Android studio" scheme="http://www.bestzhangjin.com/tags/Android-studio/"/>
-    
-      <category term="常见问题" scheme="http://www.bestzhangjin.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
-    
-      <category term="APP" scheme="http://www.bestzhangjin.com/categories/APP/"/>
     
   </entry>
   
