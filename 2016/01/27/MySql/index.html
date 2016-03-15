@@ -61,7 +61,7 @@
 <meta property="og:url" content="http://www.bestzhangjin.com/2016/01/27/MySql/index.html">
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：安装与配置MYSQL">
-<meta property="og:updated_time" content="2016-02-19T02:57:35.742Z">
+<meta property="og:updated_time" content="2016-03-15T11:44:10.468Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySql">
 <meta name="twitter:description" content="主要内容：安装与配置MYSQL">
@@ -280,7 +280,7 @@
 <p>（2）net start mysql 发生系统错误 5。  拒绝访问。<br>解决：权限不够，切换到管理员模式就可以启动了。在开始菜单的搜索框张收入cmd，然后右键单击，并选择以管理员身份运行！</p>
 <h2 id="3-_u8FDB_u5165MYSQL"><a href="#3-_u8FDB_u5165MYSQL" class="headerlink" title="3.进入MYSQL"></a>3.进入MYSQL</h2><p>dos下：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">mysql</span> -u root -p</span><br></pre></td></tr></table></figure></p>
 <p>Enter password那里，初始密码为空，直接回车就行,显示<br>mysql&gt;<br>如此则进入了MYSQL</p>
-<h1 id="u4E8C_u3001_u6570_u636E_u7C7B_u578B"><a href="#u4E8C_u3001_u6570_u636E_u7C7B_u578B" class="headerlink" title="二、数据类型"></a>二、数据类型</h1><h1 id="u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><a href="#u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL" class="headerlink" title="三、DOS下操作数据库MYSQL"></a>三、DOS下操作数据库MYSQL</h1><h2 id="1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><a href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F" class="headerlink" title="1.服务的启动与停止及版本信息"></a>1.服务的启动与停止及版本信息</h2><p>启动<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">net</span> <span class="built_in">start</span> mysql</span><br></pre></td></tr></table></figure></p>
+<h1 id="u4E8C_u3001DOS_u4E0B_u7B80_u5355_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><a href="#u4E8C_u3001DOS_u4E0B_u7B80_u5355_u64CD_u4F5C_u6570_u636E_u5E93MYSQL" class="headerlink" title="二、DOS下简单操作数据库MYSQL"></a>二、DOS下简单操作数据库MYSQL</h1><h2 id="1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><a href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F" class="headerlink" title="1.服务的启动与停止及版本信息"></a>1.服务的启动与停止及版本信息</h2><p>启动<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">net</span> <span class="built_in">start</span> mysql</span><br></pre></td></tr></table></figure></p>
 <p>停止<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net <span class="literal">stop</span> mysql</span><br></pre></td></tr></table></figure></p>
 <p>卸载<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc <span class="keyword">delete</span> mysql</span><br></pre></td></tr></table></figure></p>
 <p>备注：所有的windows服务都可以通过net start/stop启动停止</p>
@@ -291,8 +291,209 @@
 <p>备注：规范用大写——–虽然小写也可以运行<br>MYSQL语句的规范：<br>关键字和函数名称全部大写，数据库名称、表名称、字段名称全部小写，SQL语句必须以分号结尾</p>
 <h2 id="4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4"><a href="#4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4" class="headerlink" title="4.数据库操作命令"></a>4.数据库操作命令</h2><p>创建数据库：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> &#123;<span class="keyword">DATABASE</span>|<span class="keyword">SCHEMA</span>&#125; [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] db_name [<span class="keyword">DEFAULT</span>] CHARAACTER <span class="keyword">SET</span> [=] charset_name</span><br><span class="line">如：</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> <span class="keyword">test</span>;</span></span><br></pre></td></tr></table></figure></p>
 <p>查看当前服务器下的数据表列表：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SHOW</span> &#123;<span class="keyword">DATABASES</span>|SCHEMAS&#125; [<span class="keyword">LINK</span> <span class="string">'pattern'</span> | <span class="keyword">WHERE</span> expr]</span><br><span class="line">如：</span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">DATABASES</span>;</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><a href="#u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316" class="headerlink" title="四、数据库界面化"></a>四、数据库界面化</h1><p>上面安装的mysql没有界面，可以在dos下操作，如果你想要界面化的话可以自己找相关界面化软件，这里用Navicat for MySQL！<br>自己安装好软件Navicat for MySQL！<br>打开软件，点击连接，随便输入一个连接名，密码这里不用输入（因为初始数据库没有密码，如果你的MYSQL数据库加了密码的话输入即可）<br>点击确定即可看见数据库了，里面有MYSQL自带的数据表</p>
-<h1 id="u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2"><a href="#u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2" class="headerlink" title="五、MYSQL相关查询"></a>五、MYSQL相关查询</h1><h2 id="1-_u53C2_u6570"><a href="#1-_u53C2_u6570" class="headerlink" title="1.参数"></a>1.参数</h2></span>
+<h2 id="5-_u4ECE_u6587_u672C_u6587_u4EF6_u6267_u884CSQL_u8BED_u53E5"><a href="#5-_u4ECE_u6587_u672C_u6587_u4EF6_u6267_u884CSQL_u8BED_u53E5" class="headerlink" title="5.从文本文件执行SQL语句"></a>5.从文本文件执行SQL语句</h2><p>这里在D盘下建一个文件my.txt:<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> mma;</span></span><br><span class="line"><span class="operator"><span class="keyword">SHOW</span> <span class="keyword">DATABASES</span>;</span></span><br></pre></td></tr></table></figure></p>
+<p>打开cmd运行结果如下：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">E</span>:\mysql-5.7.10-winx64\bin&gt;mysql &lt; <span class="keyword">D</span>:\my.txt -<span class="keyword">u</span> root -p</span><br><span class="line">Enter password:</span><br><span class="line">Database</span><br><span class="line">information_schema</span><br><span class="line">mma</span><br><span class="line">mysql</span><br><span class="line">performance_schema</span><br><span class="line">sys</span><br><span class="line"><span class="keyword">test</span></span><br></pre></td></tr></table></figure></p>
+<p>如果正在运行mysql，则如下：<br>source D:\my.txt也可以用. D:\my.txt<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; source D:\my.txt</span><br><span class="line">Query OK, 1 row affected (0.00 sec)</span><br><span class="line"></span><br><span class="line"><span class="code">+--------------------+</span></span><br><span class="line"><span class="header">| Database           |</span><br><span class="line">+--------------------+</span></span><br><span class="line">| information<span class="emphasis">_schema |</span><br><span class="line">| mma                |</span><br><span class="line">| mysql              |</span><br><span class="line">| performance_</span>schema |</span><br><span class="line">| sys                |</span><br><span class="line"><span class="header">| test               |</span><br><span class="line">+--------------------+</span></span><br><span class="line">6 rows in set (0.00 sec)</span><br></pre></td></tr></table></figure></p>
+<h1 id="u4E09_u3001_u6570_u636E_u5E93_u57FA_u672C_u64CD_u4F5C"><a href="#u4E09_u3001_u6570_u636E_u5E93_u57FA_u672C_u64CD_u4F5C" class="headerlink" title="三、数据库基本操作"></a>三、数据库基本操作</h1><h2 id="1-_u521B_u5EFA_u6570_u636E_u5E93"><a href="#1-_u521B_u5EFA_u6570_u636E_u5E93" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] tb_name;</span> </span><br><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> tb_name <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> big5 <span class="keyword">COLLATE</span> big5_chinese_ci;</span>//创建并指定字符集为big5,校对规则为big5_chinese_ci</span><br></pre></td></tr></table></figure>
+<h2 id="2-_u67E5_u770B_u6570_u636E_u5E93"><a href="#2-_u67E5_u770B_u6570_u636E_u5E93" class="headerlink" title="2.查看数据库"></a>2.查看数据库</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SHOW</span> <span class="keyword">DATABASE</span>;</span></span><br><span class="line"><span class="operator"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> tb_name;</span>//查看某一数据库详细信息</span><br><span class="line"><span class="operator"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> tb_name \<span class="keyword">G</span>;</span>// \G使显示的信息更加直观</span><br></pre></td></tr></table></figure>
+<h2 id="3-_u4FEE_u6539_u6570_u636E_u5E93"><a href="#3-_u4FEE_u6539_u6570_u636E_u5E93" class="headerlink" title="3.修改数据库"></a>3.修改数据库</h2><p>注意:储存引擎为MyISAM可以修改数据库名称，但是储存引擎为InnoDB无法修改，可以修改字符集和校对规则：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> ADTABASE tb_name <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> gb2312;</span>//将数据库字符集设置为gb2312</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-_u5220_u9664_u6570_u636E_u5E93"><a href="#4-_u5220_u9664_u6570_u636E_u5E93" class="headerlink" title="4.删除数据库"></a>4.删除数据库</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">DROP</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">EXISTS</span>] tb_name;</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-_u5F53_u524D_u6570_u636E_u5E93_u9009_u62E9"><a href="#5-_u5F53_u524D_u6570_u636E_u5E93_u9009_u62E9" class="headerlink" title="5.当前数据库选择"></a>5.当前数据库选择</h2><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT DATABASE();<span class="comment">//显示当前数据库</span></span><br><span class="line"><span class="keyword">USE</span> tb_name;<span class="comment">//运行mysql时选择指定数据库</span></span><br><span class="line"><span class="keyword">shell</span>&gt; mysql -<span class="keyword">u</span> root -p tb_name;<span class="comment">//打开时指定</span></span><br></pre></td></tr></table></figure>
+<p>备注：修改显示格式<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; prompt \<span class="keyword">u</span>@\<span class="keyword">h</span> \<span class="keyword">d</span>&gt;</span><br><span class="line">PROMPT <span class="keyword">set</span> to '\<span class="keyword">u</span>@\<span class="keyword">h</span> \<span class="keyword">d</span>&gt;'</span><br><span class="line">root@localhost mma&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="u56DB_u3001_u6570_u636E_u8868_u64CD_u4F5C"><a href="#u56DB_u3001_u6570_u636E_u8868_u64CD_u4F5C" class="headerlink" title="四、数据表操作"></a>四、数据表操作</h1><h2 id="1-_u6570_u636E_u8868_u7C7B_u578B"><a href="#1-_u6570_u636E_u8868_u7C7B_u578B" class="headerlink" title="1.数据表类型"></a>1.数据表类型</h2><p>只有BDB属于事务安全型，其他属于非事务安全型。<br>(1)ISAM<br>现在已经被MyISAM取代<br>(2)MyISAM<br>mysql5.4以前使用<br>(3)Merge<br>一种把相同结构的MyISAM数据表组织为一个逻辑单元的方法<br>(4)HEAP<br>使用内存的数据表，检索速度快，作为一种临时数据表，在指定情况下特别有用<br>(5)BDB<br>支持事务处理机制，具有良好的并发性能。<br>(6)InnoDB<br>新加入mysql的数据表类型，支持事务处理机制，崩溃后能够立即恢复，具有并发功能，支持外键功能，包括级联删除</p>
+<h2 id="2-_u5B57_u6BB5_u6570_u636E_u7C7B_u578B"><a href="#2-_u5B57_u6BB5_u6570_u636E_u7C7B_u578B" class="headerlink" title="2.字段数据类型"></a>2.字段数据类型</h2><p>范围自己按位数推： 如TINYINT 1B 8位 有符号时(-2^7~2^7-1) 无符号(UNSIGNED)时(0~2^8-1)<br>(1)整数型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TINYINT</td>
+<td>1B</td>
+<td>小整数</td>
+</tr>
+<tr>
+<td>SMALLINT</td>
+<td>2B</td>
+<td>大整数</td>
+</tr>
+<tr>
+<td>MEDIUMINT</td>
+<td>3B</td>
+<td>大整数</td>
+</tr>
+<tr>
+<td>INT或者INTEGER</td>
+<td>4B</td>
+<td>大整数</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>8B</td>
+<td>极大整数</td>
+</tr>
+</tbody>
+</table>
+<p>(2)浮点型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FLOAT</td>
+<td>4B</td>
+<td>单精度</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>8B</td>
+<td>双精度</td>
+</tr>
+<tr>
+<td>DECIMAL</td>
+<td></td>
+<td>小数</td>
+</tr>
+</tbody>
+</table>
+<p>备注：FLOAT(7,3)—-显示值不超过7位，小数点后面有三位小数</p>
+<p>(3)字符型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHAR</td>
+<td>0~255B</td>
+<td>定长字符串</td>
+</tr>
+<tr>
+<td>VARCHAR</td>
+<td>0~255B</td>
+<td>变长字符串</td>
+</tr>
+<tr>
+<td>TINYBLOB</td>
+<td>0~255B</td>
+<td>不超过255个字符二进制字符串</td>
+</tr>
+<tr>
+<td>TINYTEXT</td>
+<td>0~255B</td>
+<td>短文本字符串</td>
+</tr>
+<tr>
+<td>BLOB</td>
+<td>0~65535B</td>
+<td>二进制长文本数据</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td>0~65535B</td>
+<td>长文本数据</td>
+</tr>
+<tr>
+<td>MEDIUMBLOB</td>
+<td>0~16777215B</td>
+<td>二进制中等长文本数据</td>
+</tr>
+<tr>
+<td>MEDIUMTEXT</td>
+<td>0~16777215B</td>
+<td>中等长文本数据</td>
+</tr>
+<tr>
+<td>LONGBLOB</td>
+<td>0~4294967295B</td>
+<td>二进制极大文本数据</td>
+</tr>
+<tr>
+<td>LONGTEXT</td>
+<td>0~4294967295B</td>
+<td>极大文本数据</td>
+</tr>
+</tbody>
+</table>
+<p>备注：<br>CHAR(长度) 而 VARCHAR根据实际内容长度动态改变储存长度，节约磁盘空间和提高储存效率<br>TEXT和BLOB用于储存文本块或者图像声音等二进制文件，TEXT不区分大小写，BLOB区分大小写</p>
+<p>(4)时间日期</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>范围</th>
+<th>格式</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DATE</td>
+<td>3</td>
+<td>1000-01-01/9999-12-31</td>
+<td>YYYY-MM-DD</td>
+<td>日期值</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>3</td>
+<td>‘-838:59:59’/‘838:59:59’</td>
+<td>HH:MM:SS</td>
+<td>时间值或持续时间</td>
+</tr>
+<tr>
+<td>YEAR</td>
+<td>1</td>
+<td>1901/2155</td>
+<td>YYYY</td>
+<td>年份值</td>
+</tr>
+<tr>
+<td>DATETIME</td>
+<td>8</td>
+<td>1000-01-01 00:00:00/9999-12-31 23:59:59</td>
+<td>YYYY-MM-DD HH:MM:SS</td>
+<td>混合日期和时间值</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>8</td>
+<td>1970-01-01 00:00:00/2037年某时</td>
+<td>YYYYMMDD HHMMSS</td>
+<td>混合日期和时间值,时间戳</td>
+</tr>
+</tbody>
+</table>
+<p>(5)复合类型<br>mysql支持的复合类型为ENUM和SET<br>ENUM只允许在集合中取得一个值，作用类似于单选项，用于处理相互排斥的数据。大小写不匹配时会自动转化为一致的，一个ENUM类型最多包括65536个元素，从1开始索引，其中一个元素被mysql保留，用来储存错误信息，这个错误用索引0或者一个空字符表示。<br>SET从预定义中取任意多个值，类似复选框，与ENUM相同，插入非预定义值会插入一个空字符，一个SET最多可以包含64项元素。</p>
+<h2 id="3-_u8868_u7684_u64CD_u4F5C"><a href="#3-_u8868_u7684_u64CD_u4F5C" class="headerlink" title="3.表的操作"></a>3.表的操作</h2><p>(1)创建<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">USE</span> 数据库名称;</span><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> 表的名称(字段<span class="number">1</span>的名称 字段<span class="number">1</span>的类型 字段<span class="number">1</span>的约束,字段<span class="number">2.</span>..);</span></span><br><span class="line">或者</span><br><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> 数据库名称.表的名称(字段<span class="number">1</span>的名称 字段<span class="number">1</span>的类型 字段<span class="number">1</span>的约束,字段<span class="number">2.</span>..);</span></span><br><span class="line">eg:</span><br><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> student(<span class="keyword">sid</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>,<span class="keyword">name</span> <span class="built_in">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,sex <span class="built_in">VARCHAR</span>(<span class="number">4</span>) <span class="literal">NULL</span>);</span></span><br></pre></td></tr></table></figure></p>
+<p>(2)查看表结构<br>Field：字段名称<br>Type：字段类型<br>Null：是否可以为null<br>Key：是否编制索引<br>Default：是否默认值，是多少<br>Extra：附加信息如AUTO_INCREMENT<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">DESCRIBE 表名;</span><br><span class="line">或者</span><br><span class="line">DESC 表名;</span><br><span class="line">eg:</span><br><span class="line">root<span class="comment">@localhost test&gt;DESC student;</span></span><br><span class="line">+-------+----------------------+------+-----+---------+----------------+</span><br><span class="line">|<span class="string"> Field </span>|<span class="string"> Type                 </span>|<span class="string"> Null </span>|<span class="string"> Key </span>|<span class="string"> Default </span>|<span class="string"> Extra          </span>|</span><br><span class="line">+-------+----------------------+------+-----+---------+----------------+</span><br><span class="line">|<span class="string"> id    </span>|<span class="string"> smallint(5) unsigned </span>|<span class="string"> NO   </span>|<span class="string"> PRI </span>|<span class="string"> NULL    </span>|<span class="string"> auto_increment </span>|</span><br><span class="line">|<span class="string"> stuid </span>|<span class="string"> varchar(20)          </span>|<span class="string"> NO   </span>|<span class="string">     </span>|<span class="string"> NULL    </span>|<span class="string">                </span>|</span><br><span class="line">|<span class="string"> name  </span>|<span class="string"> varchar(20)          </span>|<span class="string"> NO   </span>|<span class="string">     </span>|<span class="string"> NULL    </span>|<span class="string">                </span>|</span><br><span class="line">+-------+----------------------+------+-----+---------+----------------+</span><br><span class="line">3 rows in set (0.39 sec)</span><br></pre></td></tr></table></figure></p>
+<p>查看表的详细结构：<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root<span class="comment">@localhost test&gt;SHOW CREATE TABLE student \G</span></span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span> 1. row <span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line">       Table: student</span><br><span class="line">Create Table: CREATE TABLE `student` (</span><br><span class="line">  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `stuid` varchar(20) NOT NULL,</span><br><span class="line">  `name` varchar(20) NOT NULL,</span><br><span class="line">  PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=latin1</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure></p>
+<p>(3)添加与查看数据<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@localhost test&gt;INSERT INTO student(stuid,name) VALUES("001","xiangming");</span><br><span class="line">Query OK, 1 row affected (0.16 sec)</span><br><span class="line"></span><br><span class="line"><span class="header">root@localhost test&gt;SELECT * FROM student;</span><br><span class="line">+----+-------+-----------+</span></span><br><span class="line"><span class="header">| id | stuid | name      |</span><br><span class="line">+----+-------+-----------+</span></span><br><span class="line"><span class="header">|  1 | 001   | xiangming |</span><br><span class="line">+----+-------+-----------+</span></span><br><span class="line">1 row in set (0.03 sec)</span><br></pre></td></tr></table></figure></p>
+<p>(4)删除表<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> tablename;</span>//删除表中数据</span><br><span class="line"><span class="operator"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> tablename;</span>//删除整个表</span><br></pre></td></tr></table></figure></p>
+<p>(5)修改表名<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 旧表名 <span class="keyword">RENAME</span> [<span class="keyword">TO</span>] 新表名;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="4-_u5B57_u6BB5_u64CD_u4F5C"><a href="#4-_u5B57_u6BB5_u64CD_u4F5C" class="headerlink" title="4.字段操作"></a>4.字段操作</h2><p>(1)字段类型修改<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">MODIFY</span> 字段名 数据类型;</span></span><br></pre></td></tr></table></figure></p>
+<p>(2)添加字段<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">ADD</span> 新字段名 数据类型 [约束条件] [<span class="keyword">FIRST</span> | <span class="keyword">AFTER</span> 已存在的字段名];</span>//FIRST将字段设置为第一个字段，将字段AFTER添加到已存在的字段名后面</span><br></pre></td></tr></table></figure></p>
+<p>(3)删除字段<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">DROP</span> 字段名；</span></span><br></pre></td></tr></table></figure></p>
+<p>(4)字段位置修改<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">MODIFY</span> 字段<span class="number">1</span> 数据类型 <span class="keyword">FIRST</span>|<span class="keyword">AFTER</span> 字段<span class="number">2</span>；//将字段<span class="number">1</span>改到第一或者字段<span class="number">2</span>的后面</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="u4E94_u3001_u5B57_u6BB5_u7EA6_u675F"><a href="#u4E94_u3001_u5B57_u6BB5_u7EA6_u675F" class="headerlink" title="五、字段约束"></a>五、字段约束</h1><p>(1)主键约束<br>(2)外键约束<br>(3)非空约束<br>(4)默认值<br>(5)唯一性约束<br>(6)</p>
+<h1 id="u5341_u4E00_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><a href="#u5341_u4E00_u3001_u6570_u636E_u5E93_u754C_u9762_u5316" class="headerlink" title="十一、数据库界面化"></a>十一、数据库界面化</h1><p>上面安装的mysql没有界面，可以在dos下操作，如果你想要界面化的话可以自己找相关界面化软件，这里用Navicat for MySQL！<br>自己安装好软件Navicat for MySQL！<br>打开软件，点击连接，随便输入一个连接名，密码这里不用输入（因为初始数据库没有密码，如果你的MYSQL数据库加了密码的话输入即可）<br>点击确定即可看见数据库了，里面有MYSQL自带的数据表</p>
+<h1 id="u76EE_u5F55_uFF1AMYSQL_u76F8_u5173_u67E5_u8BE2"><a href="#u76EE_u5F55_uFF1AMYSQL_u76F8_u5173_u67E5_u8BE2" class="headerlink" title="目录：MYSQL相关查询"></a>目录：MYSQL相关查询</h1><h2 id="1-_u53C2_u6570"><a href="#1-_u53C2_u6570" class="headerlink" title="1.参数"></a>1.参数</h2><h2 id="2-_u6570_u636E_u7C7B_u578B"><a href="#2-_u6570_u636E_u7C7B_u578B" class="headerlink" title="2.数据类型"></a>2.数据类型</h2><hr>
+<p>更新中…………</p>
+</span>
       
     </div>
 
@@ -412,21 +613,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-count">16</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">26</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -465,7 +666,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL"><span class="nav-number">1.</span> <span class="nav-text">一、安装与配置MYSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u914D_u7F6E"><span class="nav-number">1.1.</span> <span class="nav-text">1.配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u5B89_u88C5_u670D_u52A1"><span class="nav-number">1.2.</span> <span class="nav-text">2.安装服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u8FDB_u5165MYSQL"><span class="nav-number">1.3.</span> <span class="nav-text">3.进入MYSQL</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E8C_u3001_u6570_u636E_u7C7B_u578B"><span class="nav-number">2.</span> <span class="nav-text">二、数据类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><span class="nav-number">3.</span> <span class="nav-text">三、DOS下操作数据库MYSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><span class="nav-number">3.1.</span> <span class="nav-text">1.服务的启动与停止及版本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u767B_u5F55_u4E0E_u9000_u51FA"><span class="nav-number">3.2.</span> <span class="nav-text">2.登录与退出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u5E38_u7528_u547D_u4EE4"><span class="nav-number">3.3.</span> <span class="nav-text">3.常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4"><span class="nav-number">3.4.</span> <span class="nav-text">4.数据库操作命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><span class="nav-number">4.</span> <span class="nav-text">四、数据库界面化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2"><span class="nav-number">5.</span> <span class="nav-text">五、MYSQL相关查询</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u53C2_u6570"><span class="nav-number">5.1.</span> <span class="nav-text">1.参数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL"><span class="nav-number">1.</span> <span class="nav-text">一、安装与配置MYSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u914D_u7F6E"><span class="nav-number">1.1.</span> <span class="nav-text">1.配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u5B89_u88C5_u670D_u52A1"><span class="nav-number">1.2.</span> <span class="nav-text">2.安装服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u8FDB_u5165MYSQL"><span class="nav-number">1.3.</span> <span class="nav-text">3.进入MYSQL</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E8C_u3001DOS_u4E0B_u7B80_u5355_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><span class="nav-number">2.</span> <span class="nav-text">二、DOS下简单操作数据库MYSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><span class="nav-number">2.1.</span> <span class="nav-text">1.服务的启动与停止及版本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u767B_u5F55_u4E0E_u9000_u51FA"><span class="nav-number">2.2.</span> <span class="nav-text">2.登录与退出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u5E38_u7528_u547D_u4EE4"><span class="nav-number">2.3.</span> <span class="nav-text">3.常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4"><span class="nav-number">2.4.</span> <span class="nav-text">4.数据库操作命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-_u4ECE_u6587_u672C_u6587_u4EF6_u6267_u884CSQL_u8BED_u53E5"><span class="nav-number">2.5.</span> <span class="nav-text">5.从文本文件执行SQL语句</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E09_u3001_u6570_u636E_u5E93_u57FA_u672C_u64CD_u4F5C"><span class="nav-number">3.</span> <span class="nav-text">三、数据库基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u521B_u5EFA_u6570_u636E_u5E93"><span class="nav-number">3.1.</span> <span class="nav-text">1.创建数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u67E5_u770B_u6570_u636E_u5E93"><span class="nav-number">3.2.</span> <span class="nav-text">2.查看数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u4FEE_u6539_u6570_u636E_u5E93"><span class="nav-number">3.3.</span> <span class="nav-text">3.修改数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-_u5220_u9664_u6570_u636E_u5E93"><span class="nav-number">3.4.</span> <span class="nav-text">4.删除数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-_u5F53_u524D_u6570_u636E_u5E93_u9009_u62E9"><span class="nav-number">3.5.</span> <span class="nav-text">5.当前数据库选择</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u56DB_u3001_u6570_u636E_u8868_u64CD_u4F5C"><span class="nav-number">4.</span> <span class="nav-text">四、数据表操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u6570_u636E_u8868_u7C7B_u578B"><span class="nav-number">4.1.</span> <span class="nav-text">1.数据表类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u5B57_u6BB5_u6570_u636E_u7C7B_u578B"><span class="nav-number">4.2.</span> <span class="nav-text">2.字段数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u8868_u7684_u64CD_u4F5C"><span class="nav-number">4.3.</span> <span class="nav-text">3.表的操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-_u5B57_u6BB5_u64CD_u4F5C"><span class="nav-number">4.4.</span> <span class="nav-text">4.字段操作</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E94_u3001_u5B57_u6BB5_u7EA6_u675F"><span class="nav-number">5.</span> <span class="nav-text">五、字段约束</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u5341_u4E00_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><span class="nav-number">6.</span> <span class="nav-text">十一、数据库界面化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u76EE_u5F55_uFF1AMYSQL_u76F8_u5173_u67E5_u8BE2"><span class="nav-number">7.</span> <span class="nav-text">目录：MYSQL相关查询</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u53C2_u6570"><span class="nav-number">7.1.</span> <span class="nav-text">1.参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u6570_u636E_u7C7B_u578B"><span class="nav-number">7.2.</span> <span class="nav-text">2.数据类型</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

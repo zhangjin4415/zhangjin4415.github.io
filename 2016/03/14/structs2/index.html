@@ -1,0 +1,738 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="google-site-verification" content="SxtUWZeCB1kdMgucSmFlZL9HwwJmgQHGcp9w_p4Xtgc" />
+<meta name="baidu-site-verification" content="Sil1fR2zak" />
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Struts 2,Web框架," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="做最好的自己" type="application/atom+xml" />
+
+
+
+
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="主要内容：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Struts 2框架详解">
+<meta property="og:url" content="http://www.bestzhangjin.com/2016/03/14/structs2/index.html">
+<meta property="og:site_name" content="做最好的自己">
+<meta property="og:description" content="主要内容：">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/structs2/1.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/structs2/2.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/structs2/3.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/structs2/4.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/structs2/5.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/structs2/6.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/structs2/7.png">
+<meta property="og:updated_time" content="2016-03-15T11:40:35.225Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Struts 2框架详解">
+<meta name="twitter:description" content="主要内容：">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> Struts 2框架详解 | 做最好的自己 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">做最好的自己</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Struts 2框架详解
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-03-14T10:06:50+08:00" content="2016-03-14">
+              2016-03-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Struts-2/" itemprop="url" rel="index">
+                    <span itemprop="name">Struts 2</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/14/structs2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/14/structs2/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>主要内容：<br><a id="more"></a></p>
+<h1 id="u7B2C_u4E00_u7AE0_Struts_2_u4ECB_u7ECD"><a href="#u7B2C_u4E00_u7AE0_Struts_2_u4ECB_u7ECD" class="headerlink" title="第一章 Struts 2介绍"></a>第一章 Struts 2介绍</h1><p>著名的SSH三大框架分别为：表现层(Struts)、业务逻辑层(Spring),持久化层(Hibernate)。<br>Struts 2是Struts的下一代产品，是在 struts 1和WebWork的技术基础上进行了合并的全新的Struts 2框架。其全新的Struts 2的体系结构与Struts 1的体系结构差别巨大。Struts 2以WebWork为核心，采用拦截器的机制来处理用户的请求，这样的设计也使得业务逻辑控制器能够与ServletAPI完全脱离开，所以Struts 2可以理解为WebWork的更新产品。虽然从Struts 1到Struts 2有着太大的变化，但是相对于WebWork，Struts 2的变化很小。<br>MVC模型:<br><img src="/img/structs2/1.png" alt="img"></p>
+<p>Struts2之MVC模型：<br>控制器：FilterDispatcher,是一个Sevelet过滤器，请求到来时经过FilterDispatcher过滤，FilterDispatcher决定该由哪个Action处理当前请求。<br>模型：Action,功能：调用业务逻辑处理请求，进行数据传递。Action处理完请求会返回一个逻辑视图。<br>视图:除jsp页面外，还可以是Velocity、FreeMarker、Tiles等多种视图资源。视图组件接收到Action返回的逻辑视图会寻找对应物理视图资源并返回给客户端。<br>Struts2前端控制器模式架构图：</p>
+<p>Struts2页面控制器模式架构图：</p>
+<p>Struts2的工作原理:<br><img src="/img/structs2/2.png" alt="img"><br>一个请求在Struts2框架中的处理大概分为以下几个步骤<br>1 客户端初始化一个指向Servlet容器（例如Tomcat）的请求<br>2 这个请求经过一系列的过滤器（Filter）（这些过滤器中有一个叫做ActionContextCleanUp的可选过滤器，这个过滤器对于Struts2和其他框架的集成很有帮助，例如：SiteMesh Plugin）<br>3 接着FilterDispatcher被调用，FilterDispatcher询问ActionMapper来决定这个请是否需要调用某个Action<br>4 如果ActionMapper决定需要调用某个Action，FilterDispatcher把请求的处理交给ActionProxy<br>5 ActionProxy通过Configuration Manager询问框架的配置文件，找到需要调用的Action类<br>6 ActionProxy创建一个ActionInvocation的实例。<br>7 ActionInvocation实例使用命名模式来调用，在调用Action的过程前后，涉及到相关拦截器（Intercepter）的调用。<br>8 一旦Action执行完毕，ActionInvocation负责根据struts.xml中的配置找到对应的返回结果。返回结果通常是（但不总是，也可 能是另外的一个Action链）一个需要被表示的JSP或者FreeMarker的模版。在表示的过程中可以使用Struts2 框架中继承的标签。在这个过程中需要涉及到ActionMapper</p>
+<h1 id="u7B2C_u4E8C_u7AE0__u642D_u5EFAStructs2_u5E94_u7528"><a href="#u7B2C_u4E8C_u7AE0__u642D_u5EFAStructs2_u5E94_u7528" class="headerlink" title="第二章 搭建Structs2应用"></a>第二章 搭建Structs2应用</h1><h2 id="1-_u672C_u7AE0_u4ECB_u7ECD"><a href="#1-_u672C_u7AE0_u4ECB_u7ECD" class="headerlink" title="1.本章介绍"></a>1.本章介绍</h2><p>程序开发流程：<br>(1)引入Struts2运行库<br>(2)配置Web.xml文件<br>(3)编写Action类<br>(4)配置struts.xml文件<br>(5)编写视图资源</p>
+<p>所需环境:<br>JDK,Tomcat,Struts2<br>这里只介绍Struts2下载<br>官网下载：<a href="http://struts.apache.org/download" target="_blank" rel="external">http://struts.apache.org/download</a><br>下载文件：struts-2.3.24.1-all.zip </p>
+<h2 id="2-_u624B_u52A8_u642D_u5EFAStruts2_u7A0B_u5E8F"><a href="#2-_u624B_u52A8_u642D_u5EFAStruts2_u7A0B_u5E8F" class="headerlink" title="2.手动搭建Struts2程序"></a>2.手动搭建Struts2程序</h2><p>(1) struts-2.3.24.1-all.zip解压目录分析<br><img src="/img/structs2/3.png" alt="img"><br>apps:示例应用<br>docs:帮助文档<br>lib:Struts2框架的核心类库及第三方插件类库<br>src:Struts2框架的全部源代码</p>
+<p>(2)搭建步骤<br>A.引入Struts2工程需要的运行库文件<br>B.创建配置web.xml文件<br>C.创建一个Action类<br>D.创建配置struts.xml文件</p>
+<p>找到apps下的struts2-blank.war文件发布到Tomcat上。<br>备注:war格式的文件，这个文件格式可能并不常见，这个通常是tomcat程序发布时候的自解压文件。这个文件可以用解压软件打开，也可以放到tomcat的发布目录，服务器启动是时候war文件会自动解压。<br>这里直接点击struts2-blank.war右键打开方式winrar，解压后目录：<br><img src="/img/structs2/4.png" alt="img"><br><img src="/img/structs2/5.png" alt="img"><br><img src="/img/structs2/6.png" alt="img"><br><img src="/img/structs2/7.png" alt="img"><br>jsp：放置工程中jsp文件<br>classes:放置所有编译后的文件及各个配置文件<br>lib:放置工程运行所需类库文件<br>src:放置java源码文件<br>lib中已经有需要的包，web.xml也有。</p>
+<p>编写Action类：<br>(1)要包含与请求参数对应的属性以及setter、getter方法<br>(2)Action类增加一个execute方法，Struts2框架默认会执行，该方法不做业务逻辑处理，而是调用其他业务逻辑来完成这部分工作。<br>(3)Action类返回一个标准的字符串，该字符串是一个逻辑视图名，该视图名对应实际的物理视图。<br>编写如下:<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> UserAction&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="built_in">String</span> username;</span><br><span class="line">	<span class="keyword">private</span> <span class="built_in">String</span> password;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">String</span> getPassword()&#123;</span><br><span class="line">		<span class="keyword">return</span> password;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">void</span> setPassword(<span class="built_in">String</span> password)&#123;</span><br><span class="line">		<span class="keyword">this</span>.password=password;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">String</span> getUsername()&#123;</span><br><span class="line">		<span class="keyword">return</span> username;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">void</span> setUsername(<span class="built_in">String</span> username)&#123;</span><br><span class="line">		<span class="keyword">this</span>.username=username;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">String</span> execute() &#123;</span><br><span class="line">		<span class="keyword">if</span>(username.equals(<span class="string">"zhang"</span>)&amp;&amp;password.equals(<span class="string">"123456"</span>))&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"success"</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"error"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>编译成UserAction.class放在WEB-INF/classes下。</p>
+<p>配置WEB-INF/struts.xml<br><figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!<span class="type">DOCTYPE</span> struts <span class="type">PUBLIC</span></span><br><span class="line">	<span class="string">"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"</span></span><br><span class="line">	<span class="string">"http://struts.apache.org/dtds/struts-2.3.dtd"</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;struts&gt;</span><br><span class="line">    &lt;package name=<span class="string">"default"</span> namespace=<span class="string">"/"</span> extends=<span class="string">"struts-default"</span>&gt;</span><br><span class="line">        &lt;action name=<span class="string">"login"</span> class=<span class="string">"com.zhang.UserAction"</span>&gt;</span><br><span class="line">                &lt;<span class="literal">result</span> name=<span class="string">"success"</span>&gt;/jsp/success.jsp&lt;/<span class="literal">result</span>&gt;</span><br><span class="line">                &lt;<span class="literal">result</span> name=<span class="string">"error"</span>&gt;/jsp/error.jsp&lt;/<span class="literal">result</span>&gt;</span><br><span class="line">        &lt;/action&gt;</span><br><span class="line">    &lt;/package&gt;</span><br><span class="line">&lt;/struts&gt;</span><br></pre></td></tr></table></figure></p>
+<p>程序发布运行时会自动在WEB-INF/classes下找到加载structs.xml</p>
+<p><action...>标签中两个属性name和class,name:用户URL请求的action名，<br>如用户请求如果为：<a href="http://localhost:8080/login.action则name为login，class表示请求实现的类。" target="_blank" rel="external">http://localhost:8080/login.action则name为login，class表示请求实现的类。</a></action...></p>
+<p><result...>标签定义逻辑视图与物理视图之间的映射，Action返回”success”则success.jsp处理；返回error则error.jsp处理。</result...></p>
+<p>编写视图资源:<br>登录页面<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h2 id="3-_u4F7F_u7528Myeclipse_u5F00_u53D1Structs2_u7A0B_u5E8F"><a href="#3-_u4F7F_u7528Myeclipse_u5F00_u53D1Structs2_u7A0B_u5E8F" class="headerlink" title="3.使用Myeclipse开发Structs2程序"></a>3.使用Myeclipse开发Structs2程序</h2><hr>
+<p>更新中…………</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Struts-2/" rel="tag">#Struts 2</a>
+          
+            <a href="/tags/Web框架/" rel="tag">#Web框架</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/12/jsp/" rel="next" title="JSP网站开发">
+                <i class="fa fa-chevron-left"></i> JSP网站开发
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/15/webpage_ps_fl_dream_fire/" rel="prev" title="网页设计之photoshop+firework+flash+dreamwearver篇">
+                网页设计之photoshop+firework+flash+dreamwearver篇 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/03/14/structs2/"
+     data-title="Struts 2框架详解"
+     data-content=""
+     data-url="http://www.bestzhangjin.com/2016/03/14/structs2/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/14/structs2/"
+           data-title="Struts 2框架详解" data-url="http://www.bestzhangjin.com/2016/03/14/structs2/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/avatar.jpeg" alt="Jin Zhang" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Jin Zhang</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">天高任鸟飞，海阔凭鱼跃。</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">16</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u7B2C_u4E00_u7AE0_Struts_2_u4ECB_u7ECD"><span class="nav-number">1.</span> <span class="nav-text">第一章 Struts 2介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u7B2C_u4E8C_u7AE0__u642D_u5EFAStructs2_u5E94_u7528"><span class="nav-number">2.</span> <span class="nav-text">第二章 搭建Structs2应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u672C_u7AE0_u4ECB_u7ECD"><span class="nav-number">2.1.</span> <span class="nav-text">1.本章介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u624B_u52A8_u642D_u5EFAStruts2_u7A0B_u5E8F"><span class="nav-number">2.2.</span> <span class="nav-text">2.手动搭建Struts2程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u4F7F_u7528Myeclipse_u5F00_u53D1Structs2_u7A0B_u5E8F"><span class="nav-number">2.3.</span> <span class="nav-text">3.使用Myeclipse开发Structs2程序</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin Zhang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"bestzhangjin"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>

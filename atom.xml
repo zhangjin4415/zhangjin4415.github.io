@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.bestzhangjin.com/"/>
-  <updated>2016-03-04T10:54:44.481Z</updated>
+  <updated>2016-03-15T11:41:07.942Z</updated>
   <id>http://www.bestzhangjin.com/</id>
   
   <author>
@@ -15,15 +15,131 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[JSP网站开发]]></title>
-    <link href="http://www.bestzhangjin.com/2016/03/04/jsp/"/>
-    <id>http://www.bestzhangjin.com/2016/03/04/jsp/</id>
-    <published>2016-03-04T10:53:03.000Z</published>
-    <updated>2016-03-04T10:54:44.481Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：JSP网站开发<br><a id="more"></a></p>
-<h1 id="1-_u4ECB_u7ECD"><a href="#1-_u4ECB_u7ECD" class="headerlink" title="1.介绍"></a>1.介绍</h1><h1 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h1>]]></content>
+    <title><![CDATA[网页设计之photoshop+firework+flash+dreamwearver篇]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/15/webpage_ps_fl_dream_fire/"/>
+    <id>http://www.bestzhangjin.com/2016/03/15/webpage_ps_fl_dream_fire/</id>
+    <published>2016-03-15T11:39:03.000Z</published>
+    <updated>2016-03-15T11:41:07.942Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：网页设计之dreamwearver篇<br><a id="more"></a></p>
+<h1 id="u7B2C_u4E00_u7AE0__u4ECB_u7ECD"><a href="#u7B2C_u4E00_u7AE0__u4ECB_u7ECD" class="headerlink" title="第一章 介绍"></a>第一章 介绍</h1><hr>
+<p>更新中…………</p>
+]]></content>
     <summary type="html">
-    <![CDATA[<p>主要内容：JSP网站开发<br>]]>
+    <![CDATA[<p>主要内容：网页设计之dreamwearver篇<br>]]>
+    
+    </summary>
+    
+      <category term="dreamwearver" scheme="http://www.bestzhangjin.com/tags/dreamwearver/"/>
+    
+      <category term="firework" scheme="http://www.bestzhangjin.com/tags/firework/"/>
+    
+      <category term="flash" scheme="http://www.bestzhangjin.com/tags/flash/"/>
+    
+      <category term="photoshop" scheme="http://www.bestzhangjin.com/tags/photoshop/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Struts 2框架详解]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/14/structs2/"/>
+    <id>http://www.bestzhangjin.com/2016/03/14/structs2/</id>
+    <published>2016-03-14T02:06:50.000Z</published>
+    <updated>2016-03-15T11:40:35.225Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：<br><a id="more"></a></p>
+<h1 id="u7B2C_u4E00_u7AE0_Struts_2_u4ECB_u7ECD"><a href="#u7B2C_u4E00_u7AE0_Struts_2_u4ECB_u7ECD" class="headerlink" title="第一章 Struts 2介绍"></a>第一章 Struts 2介绍</h1><p>著名的SSH三大框架分别为：表现层(Struts)、业务逻辑层(Spring),持久化层(Hibernate)。<br>Struts 2是Struts的下一代产品，是在 struts 1和WebWork的技术基础上进行了合并的全新的Struts 2框架。其全新的Struts 2的体系结构与Struts 1的体系结构差别巨大。Struts 2以WebWork为核心，采用拦截器的机制来处理用户的请求，这样的设计也使得业务逻辑控制器能够与ServletAPI完全脱离开，所以Struts 2可以理解为WebWork的更新产品。虽然从Struts 1到Struts 2有着太大的变化，但是相对于WebWork，Struts 2的变化很小。<br>MVC模型:<br><img src="/img/structs2/1.png" alt="img"></p>
+<p>Struts2之MVC模型：<br>控制器：FilterDispatcher,是一个Sevelet过滤器，请求到来时经过FilterDispatcher过滤，FilterDispatcher决定该由哪个Action处理当前请求。<br>模型：Action,功能：调用业务逻辑处理请求，进行数据传递。Action处理完请求会返回一个逻辑视图。<br>视图:除jsp页面外，还可以是Velocity、FreeMarker、Tiles等多种视图资源。视图组件接收到Action返回的逻辑视图会寻找对应物理视图资源并返回给客户端。<br>Struts2前端控制器模式架构图：</p>
+<p>Struts2页面控制器模式架构图：</p>
+<p>Struts2的工作原理:<br><img src="/img/structs2/2.png" alt="img"><br>一个请求在Struts2框架中的处理大概分为以下几个步骤<br>1 客户端初始化一个指向Servlet容器（例如Tomcat）的请求<br>2 这个请求经过一系列的过滤器（Filter）（这些过滤器中有一个叫做ActionContextCleanUp的可选过滤器，这个过滤器对于Struts2和其他框架的集成很有帮助，例如：SiteMesh Plugin）<br>3 接着FilterDispatcher被调用，FilterDispatcher询问ActionMapper来决定这个请是否需要调用某个Action<br>4 如果ActionMapper决定需要调用某个Action，FilterDispatcher把请求的处理交给ActionProxy<br>5 ActionProxy通过Configuration Manager询问框架的配置文件，找到需要调用的Action类<br>6 ActionProxy创建一个ActionInvocation的实例。<br>7 ActionInvocation实例使用命名模式来调用，在调用Action的过程前后，涉及到相关拦截器（Intercepter）的调用。<br>8 一旦Action执行完毕，ActionInvocation负责根据struts.xml中的配置找到对应的返回结果。返回结果通常是（但不总是，也可 能是另外的一个Action链）一个需要被表示的JSP或者FreeMarker的模版。在表示的过程中可以使用Struts2 框架中继承的标签。在这个过程中需要涉及到ActionMapper</p>
+<h1 id="u7B2C_u4E8C_u7AE0__u642D_u5EFAStructs2_u5E94_u7528"><a href="#u7B2C_u4E8C_u7AE0__u642D_u5EFAStructs2_u5E94_u7528" class="headerlink" title="第二章 搭建Structs2应用"></a>第二章 搭建Structs2应用</h1><h2 id="1-_u672C_u7AE0_u4ECB_u7ECD"><a href="#1-_u672C_u7AE0_u4ECB_u7ECD" class="headerlink" title="1.本章介绍"></a>1.本章介绍</h2><p>程序开发流程：<br>(1)引入Struts2运行库<br>(2)配置Web.xml文件<br>(3)编写Action类<br>(4)配置struts.xml文件<br>(5)编写视图资源</p>
+<p>所需环境:<br>JDK,Tomcat,Struts2<br>这里只介绍Struts2下载<br>官网下载：<a href="http://struts.apache.org/download" target="_blank" rel="external">http://struts.apache.org/download</a><br>下载文件：struts-2.3.24.1-all.zip </p>
+<h2 id="2-_u624B_u52A8_u642D_u5EFAStruts2_u7A0B_u5E8F"><a href="#2-_u624B_u52A8_u642D_u5EFAStruts2_u7A0B_u5E8F" class="headerlink" title="2.手动搭建Struts2程序"></a>2.手动搭建Struts2程序</h2><p>(1) struts-2.3.24.1-all.zip解压目录分析<br><img src="/img/structs2/3.png" alt="img"><br>apps:示例应用<br>docs:帮助文档<br>lib:Struts2框架的核心类库及第三方插件类库<br>src:Struts2框架的全部源代码</p>
+<p>(2)搭建步骤<br>A.引入Struts2工程需要的运行库文件<br>B.创建配置web.xml文件<br>C.创建一个Action类<br>D.创建配置struts.xml文件</p>
+<p>找到apps下的struts2-blank.war文件发布到Tomcat上。<br>备注:war格式的文件，这个文件格式可能并不常见，这个通常是tomcat程序发布时候的自解压文件。这个文件可以用解压软件打开，也可以放到tomcat的发布目录，服务器启动是时候war文件会自动解压。<br>这里直接点击struts2-blank.war右键打开方式winrar，解压后目录：<br><img src="/img/structs2/4.png" alt="img"><br><img src="/img/structs2/5.png" alt="img"><br><img src="/img/structs2/6.png" alt="img"><br><img src="/img/structs2/7.png" alt="img"><br>jsp：放置工程中jsp文件<br>classes:放置所有编译后的文件及各个配置文件<br>lib:放置工程运行所需类库文件<br>src:放置java源码文件<br>lib中已经有需要的包，web.xml也有。</p>
+<p>编写Action类：<br>(1)要包含与请求参数对应的属性以及setter、getter方法<br>(2)Action类增加一个execute方法，Struts2框架默认会执行，该方法不做业务逻辑处理，而是调用其他业务逻辑来完成这部分工作。<br>(3)Action类返回一个标准的字符串，该字符串是一个逻辑视图名，该视图名对应实际的物理视图。<br>编写如下:<br><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> UserAction&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="built_in">String</span> username;</span><br><span class="line">	<span class="keyword">private</span> <span class="built_in">String</span> password;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">String</span> getPassword()&#123;</span><br><span class="line">		<span class="keyword">return</span> password;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">void</span> setPassword(<span class="built_in">String</span> password)&#123;</span><br><span class="line">		<span class="keyword">this</span>.password=password;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">String</span> getUsername()&#123;</span><br><span class="line">		<span class="keyword">return</span> username;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">void</span> setUsername(<span class="built_in">String</span> username)&#123;</span><br><span class="line">		<span class="keyword">this</span>.username=username;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">public</span> <span class="built_in">String</span> execute() &#123;</span><br><span class="line">		<span class="keyword">if</span>(username.equals(<span class="string">"zhang"</span>)&amp;&amp;password.equals(<span class="string">"123456"</span>))&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"success"</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"error"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>编译成UserAction.class放在WEB-INF/classes下。</p>
+<p>配置WEB-INF/struts.xml<br><figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!<span class="type">DOCTYPE</span> struts <span class="type">PUBLIC</span></span><br><span class="line">	<span class="string">"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"</span></span><br><span class="line">	<span class="string">"http://struts.apache.org/dtds/struts-2.3.dtd"</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;struts&gt;</span><br><span class="line">    &lt;package name=<span class="string">"default"</span> namespace=<span class="string">"/"</span> extends=<span class="string">"struts-default"</span>&gt;</span><br><span class="line">        &lt;action name=<span class="string">"login"</span> class=<span class="string">"com.zhang.UserAction"</span>&gt;</span><br><span class="line">                &lt;<span class="literal">result</span> name=<span class="string">"success"</span>&gt;/jsp/success.jsp&lt;/<span class="literal">result</span>&gt;</span><br><span class="line">                &lt;<span class="literal">result</span> name=<span class="string">"error"</span>&gt;/jsp/error.jsp&lt;/<span class="literal">result</span>&gt;</span><br><span class="line">        &lt;/action&gt;</span><br><span class="line">    &lt;/package&gt;</span><br><span class="line">&lt;/struts&gt;</span><br></pre></td></tr></table></figure></p>
+<p>程序发布运行时会自动在WEB-INF/classes下找到加载structs.xml</p>
+<p><action...>标签中两个属性name和class,name:用户URL请求的action名，<br>如用户请求如果为：<a href="http://localhost:8080/login.action则name为login，class表示请求实现的类。" target="_blank" rel="external">http://localhost:8080/login.action则name为login，class表示请求实现的类。</a></action...></p>
+<p><result...>标签定义逻辑视图与物理视图之间的映射，Action返回”success”则success.jsp处理；返回error则error.jsp处理。</result...></p>
+<p>编写视图资源:<br>登录页面<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h2 id="3-_u4F7F_u7528Myeclipse_u5F00_u53D1Structs2_u7A0B_u5E8F"><a href="#3-_u4F7F_u7528Myeclipse_u5F00_u53D1Structs2_u7A0B_u5E8F" class="headerlink" title="3.使用Myeclipse开发Structs2程序"></a>3.使用Myeclipse开发Structs2程序</h2><hr>
+<p>更新中…………</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：<br>]]>
+    
+    </summary>
+    
+      <category term="Struts 2" scheme="http://www.bestzhangjin.com/tags/Struts-2/"/>
+    
+      <category term="Web框架" scheme="http://www.bestzhangjin.com/tags/Web%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Struts 2" scheme="http://www.bestzhangjin.com/categories/Struts-2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[JSP网站开发]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/12/jsp/"/>
+    <id>http://www.bestzhangjin.com/2016/03/12/jsp/</id>
+    <published>2016-03-12T10:53:03.000Z</published>
+    <updated>2016-03-15T11:42:36.576Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：环境搭建，网页布局，JDBC，Servlet<br><a id="more"></a></p>
+<h1 id="1-_u73AF_u5883_u642D_u5EFA"><a href="#1-_u73AF_u5883_u642D_u5EFA" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h1><h2 id="1-1_JDK"><a href="#1-1_JDK" class="headerlink" title="1.1 JDK"></a>1.1 JDK</h2><p>JDK(Java Development Kit) 是 Java 语言的软件开发工具包(SDK)。<br>J2SE：(Java SE/SE)，标准版，是我们通常用的一个版本;<br>J2EE:(Java EE/EE)，企业版，使用这种JDK开发J2EE应用程序;<br>J2ME:(Java ME/ME)，主要用于移动设备、嵌入式设备上的java应用程序。<br>JDK用于编译Java程序，JRE用于运行Java程序。</p>
+<p>官网下载：<a href="http://www.oracle.com/technetwork/java/javaee/downloads/index.html" target="_blank" rel="external">http://www.oracle.com/technetwork/java/javaee/downloads/index.html</a><br>安装会连续安装jdk和jre，安装好后配置环境变量：<br>JAVA_HOME： jdk的安装目录(如E:\Java\jdk)<br>Path： %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;（注意原Path末尾有没有;号，没有则先输入）<br>CLASSPATH： .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar（注意最前面有一点）</p>
+<p>配置完后cmd下输入java和javac命令没有提示找不到命令则安装配置成功！</p>
+<h2 id="1-2_Myeclipse"><a href="#1-2_Myeclipse" class="headerlink" title="1.2 Myeclipse"></a>1.2 Myeclipse</h2><p>在eclipse 基础上加上自己的插件开发而成的功能强大的企业级集成开发环境，主要用于Java、Java EE以及移动应用的开发。<br>官网下载： <a href="http://www.myeclipsecn.com/" target="_blank" rel="external">http://www.myeclipsecn.com/</a></p>
+<p>安装过程自己网上查，特别多！</p>
+<h2 id="1-3_Tomcat"><a href="#1-3_Tomcat" class="headerlink" title="1.3 Tomcat"></a>1.3 Tomcat</h2><p>Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于轻量级应用服务器，在中小型系统和并发访问用户不是很多的场合下被普遍使用，是开发和调试JSP 程序的首选。Tomcat和IIS等Web服务器一样，具有处理HTML页面的功能，另外它还是一个Servlet和JSP容器，独立的Servlet容器是Tomcat的默认模式。不过，Tomcat处理静态HTML的能力不如Apache服务器。常用服务器还有Nginx等。<br>官网下载： <a href="https://tomcat.apache.org/" target="_blank" rel="external">https://tomcat.apache.org/</a></p>
+<p>安装前首先需要配置好java的环境。与一般软件安装无异，直接安装就可以。<br>安装好打开tomcat安装目录的bin 文件夹，找到里面的执行文件，运行，然后在浏览器上输入本地地址：http：//localhost:8080  或者  http：//127.0.0.1:8080 看到tomcat默认界面则安装成功！</p>
+<h2 id="1-4_Mysql"><a href="#1-4_Mysql" class="headerlink" title="1.4 Mysql"></a>1.4 Mysql</h2><p>本节详见本博客的mysql篇，有详细介绍！</p>
+<h2 id="1-5__u5C0F_u7ED3"><a href="#1-5__u5C0F_u7ED3" class="headerlink" title="1.5 小结"></a>1.5 小结</h2><p>本章环境搭建好了就可以进行开发了，Mysql中注意界面化软件连接时尽量用127.0.0.1而不是localhost.有时候用localhost不识别！</p>
+<h1 id="2-_u7F51_u9875_u5E03_u5C40_u4E0E_u4FEE_u9970-HTML+CSS+JavaScript"><a href="#2-_u7F51_u9875_u5E03_u5C40_u4E0E_u4FEE_u9970-HTML+CSS+JavaScript" class="headerlink" title="2.网页布局与修饰-HTML+CSS+JavaScript"></a>2.网页布局与修饰-HTML+CSS+JavaScript</h1><p>本章不讲，详见本博客的Html+css+javascript网页布局篇！</p>
+<h1 id="3-JDBC"><a href="#3-JDBC" class="headerlink" title="3.JDBC"></a>3.JDBC</h1><h2 id="3-1__u4ECB_u7ECD_u4E0E_u6D41_u7A0B"><a href="#3-1__u4ECB_u7ECD_u4E0E_u6D41_u7A0B" class="headerlink" title="3.1 介绍与流程"></a>3.1 介绍与流程</h2><p>本章不懂的参考对应博客文章mysql<br>JDBC（Java DataBase Connectivity）是Sun公司开发的针对数据库应用程序的API(应用程序编程接口)，其由Java编写跨平台！<br>流程：<br>(1)加载JDBC驱动（首先要导入驱动包）<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">Class</span><span class="class">.forName</span>("<span class="tag">com</span><span class="class">.mysql</span><span class="class">.jdbc</span><span class="class">.Driver</span>");</span><br></pre></td></tr></table></figure></p>
+<p>(2)创建连接<br><figure class="highlight protobuf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="constant">String url</span>=<span class="string">"jdbc:mysql://localhost:3306/test"</span>;  <span class="comment">//3306--端口 test:数据库名</span></span><br><span class="line"><span class="constant">String username</span>=<span class="string">"root"</span>;<span class="comment">//数据库用户名</span></span><br><span class="line"><span class="constant">String password</span>=<span class="string">""</span>;<span class="comment">//数据库的密码</span></span><br><span class="line"><span class="constant">Connection conn</span>=DriverManeger.getConnection(url,username,password);</span><br></pre></td></tr></table></figure></p>
+<p>(3)获得java.sql.Statement实例<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">Statement</span> s=conn.createStatement();</span><br><span class="line"><span class="title">PreaparedStatement</span> p=conn.prepareStatement(sql);</span><br><span class="line"><span class="title">CallableStatement</span> c=conn.prepareCall(<span class="string">"&#123;CALL demoSp(?,?)&#125;"</span>);</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>执行静态SQL语句：Statement<br>执行动态SQL语句：PreparedStatement<br>执行数据库储存过程：CallableStatement<br>(4)执行SQL语句<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ResultSet rs=s.executeQuery(String sql);//查询并返回一个ResultSet对象</span><br><span class="line">int rows=s.executeUpdate(String sql);//执行<span class="operator"><span class="keyword">INSERT</span>、<span class="keyword">UPDATE</span>、<span class="keyword">DELETE</span>、<span class="keyword">SQL</span> <span class="keyword">DDL</span>(数据定义)语句，返回影响行数</span><br><span class="line"><span class="built_in">boolean</span> flag=s.<span class="keyword">execute</span>(<span class="keyword">String</span> <span class="keyword">sql</span>);</span>//用于执行返回多个结果集、多个更新计数或二者组合的语句</span><br></pre></td></tr></table></figure></p>
+<p>(5)处理结果<br>ResultSet方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>next()</td>
+<td>移动到ResultSet下一行</td>
+</tr>
+<tr>
+<td>first()</td>
+<td>移动到ResultSet第一行</td>
+</tr>
+<tr>
+<td>last()</td>
+<td>移动到ResultSet最后一行</td>
+</tr>
+<tr>
+<td>previous()</td>
+<td>移动到ResultSet上一行</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String name=rs.getString(<span class="string">"name"</span>);<span class="comment">//根据字段名获取</span></span><br><span class="line">String passwd=rs.getString(<span class="number">3</span>);<span class="comment">//根据列数获取 ------ 此方法更加高效</span></span><br><span class="line"><span class="keyword">int</span> id=rs.getInt(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<p>(6)关闭JDBC对象<br>关闭顺序是声明顺序的反序<br>(1)关闭记录集<br>(2)关闭声明<br>(3)关闭连接对象<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">rs</span><span class="class">.close</span>();</span><br><span class="line"><span class="tag">s</span><span class="class">.close</span>();</span><br><span class="line"><span class="tag">conn</span><span class="class">.close</span>();</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-2_JDBC_u6570_u636E_u7C7B_u578B"><a href="#3-2_JDBC_u6570_u636E_u7C7B_u578B" class="headerlink" title="3.2 JDBC数据类型"></a>3.2 JDBC数据类型</h2><p>本节参考 <a href="http://www.yiibai.com/jdbc/jdbc_data_types.html" target="_blank" rel="external">http://www.yiibai.com/jdbc/jdbc_data_types.html</a></p>
+<h2 id="3-3_JDBC_u4E8B_u52A1_u5904_u7406"><a href="#3-3_JDBC_u4E8B_u52A1_u5904_u7406" class="headerlink" title="3.3 JDBC事务处理"></a>3.3 JDBC事务处理</h2><p>一般应用是多表联系操作，如银行取款。<br>事务，是指一组原子操作(一组SQL语句执行)的工作单元，要么全部执行，要么全部失败。<br>JDBC事务步骤：<br>(1)设置事务提交方式为非自动提交<br>(2)将需要添加的代码放try-catch块内<br>(3)try块内添加提交操作，提交事务<br>(4)catch块内添加回滚事务，表示操作出现异常，撤销事务<br>(5)设置事务提交方式为自动提交<br>实例：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<h2 id="3-4__u5E94_u7528_u6848_u4F8B"><a href="#3-4__u5E94_u7528_u6848_u4F8B" class="headerlink" title="3.4 应用案例"></a>3.4 应用案例</h2><h2 id="3-5__u5C0F_u7ED3"><a href="#3-5__u5C0F_u7ED3" class="headerlink" title="3.5 小结"></a>3.5 小结</h2><h1 id="4-Servlet"><a href="#4-Servlet" class="headerlink" title="4.Servlet"></a>4.Servlet</h1><hr>
+<p>更新中…………</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：环境搭建，网页布局，JDBC，Servlet<br>]]>
     
     </summary>
     
@@ -31,7 +147,42 @@
     
       <category term="网站开发" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
     
-      <category term="JSP网站开发" scheme="http://www.bestzhangjin.com/categories/JSP%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
+      <category term="网站开发" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[网页设计之Html+css+javascript篇]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/12/html_css_javascript/"/>
+    <id>http://www.bestzhangjin.com/2016/03/12/html_css_javascript/</id>
+    <published>2016-03-12T10:53:03.000Z</published>
+    <updated>2016-03-15T11:40:23.526Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：Html，css，javascript<br><a id="more"></a></p>
+<!--more-->
+<h1 id="u7B2C_u4E00_u7AE0__u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B"><a href="#u7B2C_u4E00_u7AE0__u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B" class="headerlink" title="第一章 网页基础与网站开发流程"></a>第一章 网页基础与网站开发流程</h1><h2 id="1-_u8BA4_u8BC6_u7F51_u9875"><a href="#1-_u8BA4_u8BC6_u7F51_u9875" class="headerlink" title="1.认识网页"></a>1.认识网页</h2><p>网站由网页组成，需要域名和虚拟主机才能访问。<br>网页就是一个文件，通常是HTML文件，扩展名有.html、.htm、.asp、.aspx、.php、.jsp等。<br>动态网页是通过网页脚本与语言自动处理、自动更新的页面，如论坛中的帖子就是通过网站服务器运行程序，自动处理信息，按照流程更新网页。动态网页一般以.asp、.aspx、.php、.jsp作为文件扩展名，不同的扩展名的动态网页文件代表不同的服务器技术，要开发动态网站，需要先指定一种服务器端技术，目前动态网页服务器技术主要有CGI、ASP/ASP.NET、PHP、JSP等。<br>CGI:一种通用的网关接口，是外部程序与网页服务器之间的标准编程接口，可以使用不同的语言写CGI程序，如VB,Delphi,C/C++等，可以将写好的CGI代码放在网页服务器的计算机上运行，再将其运行结果通过网页服务器传输到客服端的网页浏览器上。CGI接收低、编写代码困难、效率低，现在基本不用。<br>ASP：在CGI技术基础上由微软开发的一种快速、简便的服务器技术，门槛低、功能强大，较为流行。<br>ASP.NET：微软在ASP基础上退出的一种服务器技术，解决了原来ASP技术的服务器代码与HTML混合导致页面冗长而复杂、程序难以理解的问题，而且能够与浏览器独立，支持VB.NET,C#、VC++.NET、JS.NET四种编程语言。<br>PHP:是一种HTML内嵌式语言，与微软的ASP相似，开放免费，广泛使用。<br>JSP:SUN公司推出的网站开放技术，是将纯Java代码嵌入HTML中实现动态功能的技术，已成为ASP有力竞争者。<br>ASP与JSP区别：<br>明显区别：ASP使用编程语言是VBScript之类的脚本语言，JSP使用的是Java。<br>本质区别：ASP的VBScript代码被ASP引擎解释执行，而JSP脚本在第一次被编译成Servlet并由java虚拟机执行。</p>
+<p>静态网页与动态网页<br>静态网页：<br><em>使用语言HTML
+</em>每个网页都有一个固定URL,网页URL以.htm、.html、.shtml等常见形式为后缀，不含有“？”<br><em>静态网页是实实在在保存网站服务器上的文件，每个网页是一个独立文件
+</em>静态网页内容相对稳定，容易被搜索引擎检索<br><em>没有数据库支持，当网站信息量大时完全依靠静态网页制作方式比较困难
+</em>交互性差，在功能方面有很大限制<br>动态网页：<br><em>使用语言HTML+ASP,HTML+PHP,HTML+JSP等
+</em>以数据库为基础，可以大大减少网站维护工作<br><em>动态网页技术可以实现更多的功能
+</em>不是独立存在于服务器上的独立网页文件，只有当用户请求服务器时才返回一个完整的网页<br>*动态网页中“？”对搜索引擎检索存在一定问题，搜索引擎的机器人一般不会抓取URL字符串的“？”，所以采用动态网站进行搜索引擎推广时需要做一定的技术处理才能适应搜索要求</p>
+<hr>
+<p>更新中…………</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：Html，css，javascript<br>]]>
+    
+    </summary>
+    
+      <category term="Html" scheme="http://www.bestzhangjin.com/tags/Html/"/>
+    
+      <category term="css" scheme="http://www.bestzhangjin.com/tags/css/"/>
+    
+      <category term="javascript" scheme="http://www.bestzhangjin.com/tags/javascript/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -83,43 +234,24 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Ubuntu()之应用软件安装篇]]></title>
-    <link href="http://www.bestzhangjin.com/2016/02/26/ubuntu_soft/"/>
-    <id>http://www.bestzhangjin.com/2016/02/26/ubuntu_soft/</id>
-    <published>2016-02-26T04:55:12.000Z</published>
-    <updated>2016-02-26T08:29:29.037Z</updated>
-    <content type="html"><![CDATA[<p>主要内容:<br><a id="more"></a></p>
-<h1 id="1-_u641C_u72D7_u8F93_u5165_u6CD5"><a href="#1-_u641C_u72D7_u8F93_u5165_u6CD5" class="headerlink" title="1.搜狗输入法"></a>1.搜狗输入法</h1>]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容:<br>]]>
-    
-    </summary>
-    
-      <category term="Ubuntu" scheme="http://www.bestzhangjin.com/tags/Ubuntu/"/>
-    
-      <category term="Ubuntu" scheme="http://www.bestzhangjin.com/categories/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Ubuntu()之基础篇]]></title>
     <link href="http://www.bestzhangjin.com/2016/02/26/ubuntu_use/"/>
     <id>http://www.bestzhangjin.com/2016/02/26/ubuntu_use/</id>
     <published>2016-02-26T04:55:12.000Z</published>
-    <updated>2016-02-26T06:55:41.308Z</updated>
+    <updated>2016-03-15T11:33:04.623Z</updated>
     <content type="html"><![CDATA[<p>主要内容:<br><a id="more"></a></p>
-<h1 id="1-_u7EC8_u7AEF"><a href="#1-_u7EC8_u7AEF" class="headerlink" title="1.终端"></a>1.终端</h1><h2 id="1-1__u6253_u5F00_u7EC8_u7AEF_u547D_u4EE4_u5FEB_u6377_u952E"><a href="#1-1__u6253_u5F00_u7EC8_u7AEF_u547D_u4EE4_u5FEB_u6377_u952E" class="headerlink" title="1.1 打开终端命令快捷键"></a>1.1 打开终端命令快捷键</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ctrl+alt+f1		<span class="comment">//打开字符模式终端</span></span><br><span class="line">ctrl+alt+T		<span class="comment">//打开图像模式终端</span></span><br><span class="line">ctrl+alt+f7		<span class="comment">//退出终端回到桌面</span></span><br></pre></td></tr></table></figure>
-<h1 id="2-vim_u5B89_u88C5_u4E0E_u914D_u7F6E"><a href="#2-vim_u5B89_u88C5_u4E0E_u914D_u7F6E" class="headerlink" title="2.vim安装与配置"></a>2.vim安装与配置</h1><h2 id="2-1-vim_u4ECB_u7ECD"><a href="#2-1-vim_u4ECB_u7ECD" class="headerlink" title="2.1.vim介绍"></a>2.1.vim介绍</h2><p>vim是从VI发展而来的一个文本编辑器，功能更强大<br>在命令行敲入“vi”后按”tab”键，可以看到目前系统中只安装了vi和vim.tiny，vim.tiny是vim的精简版</p>
-<h2 id="2-2-vim_u5B89_u88C5"><a href="#2-2-vim_u5B89_u88C5" class="headerlink" title="2.2.vim安装"></a>2.2.vim安装</h2><p>终端输入:<br>sudo apt-get update<br>sudo apt-get install vim<br>安装完成之后，在命令行敲入vi，按“tab”键。</p>
+<h1 id="u7B2C_u4E00_u7AE0__u7EC8_u7AEF"><a href="#u7B2C_u4E00_u7AE0__u7EC8_u7AEF" class="headerlink" title="第一章 终端"></a>第一章 终端</h1><h2 id="1-_u6253_u5F00_u7EC8_u7AEF_u547D_u4EE4_u5FEB_u6377_u952E"><a href="#1-_u6253_u5F00_u7EC8_u7AEF_u547D_u4EE4_u5FEB_u6377_u952E" class="headerlink" title="1.打开终端命令快捷键"></a>1.打开终端命令快捷键</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ctrl+alt+f1		<span class="comment">//打开字符模式终端</span></span><br><span class="line">ctrl+alt+T		<span class="comment">//打开图像模式终端</span></span><br><span class="line">ctrl+alt+f7		<span class="comment">//退出终端回到桌面</span></span><br></pre></td></tr></table></figure>
+<h1 id="u7B2C_u4E8C_u7AE0_vim_u5B89_u88C5_u4E0E_u914D_u7F6E"><a href="#u7B2C_u4E8C_u7AE0_vim_u5B89_u88C5_u4E0E_u914D_u7F6E" class="headerlink" title="第二章 vim安装与配置"></a>第二章 vim安装与配置</h1><h2 id="1-vim_u4ECB_u7ECD"><a href="#1-vim_u4ECB_u7ECD" class="headerlink" title="1.vim介绍"></a>1.vim介绍</h2><p>vim是从VI发展而来的一个文本编辑器，功能更强大<br>在命令行敲入“vi”后按”tab”键，可以看到目前系统中只安装了vi和vim.tiny，vim.tiny是vim的精简版</p>
+<h2 id="2-vim_u5B89_u88C5"><a href="#2-vim_u5B89_u88C5" class="headerlink" title="2.vim安装"></a>2.vim安装</h2><p>终端输入:<br>sudo apt-get update<br>sudo apt-get install vim<br>安装完成之后，在命令行敲入vi，按“tab”键。</p>
 <p>可以看到，已经有vim命令的存在。</p>
 <p>安装成功。现在vim可以用了，但是不太方便，为了更人性化，我们对他进行配置</p>
-<h2 id="2-3-vim_u914D_u7F6E"><a href="#2-3-vim_u914D_u7F6E" class="headerlink" title="2.3.vim配置"></a>2.3.vim配置</h2><p>现在按照我们的需求去修改它<br>在命令行下，输入命令：sudo vim /etc/vim/vimrc</p>
+<h2 id="3-vim_u914D_u7F6E"><a href="#3-vim_u914D_u7F6E" class="headerlink" title="3.vim配置"></a>3.vim配置</h2><p>现在按照我们的需求去修改它<br>在命令行下，输入命令：sudo vim /etc/vim/vimrc</p>
 <p>必须加上sudo，否则你是没有权限编辑vimrc的</p>
 <p>请在您的VIM的最后一行，输入他们，可以让您的VIM变得更漂亮、舒服。</p>
 <p>set nu                           “ 在左侧行号<br>set ai!                          “设置自动缩进<br>set incsearch                “设置单词匹配<br>set tabstop=4                “tab 长度设置为 4<br>set shiftwidth=4             “设置当行之间交错时使用4空格<br>set nobackup                 “覆盖文件时不备份<br>set ruler                        “在右下角显示光标位置的状态行<br>set showmatch                “设置匹配模式<br>set cindent                  “cindent是针对C语言语法自动缩进<br>set mouse=a                  “设置鼠标点击时有反应<br>保存之后，配置完毕。</p>
 <p>上面的配置，其实是非常简单的，比如一些配色方案等，并没有写入，如果您还有其他需求的话，建议百度。</p>
 <p>保存后退出，现在界面已经变得友好了</p>
-<hr>
+<h1 id="u7B2C_u4E09_u7AE0__u8F6F_u4EF6_u5B89_u88C5_u7BC7"><a href="#u7B2C_u4E09_u7AE0__u8F6F_u4EF6_u5B89_u88C5_u7BC7" class="headerlink" title="第三章 软件安装篇"></a>第三章 软件安装篇</h1><hr>
 <p>更新中…………</p>
 ]]></content>
     <summary type="html">
@@ -138,9 +270,11 @@
     <link href="http://www.bestzhangjin.com/2016/02/19/java_learn/"/>
     <id>http://www.bestzhangjin.com/2016/02/19/java_learn/</id>
     <published>2016-02-19T15:39:15.000Z</published>
-    <updated>2016-02-19T15:42:11.189Z</updated>
+    <updated>2016-03-15T11:41:45.805Z</updated>
     <content type="html"><![CDATA[<p>主要内容:<br><a id="more"></a></p>
-<h1 id="u7B2C_u4E00_u7AE0__u57FA_u7840_u77E5_u8BC6_u6F14_u7EC3"><a href="#u7B2C_u4E00_u7AE0__u57FA_u7840_u77E5_u8BC6_u6F14_u7EC3" class="headerlink" title="第一章 基础知识演练"></a>第一章 基础知识演练</h1><h1 id="u7B2C_u4E8C_u7AE0__u5B9E_u7528_u5DE5_u5177"><a href="#u7B2C_u4E8C_u7AE0__u5B9E_u7528_u5DE5_u5177" class="headerlink" title="第二章 实用工具"></a>第二章 实用工具</h1><h1 id="u7B2C_u4E09_u7AE0__u56FE_u5F62_u56FE_u50CF"><a href="#u7B2C_u4E09_u7AE0__u56FE_u5F62_u56FE_u50CF" class="headerlink" title="第三章 图形图像"></a>第三章 图形图像</h1><h1 id="u7B2C_u56DB_u7AE0__u5A31_u4E50_u5148_u950B"><a href="#u7B2C_u56DB_u7AE0__u5A31_u4E50_u5148_u950B" class="headerlink" title="第四章 娱乐先锋"></a>第四章 娱乐先锋</h1>]]></content>
+<h1 id="u7B2C_u4E00_u7AE0__u57FA_u7840_u77E5_u8BC6_u6F14_u7EC3"><a href="#u7B2C_u4E00_u7AE0__u57FA_u7840_u77E5_u8BC6_u6F14_u7EC3" class="headerlink" title="第一章 基础知识演练"></a>第一章 基础知识演练</h1><h1 id="u7B2C_u4E8C_u7AE0__u5B9E_u7528_u5DE5_u5177"><a href="#u7B2C_u4E8C_u7AE0__u5B9E_u7528_u5DE5_u5177" class="headerlink" title="第二章 实用工具"></a>第二章 实用工具</h1><h1 id="u7B2C_u4E09_u7AE0__u56FE_u5F62_u56FE_u50CF"><a href="#u7B2C_u4E09_u7AE0__u56FE_u5F62_u56FE_u50CF" class="headerlink" title="第三章 图形图像"></a>第三章 图形图像</h1><h1 id="u7B2C_u56DB_u7AE0__u5A31_u4E50_u5148_u950B"><a href="#u7B2C_u56DB_u7AE0__u5A31_u4E50_u5148_u950B" class="headerlink" title="第四章 娱乐先锋"></a>第四章 娱乐先锋</h1><hr>
+<p>更新中…………</p>
+]]></content>
     <summary type="html">
     <![CDATA[<p>主要内容:<br>]]>
     
@@ -157,9 +291,11 @@
     <link href="http://www.bestzhangjin.com/2016/02/18/markdown/"/>
     <id>http://www.bestzhangjin.com/2016/02/18/markdown/</id>
     <published>2016-02-18T09:32:28.000Z</published>
-    <updated>2016-02-18T10:45:11.459Z</updated>
+    <updated>2016-03-15T11:44:30.923Z</updated>
     <content type="html"><![CDATA[<p>主要内容：<br><a id="more"></a></p>
-<h1 id="u4E00-__u4ECB_u7ECD"><a href="#u4E00-__u4ECB_u7ECD" class="headerlink" title="一. 介绍"></a>一. 介绍</h1><h1 id="u4E8C-_u8BED_u6CD5"><a href="#u4E8C-_u8BED_u6CD5" class="headerlink" title="二.语法"></a>二.语法</h1><h2 id="1-_u8868_u683C"><a href="#1-_u8868_u683C" class="headerlink" title="1.表格"></a>1.表格</h2>]]></content>
+<h1 id="u4E00-__u4ECB_u7ECD"><a href="#u4E00-__u4ECB_u7ECD" class="headerlink" title="一. 介绍"></a>一. 介绍</h1><h1 id="u4E8C-_u8BED_u6CD5"><a href="#u4E8C-_u8BED_u6CD5" class="headerlink" title="二.语法"></a>二.语法</h1><h2 id="1-_u8868_u683C"><a href="#1-_u8868_u683C" class="headerlink" title="1.表格"></a>1.表格</h2><hr>
+<p>更新中…………</p>
+]]></content>
     <summary type="html">
     <![CDATA[<p>主要内容：<br>]]>
     
@@ -168,34 +304,6 @@
       <category term="markdown" scheme="http://www.bestzhangjin.com/tags/markdown/"/>
     
       <category term="markdown" scheme="http://www.bestzhangjin.com/categories/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[DIV+CSS网站布局]]></title>
-    <link href="http://www.bestzhangjin.com/2016/02/02/div_css_use/"/>
-    <id>http://www.bestzhangjin.com/2016/02/02/div_css_use/</id>
-    <published>2016-02-02T13:05:21.000Z</published>
-    <updated>2016-02-02T15:08:19.037Z</updated>
-    <content type="html"><![CDATA[<p>主要内容:DIV+CSS网站布局<br><a id="more"></a></p>
-<h1 id="u4E00_u3001_u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B"><a href="#u4E00_u3001_u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B" class="headerlink" title="一、网页基础与网站开发流程"></a>一、网页基础与网站开发流程</h1><h2 id="1-_u8BA4_u8BC6_u7F51_u9875"><a href="#1-_u8BA4_u8BC6_u7F51_u9875" class="headerlink" title="1.认识网页"></a>1.认识网页</h2><p>网站由网页组成，需要域名和虚拟主机才能访问。<br>网页就是一个文件，通常是HTML文件，扩展名有.html、.htm、.asp、.aspx、.php、.jsp等。<br>动态网页是通过网页脚本与语言自动处理、自动更新的页面，如论坛中的帖子就是通过网站服务器运行程序，自动处理信息，按照流程更新网页。动态网页一般以.asp、.aspx、.php、.jsp作为文件扩展名，不同的扩展名的动态网页文件代表不同的服务器技术，要开发动态网站，需要先指定一种服务器端技术，目前动态网页服务器技术主要有CGI、ASP/ASP.NET、PHP、JSP等。<br>CGI:一种通用的网关接口，是外部程序与网页服务器之间的标准编程接口，可以使用不同的语言写CGI程序，如VB,Delphi,C/C++等，可以将写好的CGI代码放在网页服务器的计算机上运行，再将其运行结果通过网页服务器传输到客服端的网页浏览器上。CGI接收低、编写代码困难、效率低，现在基本不用。<br>ASP：在CGI技术基础上由微软开发的一种快速、简便的服务器技术，门槛低、功能强大，较为流行。<br>ASP.NET：微软在ASP基础上退出的一种服务器技术，解决了原来ASP技术的服务器代码与HTML混合导致页面冗长而复杂、程序难以理解的问题，而且能够与浏览器独立，支持VB.NET,C#、VC++.NET、JS.NET四种编程语言。<br>PHP:是一种HTML内嵌式语言，与微软的ASP相似，开放免费，广泛使用。<br>JSP:SUN公司推出的网站开放技术，是将纯Java代码嵌入HTML中实现动态功能的技术，已成为ASP有力竞争者。<br>ASP与JSP区别：<br>明显区别：ASP使用编程语言是VBScript之类的脚本语言，JSP使用的是Java。<br>本质区别：ASP的VBScript代码被ASP引擎解释执行，而JSP脚本在第一次被编译成Servlet并由java虚拟机执行。</p>
-<p>静态网页与动态网页<br>静态网页：<br><em>使用语言HTML
-</em>每个网页都有一个固定URL,网页URL以.htm、.html、.shtml等常见形式为后缀，不含有“？”<br><em>静态网页是实实在在保存网站服务器上的文件，每个网页是一个独立文件
-</em>静态网页内容相对稳定，容易被搜索引擎检索<br><em>没有数据库支持，当网站信息量大时完全依靠静态网页制作方式比较困难
-</em>交互性差，在功能方面有很大限制<br>动态网页：<br><em>使用语言HTML+ASP,HTML+PHP,HTML+JSP等
-</em>以数据库为基础，可以大大减少网站维护工作<br><em>动态网页技术可以实现更多的功能
-</em>不是独立存在于服务器上的独立网页文件，只有当用户请求服务器时才返回一个完整的网页<br>*动态网页中“？”对搜索引擎检索存在一定问题，搜索引擎的机器人一般不会抓取URL字符串的“？”，所以采用动态网站进行搜索引擎推广时需要做一定的技术处理才能适应搜索要求</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容:DIV+CSS网站布局<br>]]>
-    
-    </summary>
-    
-      <category term="CSS" scheme="http://www.bestzhangjin.com/tags/CSS/"/>
-    
-      <category term="DIV" scheme="http://www.bestzhangjin.com/tags/DIV/"/>
-    
-      <category term="CSS" scheme="http://www.bestzhangjin.com/categories/CSS/"/>
     
   </entry>
   
@@ -1581,7 +1689,7 @@
     <link href="http://www.bestzhangjin.com/2016/01/27/MySql/"/>
     <id>http://www.bestzhangjin.com/2016/01/27/MySql/</id>
     <published>2016-01-27T10:00:00.000Z</published>
-    <updated>2016-02-19T02:57:35.742Z</updated>
+    <updated>2016-03-15T11:44:10.468Z</updated>
     <content type="html"><![CDATA[<p>主要内容：安装与配置MYSQL<br><a id="more"></a></p>
 <h1 id="u4E00_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL"><a href="#u4E00_u3001_u5B89_u88C5_u4E0E_u914D_u7F6EMYSQL" class="headerlink" title="一、安装与配置MYSQL"></a>一、安装与配置MYSQL</h1><p>MYSQL是一个开源的关系型数据库管理系统，分社区版和企业版。<br>下载地址：<a href="http://dev.mysql.com/downloads/mysql/" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/</a><br>我选择Windows (x86, 64-bit), ZIP Archive下载—-自己根据自己电脑版本下载</p>
 <h2 id="1-_u914D_u7F6E"><a href="#1-_u914D_u7F6E" class="headerlink" title="1.配置"></a>1.配置</h2><p>将下载文件解压到你的目录，配置环境变量：path：E:\mysql-5.7.10-winx64\bin<br>每个人根据自己的解压目录而定<br>配置完环境变量之后先别忙着启动mysql，我们还需要修改一下配置文件<br>E:\mysql-5.7.10-winx64\my-default.ini<br>在其中修改或添加配置：<br>basedir=E:\mysql-5.7.10-winx64（mysql所在目录）<br>datadir=E:\mysql-5.7.10-winx64\data （mysql所在目录\data）</p>
@@ -1591,7 +1699,7 @@
 <p>（2）net start mysql 发生系统错误 5。  拒绝访问。<br>解决：权限不够，切换到管理员模式就可以启动了。在开始菜单的搜索框张收入cmd，然后右键单击，并选择以管理员身份运行！</p>
 <h2 id="3-_u8FDB_u5165MYSQL"><a href="#3-_u8FDB_u5165MYSQL" class="headerlink" title="3.进入MYSQL"></a>3.进入MYSQL</h2><p>dos下：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">mysql</span> -u root -p</span><br></pre></td></tr></table></figure></p>
 <p>Enter password那里，初始密码为空，直接回车就行,显示<br>mysql&gt;<br>如此则进入了MYSQL</p>
-<h1 id="u4E8C_u3001_u6570_u636E_u7C7B_u578B"><a href="#u4E8C_u3001_u6570_u636E_u7C7B_u578B" class="headerlink" title="二、数据类型"></a>二、数据类型</h1><h1 id="u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><a href="#u4E09_u3001DOS_u4E0B_u64CD_u4F5C_u6570_u636E_u5E93MYSQL" class="headerlink" title="三、DOS下操作数据库MYSQL"></a>三、DOS下操作数据库MYSQL</h1><h2 id="1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><a href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F" class="headerlink" title="1.服务的启动与停止及版本信息"></a>1.服务的启动与停止及版本信息</h2><p>启动<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">net</span> <span class="built_in">start</span> mysql</span><br></pre></td></tr></table></figure></p>
+<h1 id="u4E8C_u3001DOS_u4E0B_u7B80_u5355_u64CD_u4F5C_u6570_u636E_u5E93MYSQL"><a href="#u4E8C_u3001DOS_u4E0B_u7B80_u5355_u64CD_u4F5C_u6570_u636E_u5E93MYSQL" class="headerlink" title="二、DOS下简单操作数据库MYSQL"></a>二、DOS下简单操作数据库MYSQL</h1><h2 id="1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F"><a href="#1-_u670D_u52A1_u7684_u542F_u52A8_u4E0E_u505C_u6B62_u53CA_u7248_u672C_u4FE1_u606F" class="headerlink" title="1.服务的启动与停止及版本信息"></a>1.服务的启动与停止及版本信息</h2><p>启动<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">net</span> <span class="built_in">start</span> mysql</span><br></pre></td></tr></table></figure></p>
 <p>停止<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net <span class="literal">stop</span> mysql</span><br></pre></td></tr></table></figure></p>
 <p>卸载<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sc <span class="keyword">delete</span> mysql</span><br></pre></td></tr></table></figure></p>
 <p>备注：所有的windows服务都可以通过net start/stop启动停止</p>
@@ -1602,8 +1710,209 @@
 <p>备注：规范用大写——–虽然小写也可以运行<br>MYSQL语句的规范：<br>关键字和函数名称全部大写，数据库名称、表名称、字段名称全部小写，SQL语句必须以分号结尾</p>
 <h2 id="4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4"><a href="#4-_u6570_u636E_u5E93_u64CD_u4F5C_u547D_u4EE4" class="headerlink" title="4.数据库操作命令"></a>4.数据库操作命令</h2><p>创建数据库：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> &#123;<span class="keyword">DATABASE</span>|<span class="keyword">SCHEMA</span>&#125; [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] db_name [<span class="keyword">DEFAULT</span>] CHARAACTER <span class="keyword">SET</span> [=] charset_name</span><br><span class="line">如：</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> <span class="keyword">test</span>;</span></span><br></pre></td></tr></table></figure></p>
 <p>查看当前服务器下的数据表列表：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SHOW</span> &#123;<span class="keyword">DATABASES</span>|SCHEMAS&#125; [<span class="keyword">LINK</span> <span class="string">'pattern'</span> | <span class="keyword">WHERE</span> expr]</span><br><span class="line">如：</span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">DATABASES</span>;</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><a href="#u56DB_u3001_u6570_u636E_u5E93_u754C_u9762_u5316" class="headerlink" title="四、数据库界面化"></a>四、数据库界面化</h1><p>上面安装的mysql没有界面，可以在dos下操作，如果你想要界面化的话可以自己找相关界面化软件，这里用Navicat for MySQL！<br>自己安装好软件Navicat for MySQL！<br>打开软件，点击连接，随便输入一个连接名，密码这里不用输入（因为初始数据库没有密码，如果你的MYSQL数据库加了密码的话输入即可）<br>点击确定即可看见数据库了，里面有MYSQL自带的数据表</p>
-<h1 id="u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2"><a href="#u4E94_u3001MYSQL_u76F8_u5173_u67E5_u8BE2" class="headerlink" title="五、MYSQL相关查询"></a>五、MYSQL相关查询</h1><h2 id="1-_u53C2_u6570"><a href="#1-_u53C2_u6570" class="headerlink" title="1.参数"></a>1.参数</h2>]]></content>
+<h2 id="5-_u4ECE_u6587_u672C_u6587_u4EF6_u6267_u884CSQL_u8BED_u53E5"><a href="#5-_u4ECE_u6587_u672C_u6587_u4EF6_u6267_u884CSQL_u8BED_u53E5" class="headerlink" title="5.从文本文件执行SQL语句"></a>5.从文本文件执行SQL语句</h2><p>这里在D盘下建一个文件my.txt:<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> mma;</span></span><br><span class="line"><span class="operator"><span class="keyword">SHOW</span> <span class="keyword">DATABASES</span>;</span></span><br></pre></td></tr></table></figure></p>
+<p>打开cmd运行结果如下：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">E</span>:\mysql-5.7.10-winx64\bin&gt;mysql &lt; <span class="keyword">D</span>:\my.txt -<span class="keyword">u</span> root -p</span><br><span class="line">Enter password:</span><br><span class="line">Database</span><br><span class="line">information_schema</span><br><span class="line">mma</span><br><span class="line">mysql</span><br><span class="line">performance_schema</span><br><span class="line">sys</span><br><span class="line"><span class="keyword">test</span></span><br></pre></td></tr></table></figure></p>
+<p>如果正在运行mysql，则如下：<br>source D:\my.txt也可以用. D:\my.txt<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; source D:\my.txt</span><br><span class="line">Query OK, 1 row affected (0.00 sec)</span><br><span class="line"></span><br><span class="line"><span class="code">+--------------------+</span></span><br><span class="line"><span class="header">| Database           |</span><br><span class="line">+--------------------+</span></span><br><span class="line">| information<span class="emphasis">_schema |</span><br><span class="line">| mma                |</span><br><span class="line">| mysql              |</span><br><span class="line">| performance_</span>schema |</span><br><span class="line">| sys                |</span><br><span class="line"><span class="header">| test               |</span><br><span class="line">+--------------------+</span></span><br><span class="line">6 rows in set (0.00 sec)</span><br></pre></td></tr></table></figure></p>
+<h1 id="u4E09_u3001_u6570_u636E_u5E93_u57FA_u672C_u64CD_u4F5C"><a href="#u4E09_u3001_u6570_u636E_u5E93_u57FA_u672C_u64CD_u4F5C" class="headerlink" title="三、数据库基本操作"></a>三、数据库基本操作</h1><h2 id="1-_u521B_u5EFA_u6570_u636E_u5E93"><a href="#1-_u521B_u5EFA_u6570_u636E_u5E93" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] tb_name;</span> </span><br><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> tb_name <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> big5 <span class="keyword">COLLATE</span> big5_chinese_ci;</span>//创建并指定字符集为big5,校对规则为big5_chinese_ci</span><br></pre></td></tr></table></figure>
+<h2 id="2-_u67E5_u770B_u6570_u636E_u5E93"><a href="#2-_u67E5_u770B_u6570_u636E_u5E93" class="headerlink" title="2.查看数据库"></a>2.查看数据库</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SHOW</span> <span class="keyword">DATABASE</span>;</span></span><br><span class="line"><span class="operator"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> tb_name;</span>//查看某一数据库详细信息</span><br><span class="line"><span class="operator"><span class="keyword">SHOW</span> <span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> tb_name \<span class="keyword">G</span>;</span>// \G使显示的信息更加直观</span><br></pre></td></tr></table></figure>
+<h2 id="3-_u4FEE_u6539_u6570_u636E_u5E93"><a href="#3-_u4FEE_u6539_u6570_u636E_u5E93" class="headerlink" title="3.修改数据库"></a>3.修改数据库</h2><p>注意:储存引擎为MyISAM可以修改数据库名称，但是储存引擎为InnoDB无法修改，可以修改字符集和校对规则：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> ADTABASE tb_name <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> gb2312;</span>//将数据库字符集设置为gb2312</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-_u5220_u9664_u6570_u636E_u5E93"><a href="#4-_u5220_u9664_u6570_u636E_u5E93" class="headerlink" title="4.删除数据库"></a>4.删除数据库</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">DROP</span> <span class="keyword">DATABASE</span> [<span class="keyword">IF</span> <span class="keyword">EXISTS</span>] tb_name;</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-_u5F53_u524D_u6570_u636E_u5E93_u9009_u62E9"><a href="#5-_u5F53_u524D_u6570_u636E_u5E93_u9009_u62E9" class="headerlink" title="5.当前数据库选择"></a>5.当前数据库选择</h2><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT DATABASE();<span class="comment">//显示当前数据库</span></span><br><span class="line"><span class="keyword">USE</span> tb_name;<span class="comment">//运行mysql时选择指定数据库</span></span><br><span class="line"><span class="keyword">shell</span>&gt; mysql -<span class="keyword">u</span> root -p tb_name;<span class="comment">//打开时指定</span></span><br></pre></td></tr></table></figure>
+<p>备注：修改显示格式<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; prompt \<span class="keyword">u</span>@\<span class="keyword">h</span> \<span class="keyword">d</span>&gt;</span><br><span class="line">PROMPT <span class="keyword">set</span> to '\<span class="keyword">u</span>@\<span class="keyword">h</span> \<span class="keyword">d</span>&gt;'</span><br><span class="line">root@localhost mma&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="u56DB_u3001_u6570_u636E_u8868_u64CD_u4F5C"><a href="#u56DB_u3001_u6570_u636E_u8868_u64CD_u4F5C" class="headerlink" title="四、数据表操作"></a>四、数据表操作</h1><h2 id="1-_u6570_u636E_u8868_u7C7B_u578B"><a href="#1-_u6570_u636E_u8868_u7C7B_u578B" class="headerlink" title="1.数据表类型"></a>1.数据表类型</h2><p>只有BDB属于事务安全型，其他属于非事务安全型。<br>(1)ISAM<br>现在已经被MyISAM取代<br>(2)MyISAM<br>mysql5.4以前使用<br>(3)Merge<br>一种把相同结构的MyISAM数据表组织为一个逻辑单元的方法<br>(4)HEAP<br>使用内存的数据表，检索速度快，作为一种临时数据表，在指定情况下特别有用<br>(5)BDB<br>支持事务处理机制，具有良好的并发性能。<br>(6)InnoDB<br>新加入mysql的数据表类型，支持事务处理机制，崩溃后能够立即恢复，具有并发功能，支持外键功能，包括级联删除</p>
+<h2 id="2-_u5B57_u6BB5_u6570_u636E_u7C7B_u578B"><a href="#2-_u5B57_u6BB5_u6570_u636E_u7C7B_u578B" class="headerlink" title="2.字段数据类型"></a>2.字段数据类型</h2><p>范围自己按位数推： 如TINYINT 1B 8位 有符号时(-2^7~2^7-1) 无符号(UNSIGNED)时(0~2^8-1)<br>(1)整数型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TINYINT</td>
+<td>1B</td>
+<td>小整数</td>
+</tr>
+<tr>
+<td>SMALLINT</td>
+<td>2B</td>
+<td>大整数</td>
+</tr>
+<tr>
+<td>MEDIUMINT</td>
+<td>3B</td>
+<td>大整数</td>
+</tr>
+<tr>
+<td>INT或者INTEGER</td>
+<td>4B</td>
+<td>大整数</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>8B</td>
+<td>极大整数</td>
+</tr>
+</tbody>
+</table>
+<p>(2)浮点型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FLOAT</td>
+<td>4B</td>
+<td>单精度</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>8B</td>
+<td>双精度</td>
+</tr>
+<tr>
+<td>DECIMAL</td>
+<td></td>
+<td>小数</td>
+</tr>
+</tbody>
+</table>
+<p>备注：FLOAT(7,3)—-显示值不超过7位，小数点后面有三位小数</p>
+<p>(3)字符型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CHAR</td>
+<td>0~255B</td>
+<td>定长字符串</td>
+</tr>
+<tr>
+<td>VARCHAR</td>
+<td>0~255B</td>
+<td>变长字符串</td>
+</tr>
+<tr>
+<td>TINYBLOB</td>
+<td>0~255B</td>
+<td>不超过255个字符二进制字符串</td>
+</tr>
+<tr>
+<td>TINYTEXT</td>
+<td>0~255B</td>
+<td>短文本字符串</td>
+</tr>
+<tr>
+<td>BLOB</td>
+<td>0~65535B</td>
+<td>二进制长文本数据</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td>0~65535B</td>
+<td>长文本数据</td>
+</tr>
+<tr>
+<td>MEDIUMBLOB</td>
+<td>0~16777215B</td>
+<td>二进制中等长文本数据</td>
+</tr>
+<tr>
+<td>MEDIUMTEXT</td>
+<td>0~16777215B</td>
+<td>中等长文本数据</td>
+</tr>
+<tr>
+<td>LONGBLOB</td>
+<td>0~4294967295B</td>
+<td>二进制极大文本数据</td>
+</tr>
+<tr>
+<td>LONGTEXT</td>
+<td>0~4294967295B</td>
+<td>极大文本数据</td>
+</tr>
+</tbody>
+</table>
+<p>备注：<br>CHAR(长度) 而 VARCHAR根据实际内容长度动态改变储存长度，节约磁盘空间和提高储存效率<br>TEXT和BLOB用于储存文本块或者图像声音等二进制文件，TEXT不区分大小写，BLOB区分大小写</p>
+<p>(4)时间日期</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>范围</th>
+<th>格式</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DATE</td>
+<td>3</td>
+<td>1000-01-01/9999-12-31</td>
+<td>YYYY-MM-DD</td>
+<td>日期值</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>3</td>
+<td>‘-838:59:59’/‘838:59:59’</td>
+<td>HH:MM:SS</td>
+<td>时间值或持续时间</td>
+</tr>
+<tr>
+<td>YEAR</td>
+<td>1</td>
+<td>1901/2155</td>
+<td>YYYY</td>
+<td>年份值</td>
+</tr>
+<tr>
+<td>DATETIME</td>
+<td>8</td>
+<td>1000-01-01 00:00:00/9999-12-31 23:59:59</td>
+<td>YYYY-MM-DD HH:MM:SS</td>
+<td>混合日期和时间值</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>8</td>
+<td>1970-01-01 00:00:00/2037年某时</td>
+<td>YYYYMMDD HHMMSS</td>
+<td>混合日期和时间值,时间戳</td>
+</tr>
+</tbody>
+</table>
+<p>(5)复合类型<br>mysql支持的复合类型为ENUM和SET<br>ENUM只允许在集合中取得一个值，作用类似于单选项，用于处理相互排斥的数据。大小写不匹配时会自动转化为一致的，一个ENUM类型最多包括65536个元素，从1开始索引，其中一个元素被mysql保留，用来储存错误信息，这个错误用索引0或者一个空字符表示。<br>SET从预定义中取任意多个值，类似复选框，与ENUM相同，插入非预定义值会插入一个空字符，一个SET最多可以包含64项元素。</p>
+<h2 id="3-_u8868_u7684_u64CD_u4F5C"><a href="#3-_u8868_u7684_u64CD_u4F5C" class="headerlink" title="3.表的操作"></a>3.表的操作</h2><p>(1)创建<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">USE</span> 数据库名称;</span><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> 表的名称(字段<span class="number">1</span>的名称 字段<span class="number">1</span>的类型 字段<span class="number">1</span>的约束,字段<span class="number">2.</span>..);</span></span><br><span class="line">或者</span><br><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> 数据库名称.表的名称(字段<span class="number">1</span>的名称 字段<span class="number">1</span>的类型 字段<span class="number">1</span>的约束,字段<span class="number">2.</span>..);</span></span><br><span class="line">eg:</span><br><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> student(<span class="keyword">sid</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>,<span class="keyword">name</span> <span class="built_in">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,sex <span class="built_in">VARCHAR</span>(<span class="number">4</span>) <span class="literal">NULL</span>);</span></span><br></pre></td></tr></table></figure></p>
+<p>(2)查看表结构<br>Field：字段名称<br>Type：字段类型<br>Null：是否可以为null<br>Key：是否编制索引<br>Default：是否默认值，是多少<br>Extra：附加信息如AUTO_INCREMENT<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">DESCRIBE 表名;</span><br><span class="line">或者</span><br><span class="line">DESC 表名;</span><br><span class="line">eg:</span><br><span class="line">root<span class="comment">@localhost test&gt;DESC student;</span></span><br><span class="line">+-------+----------------------+------+-----+---------+----------------+</span><br><span class="line">|<span class="string"> Field </span>|<span class="string"> Type                 </span>|<span class="string"> Null </span>|<span class="string"> Key </span>|<span class="string"> Default </span>|<span class="string"> Extra          </span>|</span><br><span class="line">+-------+----------------------+------+-----+---------+----------------+</span><br><span class="line">|<span class="string"> id    </span>|<span class="string"> smallint(5) unsigned </span>|<span class="string"> NO   </span>|<span class="string"> PRI </span>|<span class="string"> NULL    </span>|<span class="string"> auto_increment </span>|</span><br><span class="line">|<span class="string"> stuid </span>|<span class="string"> varchar(20)          </span>|<span class="string"> NO   </span>|<span class="string">     </span>|<span class="string"> NULL    </span>|<span class="string">                </span>|</span><br><span class="line">|<span class="string"> name  </span>|<span class="string"> varchar(20)          </span>|<span class="string"> NO   </span>|<span class="string">     </span>|<span class="string"> NULL    </span>|<span class="string">                </span>|</span><br><span class="line">+-------+----------------------+------+-----+---------+----------------+</span><br><span class="line">3 rows in set (0.39 sec)</span><br></pre></td></tr></table></figure></p>
+<p>查看表的详细结构：<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root<span class="comment">@localhost test&gt;SHOW CREATE TABLE student \G</span></span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span> 1. row <span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line">       Table: student</span><br><span class="line">Create Table: CREATE TABLE `student` (</span><br><span class="line">  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `stuid` varchar(20) NOT NULL,</span><br><span class="line">  `name` varchar(20) NOT NULL,</span><br><span class="line">  PRIMARY KEY (`id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=latin1</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure></p>
+<p>(3)添加与查看数据<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@localhost test&gt;INSERT INTO student(stuid,name) VALUES("001","xiangming");</span><br><span class="line">Query OK, 1 row affected (0.16 sec)</span><br><span class="line"></span><br><span class="line"><span class="header">root@localhost test&gt;SELECT * FROM student;</span><br><span class="line">+----+-------+-----------+</span></span><br><span class="line"><span class="header">| id | stuid | name      |</span><br><span class="line">+----+-------+-----------+</span></span><br><span class="line"><span class="header">|  1 | 001   | xiangming |</span><br><span class="line">+----+-------+-----------+</span></span><br><span class="line">1 row in set (0.03 sec)</span><br></pre></td></tr></table></figure></p>
+<p>(4)删除表<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> tablename;</span>//删除表中数据</span><br><span class="line"><span class="operator"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> tablename;</span>//删除整个表</span><br></pre></td></tr></table></figure></p>
+<p>(5)修改表名<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 旧表名 <span class="keyword">RENAME</span> [<span class="keyword">TO</span>] 新表名;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="4-_u5B57_u6BB5_u64CD_u4F5C"><a href="#4-_u5B57_u6BB5_u64CD_u4F5C" class="headerlink" title="4.字段操作"></a>4.字段操作</h2><p>(1)字段类型修改<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">MODIFY</span> 字段名 数据类型;</span></span><br></pre></td></tr></table></figure></p>
+<p>(2)添加字段<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">ADD</span> 新字段名 数据类型 [约束条件] [<span class="keyword">FIRST</span> | <span class="keyword">AFTER</span> 已存在的字段名];</span>//FIRST将字段设置为第一个字段，将字段AFTER添加到已存在的字段名后面</span><br></pre></td></tr></table></figure></p>
+<p>(3)删除字段<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">DROP</span> 字段名；</span></span><br></pre></td></tr></table></figure></p>
+<p>(4)字段位置修改<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> 表名 <span class="keyword">MODIFY</span> 字段<span class="number">1</span> 数据类型 <span class="keyword">FIRST</span>|<span class="keyword">AFTER</span> 字段<span class="number">2</span>；//将字段<span class="number">1</span>改到第一或者字段<span class="number">2</span>的后面</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="u4E94_u3001_u5B57_u6BB5_u7EA6_u675F"><a href="#u4E94_u3001_u5B57_u6BB5_u7EA6_u675F" class="headerlink" title="五、字段约束"></a>五、字段约束</h1><p>(1)主键约束<br>(2)外键约束<br>(3)非空约束<br>(4)默认值<br>(5)唯一性约束<br>(6)</p>
+<h1 id="u5341_u4E00_u3001_u6570_u636E_u5E93_u754C_u9762_u5316"><a href="#u5341_u4E00_u3001_u6570_u636E_u5E93_u754C_u9762_u5316" class="headerlink" title="十一、数据库界面化"></a>十一、数据库界面化</h1><p>上面安装的mysql没有界面，可以在dos下操作，如果你想要界面化的话可以自己找相关界面化软件，这里用Navicat for MySQL！<br>自己安装好软件Navicat for MySQL！<br>打开软件，点击连接，随便输入一个连接名，密码这里不用输入（因为初始数据库没有密码，如果你的MYSQL数据库加了密码的话输入即可）<br>点击确定即可看见数据库了，里面有MYSQL自带的数据表</p>
+<h1 id="u76EE_u5F55_uFF1AMYSQL_u76F8_u5173_u67E5_u8BE2"><a href="#u76EE_u5F55_uFF1AMYSQL_u76F8_u5173_u67E5_u8BE2" class="headerlink" title="目录：MYSQL相关查询"></a>目录：MYSQL相关查询</h1><h2 id="1-_u53C2_u6570"><a href="#1-_u53C2_u6570" class="headerlink" title="1.参数"></a>1.参数</h2><h2 id="2-_u6570_u636E_u7C7B_u578B"><a href="#2-_u6570_u636E_u7C7B_u578B" class="headerlink" title="2.数据类型"></a>2.数据类型</h2><hr>
+<p>更新中…………</p>
+]]></content>
     <summary type="html">
     <![CDATA[<p>主要内容：安装与配置MYSQL<br>]]>
     
@@ -1622,11 +1931,13 @@
     <link href="http://www.bestzhangjin.com/2016/01/16/android_studio_view/"/>
     <id>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</id>
     <published>2016-01-16T01:29:12.000Z</published>
-    <updated>2016-01-16T02:27:49.606Z</updated>
+    <updated>2016-03-15T11:42:14.548Z</updated>
     <content type="html"><![CDATA[<p>主要内容：路径修改<br><a id="more"></a></p>
 <h1 id="u4E00-_u8DEF_u5F84_u95EE_u9898"><a href="#u4E00-_u8DEF_u5F84_u95EE_u9898" class="headerlink" title="一.路径问题"></a>一.路径问题</h1><h2 id="u9879_u76EE_u8DEF_u5F84_uFF1A"><a href="#u9879_u76EE_u8DEF_u5F84_uFF1A" class="headerlink" title="项目路径："></a>项目路径：</h2><p>查看当前项目的路径：navigate-&gt;File path<br>注意：Android Studio的project相当于eclipse的workspace，Android Studio的module相当于eclipse的project，android Stduio，把一个项目比喻成一个工程的一个个模块，外部的依赖也是一个个模块，这样一个项目的结构就很清晰明了。当然也有一个缺点，就是一个窗口只能打开一个project,不能像eclipse那样一次一个窗口打开多个项目。</p>
 <h2 id="SDK/JDK_u8DEF_u5F84"><a href="#SDK/JDK_u8DEF_u5F84" class="headerlink" title="SDK/JDK路径"></a>SDK/JDK路径</h2><p>查看和修改：Fiew-&gt;project strcture或者View-&gt;open module settings-&gt;SDK Location<br>打开会发现SDK/JDK路径设置</p>
 <h1 id="u4E8C-_u4FEE_u6539_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29"><a href="#u4E8C-_u4FEE_u6539_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29" class="headerlink" title="二.修改工程名(apk名称)"></a>二.修改工程名(apk名称)</h1><p>项目右键-&gt;refactor-&gt;rename</p>
+<hr>
+<p>更新中…………</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>主要内容：路径修改<br>]]>
@@ -1672,12 +1983,14 @@
     <link href="http://www.bestzhangjin.com/2016/01/15/myeclipse_APP_question/"/>
     <id>http://www.bestzhangjin.com/2016/01/15/myeclipse_APP_question/</id>
     <published>2016-01-15T05:51:52.000Z</published>
-    <updated>2016-01-18T13:54:33.247Z</updated>
+    <updated>2016-03-15T11:43:30.183Z</updated>
     <content type="html"><![CDATA[<p>主要内容：Myeclipse搭建安卓环境，错误及解决方法<br><a id="more"></a></p>
 <h1 id="u4E00-Myeclipse_u642D_u5EFA_u5B89_u5353_u73AF_u5883"><a href="#u4E00-Myeclipse_u642D_u5EFA_u5B89_u5353_u73AF_u5883" class="headerlink" title="一.Myeclipse搭建安卓环境"></a>一.Myeclipse搭建安卓环境</h1><p>工具：Myeclipse,ADT,SDK<br>1.安装Myeclipse<br>2.ADT解压，将解压目录下的features与plugins文件夹放到Myeclipse安装目录的dropins目录下面<br>3.复制SDK，制定Myeclipse对应到这个SDK<br>  windows-&gt;perference-&gt;android-&gt;SDK目录</p>
 <h1 id="u4E8C-_u9519_u8BEF_u53CA_u89E3_u51B3_u65B9_u6CD5"><a href="#u4E8C-_u9519_u8BEF_u53CA_u89E3_u51B3_u65B9_u6CD5" class="headerlink" title="二.错误及解决方法"></a>二.错误及解决方法</h1><h2 id="1-Error_when_loading_the_SDK_3A_5Candroid-wear_5Carmeabi-v7a_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9_uFF0C_5Candroid-wear_5Cx86_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9"><a href="#1-Error_when_loading_the_SDK_3A_5Candroid-wear_5Carmeabi-v7a_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9_uFF0C_5Candroid-wear_5Cx86_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9" class="headerlink" title="1.Error when loading the SDK:\android-wear\armeabi-v7a\devices.xml发现以元素’d:skin’开头的无效内容，\android-wear\x86\devices.xml发现以元素’d:skin’开头的无效内容"></a>1.Error when loading the SDK:\android-wear\armeabi-v7a\devices.xml发现以元素’d:skin’开头的无效内容，\android-wear\x86\devices.xml发现以元素’d:skin’开头的无效内容</h2><p>解决：<br>方法1： 在SDK Manager里删除Android-wear相关的image<br>方法2： 进入sdk目录下，把..\android-sdk\system-images\android-22\android-wear\armeabi-v7a\devices.xml<br>和..\android-sdk\system-images\android-22\android-wear\x86\devices.xml文件删除，<br>再把sdk里面..\android-sdk\tools\lib\下的devices.xml拷贝到上述两个文件夹里，重启eclipse即可</p>
 <h2 id="2-_u2019Open_Project_u2019_has_encountered_a_problem_2CThe_project_description_file_28-project_29_for__u2018APP_u2019_is_missing"><a href="#2-_u2019Open_Project_u2019_has_encountered_a_problem_2CThe_project_description_file_28-project_29_for__u2018APP_u2019_is_missing" class="headerlink" title="2.’Open Project’ has encountered a problem,The project description file(.project) for ‘APP’ is missing"></a>2.’Open Project’ has encountered a problem,The project description file(.project) for ‘APP’ is missing</h2><p>解决：<br>可能一：这种情况往往是工程文件夹中的.project文件丢失了，所以从别的工程复制过来，就可以用啦。<br>方法二：项目路径改变了，删除项目（不勾选删除文件）后，再重新导入</p>
 <h2 id="3-MyEclipse_u4E2D_u5BFC_u5165_u9879_u76EE_u51FA_u73B0Select_at_least_one_project"><a href="#3-MyEclipse_u4E2D_u5BFC_u5165_u9879_u76EE_u51FA_u73B0Select_at_least_one_project" class="headerlink" title="3.MyEclipse中导入项目出现Select at least one project"></a>3.MyEclipse中导入项目出现Select at least one project </h2><p>解决：在导入工程的时候出现的，这是因为有同名的工程的，<br>进入windows-&gt;show view-&gt;project explorer 这里找出来删掉再导入工程即可。</p>
+<hr>
+<p>更新中…………</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>主要内容：Myeclipse搭建安卓环境，错误及解决方法<br>]]>
@@ -1743,25 +2056,24 @@
     <link href="http://www.bestzhangjin.com/2016/01/03/blog-hexo/"/>
     <id>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</id>
     <published>2016-01-03T02:19:50.000Z</published>
-    <updated>2016-01-15T05:50:46.489Z</updated>
+    <updated>2016-03-15T11:51:36.793Z</updated>
     <content type="html"><![CDATA[<p>主要内容：hexo环境搭建，相关软件安装，Github配置，域名绑定<br><a id="more"></a></p>
 <h1 id="u4E00-_u7B80_u4ECB"><a href="#u4E00-_u7B80_u4ECB" class="headerlink" title="一.简介"></a>一.简介</h1><p>前几天利用Github和Hexo搭建了一个属于自己的博客，为了方便更多的人学习！将具体流程写下来！主要分4步：软件安装，Github配置，Hexo配置，域名绑定。</p>
 <h1 id="u4E8C-_u8F6F_u4EF6_u5B89_u88C5"><a href="#u4E8C-_u8F6F_u4EF6_u5B89_u88C5" class="headerlink" title="二.软件安装"></a>二.软件安装</h1><h2 id="1-_u5B89_u88C5node-js"><a href="#1-_u5B89_u88C5node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h2><p>百度一下nodejs官网，找到DOWNLOADS点击，找到符合自己电脑系统的版本。点击下载，安装！</p>
 <h2 id="2-_u5B89_u88C5Git"><a href="#2-_u5B89_u88C5Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h2><p>下载安装Git，用法：在Windows下，打开Git Bash，其他系统下面则打开终端（Terminal）。</p>
 <h1 id="u4E09-Github_u914D_u7F6E"><a href="#u4E09-Github_u914D_u7F6E" class="headerlink" title="三.Github配置"></a>三.Github配置</h1><h2 id="1-_u6CE8_u518CGithub_u5E10_u53F7"><a href="#1-_u6CE8_u518CGithub_u5E10_u53F7" class="headerlink" title="1.注册Github帐号"></a>1.注册Github帐号</h2><p>已经有Github帐号跳过此步，首先进入Github进行注册，用户名、邮箱和密码之后都需要用到，自己记好。</p>
-<h2 id="2-_u521B_u5EFArepository"><a href="#2-_u521B_u5EFArepository" class="headerlink" title="2.创建repository"></a>2.创建repository</h2><p>在自己的Github下创建repository<br><img src="/img/1.png" alt="blog-hexo1"><br>命名方式：你的Github账号.github.io</p>
+<h2 id="2-_u521B_u5EFArepository"><a href="#2-_u521B_u5EFArepository" class="headerlink" title="2.创建repository"></a>2.创建repository</h2><p>在自己的Github下创建repository<br><img src="/img/blog_hexo/1.png" alt="blog-hexo1"><br>命名方式：你的Github账号.github.io</p>
 <h2 id="3-_u914D_u7F6E_SSH_keys"><a href="#3-_u914D_u7F6E_SSH_keys" class="headerlink" title="3.配置 SSH keys"></a>3.配置 SSH keys</h2><p>下面内容参考：<a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/" target="_blank" rel="external">http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/</a></p>
-<p>###我们如何让本地git项目与远程的github建立联系呢？用SSH keys。<br>打开git bash<br>首先我们检查你电脑上现有的ssh key：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure></p>
+<p>我们如何让本地git项目与远程的github建立联系呢？用SSH keys。<br>打开git bash<br>首先我们检查你电脑上现有的ssh key：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure></p>
 <p>如果提示：No such file or directory 说明你是第一次使用git.<br>生成新的SSH Key:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"邮件地址@youremail.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure></p>
 <p>然后系统会要你输入密码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;输入加密串&gt;</span><br><span class="line">Enter same passphrase again:&lt;再次输入加密串&gt;</span><br></pre></td></tr></table></figure></p>
-<p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。<br>注意：输入密码的时候没有字样的，你直接输入就可以了。<br>最后看到这样的界面，就成功设置ssh key了：<br><img src="/img/2.png" alt="blog-hexo"></p>
-<p>添加 SSH Key 到 GitHub</p>
-<p>###在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。<br>(1)、打开本地C:\Documents and Settings\Administrator.ssh\id_rsa.pub文件。此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。<br>(2)、登陆github系统。点击右上角的 Account Settings—&gt;SSH Public keys —&gt; add another public keys<br>(3)、把你本地生成的密钥复制到里面（key文本框中）， 点击 add key 就ok了</p>
-<p>###测试<br>可以输入下面的命令，看看设置是否成功:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。<br>注意：输入密码的时候没有字样的，你直接输入就可以了。<br>最后看到这样的界面，就成功设置ssh key了：<br><img src="/img/blog_hexo/2.png" alt="blog-hexo"></p>
+<p>添加 SSH Key 到 GitHub<br>在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。<br>(1)、打开本地C:\Documents and Settings\Administrator.ssh\id_rsa.pub文件。此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。<br>(2)、登陆github系统。点击右上角的 Account Settings—&gt;SSH Public keys —&gt; add another public keys<br>(3)、把你本地生成的密钥复制到里面（key文本框中）， 点击 add key 就ok了</p>
+<p>测试:<br>可以输入下面的命令，看看设置是否成功:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
 <p>如果是下面的反馈：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host <span class="string">'github.com (207.97.227.239)'</span> can<span class="string">'t be established.</span><br><span class="line">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span><br><span class="line">Are you sure you want to continue connecting (yes/no)?</span></span><br></pre></td></tr></table></figure></p>
 <p>不要紧张，输入yes就好，然后会看到：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi 某某某! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure></p>
 <p>现在你已经可以通过 SSH 链接到 GitHub 了，还有一些个人信息需要完善的。</p>
-<p>###设置用户信息<br>Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的，名字必须是你的真名，而不是GitHub的昵称。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"yourname"</span>//用户名</span><br><span class="line">$ git config --global user.email  <span class="string">"yourmail@mail.com"</span>//填写自己的邮箱</span><br></pre></td></tr></table></figure></p>
+<p>设置用户信息:<br>Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的，名字必须是你的真名，而不是GitHub的昵称。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"yourname"</span>//用户名</span><br><span class="line">$ git config --global user.email  <span class="string">"yourmail@mail.com"</span>//填写自己的邮箱</span><br></pre></td></tr></table></figure></p>
 <p>SSH Key 配置成功<br>本机已成功连接到 github。</p>
 <h1 id="u56DB-Hexo_u914D_u7F6E"><a href="#u56DB-Hexo_u914D_u7F6E" class="headerlink" title="四.Hexo配置"></a>四.Hexo配置</h1><h2 id="1-hexo_u5E38_u7528_u547D_u4EE4_u4ECB_u7ECD"><a href="#1-hexo_u5E38_u7528_u547D_u4EE4_u4ECB_u7ECD" class="headerlink" title="1.hexo常用命令介绍"></a>1.hexo常用命令介绍</h2><p>hexo常用的命令,#后面为注释:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment">#完整命令为hexo generate,用于生成静态文件</span></span><br><span class="line">$ hexo s <span class="comment">#完整命令为hexo server,用于启动服务器，主要用来本地预览</span></span><br><span class="line">$ hexo d <span class="comment">#完整命令为hexo deploy,用于将本地文件发布到github上</span></span><br><span class="line">$ hexo n <span class="comment">#完整命令为hexo new,用于新建一篇文章</span></span><br><span class="line">$ hexo s<span class="comment">#完整命令为hexo server启动本地服务，进行文章预览调试</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="2-_u5B89_u88C5hexo"><a href="#2-_u5B89_u88C5hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h2><p>打开Git Bash,输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
@@ -1774,9 +2086,9 @@
 <p>如果上面的hexo d命令没有反应，ERROR Deployer not found: git解决<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
 <p>之后就可以执行hexo d了。<br>中间会提示输入账号，密码<br>如此完成！<br>在浏览器上输入：你的githun账号.github.io就可以访问你的博客了<br>但是如果你有自己的域名并且要绑定的话，请看第五步</p>
 <h1 id="u4E94-_u57DF_u540D_u7ED1_u5B9A"><a href="#u4E94-_u57DF_u540D_u7ED1_u5B9A" class="headerlink" title="五.域名绑定"></a>五.域名绑定</h1><h2 id="1-_u8D2D_u4E70_u57DF_u540D"><a href="#1-_u8D2D_u4E70_u57DF_u540D" class="headerlink" title="1.购买域名"></a>1.购买域名</h2><p>购买域名比较简单，此处不再介绍，我的是万维的：www.bestzhangjin.com</p>
-<h2 id="2-_u5C06_u72EC_u7ACB_u57DF_u540D_u4E0E_GitHub_Pages__u7684_u7A7A_u95F4_u7ED1_u5B9A"><a href="#2-_u5C06_u72EC_u7ACB_u57DF_u540D_u4E0E_GitHub_Pages__u7684_u7A7A_u95F4_u7ED1_u5B9A" class="headerlink" title="2.将独立域名与 GitHub Pages 的空间绑定"></a>2.将独立域名与 GitHub Pages 的空间绑定</h2><p>###DNS 设置<br>注册DNSpod，添加域名，如下图设置。<br><img src="/img/3.png" alt="blog-hexo"><br>其中A的两条记录指向的ip地址是github Pages的提供的ip<br>192.30.252.153<br>192.30.252.154<br>如博客不能登录，有可能是 github 更改了空间服务的 ip 地址，记得及时到在GitHub Pages查看最新的ip即可<br>www 指定的记录是你在 github 注册的仓库</p>
-<p>###去阿里云（因为阿里云、万维合作–我在阿里云买的域名）修改 DNS 地址<br>进入阿里云找到域名修改DNS 地址<br><img src="/img/4.png" alt="blog-hexo"></p>
-<p>###CNAME文件上传<br>在hexo文件的source目录下创建一个名字为CNAME的文件<br>文件内容：<br><a href="http://beastzhangjin.com" target="_blank" rel="external">http://beastzhangjin.com</a><br>每个人的不一样———为自己的域名<br>然后执行仿照第三步hexo配置，输入hexo g hexo d上传即可<br>浏览器上输入你的域名就可以访问你的博客了！</p>
+<h2 id="2-_u5C06_u72EC_u7ACB_u57DF_u540D_u4E0E_GitHub_Pages__u7684_u7A7A_u95F4_u7ED1_u5B9A"><a href="#2-_u5C06_u72EC_u7ACB_u57DF_u540D_u4E0E_GitHub_Pages__u7684_u7A7A_u95F4_u7ED1_u5B9A" class="headerlink" title="2.将独立域名与 GitHub Pages 的空间绑定"></a>2.将独立域名与 GitHub Pages 的空间绑定</h2><p>DNS 设置:<br>注册DNSpod，添加域名，如下图设置。<br><img src="/img/blog_hexo/3.png" alt="blog-hexo"><br>其中A的两条记录指向的ip地址是github Pages的提供的ip<br>192.30.252.153<br>192.30.252.154<br>如博客不能登录，有可能是 github 更改了空间服务的 ip 地址，记得及时到在GitHub Pages查看最新的ip即可<br>www 指定的记录是你在 github 注册的仓库</p>
+<p>去阿里云（因为阿里云、万维合作–我在阿里云买的域名）修改 DNS 地址<br>进入阿里云找到域名修改DNS 地址<br><img src="/img/blog_hexo/4.png" alt="blog-hexo"></p>
+<p>CNAME文件上传<br>在hexo文件的source目录下创建一个名字为CNAME的文件<br>文件内容：<br><a href="http://beastzhangjin.com" target="_blank" rel="external">http://beastzhangjin.com</a><br>每个人的不一样———为自己的域名<br>然后执行仿照第三步hexo配置，输入hexo g hexo d上传即可<br>浏览器上输入你的域名就可以访问你的博客了！</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>主要内容：hexo环境搭建，相关软件安装，Github配置，域名绑定<br>]]>
