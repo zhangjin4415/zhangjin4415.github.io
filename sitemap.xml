@@ -2,18 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.bestzhangjin.com/about/index.html</loc>
+    <lastmod>2016-03-15T19:15:23.354Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/14/structs2/</loc>
+    <lastmod>2016-03-15T17:37:24.985Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/myeclipse_question/</loc>
+    <lastmod>2016-03-15T17:12:33.256Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.bestzhangjin.com/2016/03/15/myeclipse_view/</loc>
-    <lastmod>2016-03-15T13:10:06.507Z</lastmod>
+    <lastmod>2016-03-15T15:13:23.287Z</lastmod>
   </url>
   
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
     <lastmod>2016-03-15T13:09:59.476Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/myeclipse_APP_question/</loc>
-    <lastmod>2016-03-15T12:59:23.338Z</lastmod>
   </url>
   
   <url>
@@ -62,18 +72,8 @@
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/03/14/structs2/</loc>
-    <lastmod>2016-03-15T11:40:35.225Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.bestzhangjin.com/2016/03/12/html_css_javascript/</loc>
     <lastmod>2016-03-15T11:40:23.526Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/about/index.html</loc>
-    <lastmod>2016-03-07T11:02:07.376Z</lastmod>
   </url>
   
   <url>
