@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.bestzhangjin.com/2016/02/26/ubuntu_use/</loc>
+    <lastmod>2016-03-15T12:01:27.924Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu学习</title>
+        <pubTime>2016-02-26T04:55:12.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="http://www.bestzhangjin.com/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
     <lastmod>2016-03-15T11:51:36.793Z</lastmod>
     <data>
@@ -225,26 +245,6 @@
            
              
               <breadCrumb title="网页设计" url="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/02/26/ubuntu_use/</loc>
-    <lastmod>2016-03-15T11:33:04.623Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu()之基础篇</title>
-        <pubTime>2016-02-26T04:55:12.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="http://www.bestzhangjin.com/categories/Ubuntu/"/>
           
         </display>
     </data>
