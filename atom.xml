@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.bestzhangjin.com/"/>
-  <updated>2016-03-15T11:41:07.942Z</updated>
+  <updated>2016-03-15T12:21:59.358Z</updated>
   <id>http://www.bestzhangjin.com/</id>
   
   <author>
@@ -13,6 +13,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[软件工程师常见问题汇总]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/15/question/"/>
+    <id>http://www.bestzhangjin.com/2016/03/15/question/</id>
+    <published>2016-03-15T13:23:59.000Z</published>
+    <updated>2016-03-15T12:21:59.358Z</updated>
+    <content type="html"><![CDATA[<p>好记性不如烂笔头，本文收集了我在学习过程中遇到的常见问题<br><a id="more"></a></p>
+<h1 id="1-_u7AEF_u53E3_u51B2_u7A81_u95EE_u9898"><a href="#1-_u7AEF_u53E3_u51B2_u7A81_u95EE_u9898" class="headerlink" title="1.端口冲突问题"></a>1.端口冲突问题</h1><p>win+R打开运行，然后输入cmd即可。<br>在dos命令中输入以下命令查询正在被使用的端口号(第二列)以及使用它的程序。<br>命令：netstat -ano<br>看到后面一列是有一个PID，然后把占用端口的PID号记下来。<br>打开任务管理器，选择服务，找到对应PID进程结束进程即可。</p>
+<hr>
+<p>更新中…………</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>好记性不如烂笔头，本文收集了我在学习过程中遇到的常见问题<br>]]>
+    
+    </summary>
+    
+      <category term="常见问题" scheme="http://www.bestzhangjin.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="软件工程师" scheme="http://www.bestzhangjin.com/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
+    
+      <category term="常见问题" scheme="http://www.bestzhangjin.com/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Myeclipse应用技巧]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/15/myeclipse_view/"/>
+    <id>http://www.bestzhangjin.com/2016/03/15/myeclipse_view/</id>
+    <published>2016-03-15T13:00:51.000Z</published>
+    <updated>2016-03-15T13:10:06.507Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：<br><a id="more"></a></p>
+<h1 id="1-Myeclipse_u642D_u5EFA_u5B89_u5353_u73AF_u5883"><a href="#1-Myeclipse_u642D_u5EFA_u5B89_u5353_u73AF_u5883" class="headerlink" title="1.Myeclipse搭建安卓环境"></a>1.Myeclipse搭建安卓环境</h1><p>工具：Myeclipse,ADT,SDK<br>1.安装Myeclipse<br>2.ADT解压，将解压目录下的features与plugins文件夹放到Myeclipse安装目录的dropins目录下面<br>3.复制SDK，制定Myeclipse对应到这个SDK<br>  windows-&gt;perference-&gt;android-&gt;SDK目录</p>
+<h1 id="2-myeclipse_u5BFC_u5165_u9879_u76EE"><a href="#2-myeclipse_u5BFC_u5165_u9879_u76EE" class="headerlink" title="2.myeclipse导入项目"></a>2.myeclipse导入项目</h1><p>File-&gt;Import-&gt;General-&gt;Existing Projects into Workpace<br>点击next，选择”Browse…”,浏览工程所在目录，找到工程所在文件夹，确定。<br>此时projects里面会出现工程所在目录对应所有的工程，选择你需要的工程，选择”Finish”，即可！</p>
+<hr>
+<p>更新中…………</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：<br>]]>
+    
+    </summary>
+    
+      <category term="Myeclipse" scheme="http://www.bestzhangjin.com/tags/Myeclipse/"/>
+    
+      <category term="应用技巧" scheme="http://www.bestzhangjin.com/tags/%E5%BA%94%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="Myeclipse" scheme="http://www.bestzhangjin.com/categories/Myeclipse/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[网页设计之photoshop+firework+flash+dreamwearver篇]]></title>
@@ -83,6 +132,41 @@
   </entry>
   
   <entry>
+    <title><![CDATA[网页设计之Html+css+javascript篇]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/12/html_css_javascript/"/>
+    <id>http://www.bestzhangjin.com/2016/03/12/html_css_javascript/</id>
+    <published>2016-03-12T10:53:03.000Z</published>
+    <updated>2016-03-15T11:40:23.526Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：Html，css，javascript<br><a id="more"></a></p>
+<!--more-->
+<h1 id="u7B2C_u4E00_u7AE0__u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B"><a href="#u7B2C_u4E00_u7AE0__u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B" class="headerlink" title="第一章 网页基础与网站开发流程"></a>第一章 网页基础与网站开发流程</h1><h2 id="1-_u8BA4_u8BC6_u7F51_u9875"><a href="#1-_u8BA4_u8BC6_u7F51_u9875" class="headerlink" title="1.认识网页"></a>1.认识网页</h2><p>网站由网页组成，需要域名和虚拟主机才能访问。<br>网页就是一个文件，通常是HTML文件，扩展名有.html、.htm、.asp、.aspx、.php、.jsp等。<br>动态网页是通过网页脚本与语言自动处理、自动更新的页面，如论坛中的帖子就是通过网站服务器运行程序，自动处理信息，按照流程更新网页。动态网页一般以.asp、.aspx、.php、.jsp作为文件扩展名，不同的扩展名的动态网页文件代表不同的服务器技术，要开发动态网站，需要先指定一种服务器端技术，目前动态网页服务器技术主要有CGI、ASP/ASP.NET、PHP、JSP等。<br>CGI:一种通用的网关接口，是外部程序与网页服务器之间的标准编程接口，可以使用不同的语言写CGI程序，如VB,Delphi,C/C++等，可以将写好的CGI代码放在网页服务器的计算机上运行，再将其运行结果通过网页服务器传输到客服端的网页浏览器上。CGI接收低、编写代码困难、效率低，现在基本不用。<br>ASP：在CGI技术基础上由微软开发的一种快速、简便的服务器技术，门槛低、功能强大，较为流行。<br>ASP.NET：微软在ASP基础上退出的一种服务器技术，解决了原来ASP技术的服务器代码与HTML混合导致页面冗长而复杂、程序难以理解的问题，而且能够与浏览器独立，支持VB.NET,C#、VC++.NET、JS.NET四种编程语言。<br>PHP:是一种HTML内嵌式语言，与微软的ASP相似，开放免费，广泛使用。<br>JSP:SUN公司推出的网站开放技术，是将纯Java代码嵌入HTML中实现动态功能的技术，已成为ASP有力竞争者。<br>ASP与JSP区别：<br>明显区别：ASP使用编程语言是VBScript之类的脚本语言，JSP使用的是Java。<br>本质区别：ASP的VBScript代码被ASP引擎解释执行，而JSP脚本在第一次被编译成Servlet并由java虚拟机执行。</p>
+<p>静态网页与动态网页<br>静态网页：<br><em>使用语言HTML
+</em>每个网页都有一个固定URL,网页URL以.htm、.html、.shtml等常见形式为后缀，不含有“？”<br><em>静态网页是实实在在保存网站服务器上的文件，每个网页是一个独立文件
+</em>静态网页内容相对稳定，容易被搜索引擎检索<br><em>没有数据库支持，当网站信息量大时完全依靠静态网页制作方式比较困难
+</em>交互性差，在功能方面有很大限制<br>动态网页：<br><em>使用语言HTML+ASP,HTML+PHP,HTML+JSP等
+</em>以数据库为基础，可以大大减少网站维护工作<br><em>动态网页技术可以实现更多的功能
+</em>不是独立存在于服务器上的独立网页文件，只有当用户请求服务器时才返回一个完整的网页<br>*动态网页中“？”对搜索引擎检索存在一定问题，搜索引擎的机器人一般不会抓取URL字符串的“？”，所以采用动态网站进行搜索引擎推广时需要做一定的技术处理才能适应搜索要求</p>
+<hr>
+<p>更新中…………</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：Html，css，javascript<br>]]>
+    
+    </summary>
+    
+      <category term="Html" scheme="http://www.bestzhangjin.com/tags/Html/"/>
+    
+      <category term="css" scheme="http://www.bestzhangjin.com/tags/css/"/>
+    
+      <category term="javascript" scheme="http://www.bestzhangjin.com/tags/javascript/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[JSP网站开发]]></title>
     <link href="http://www.bestzhangjin.com/2016/03/12/jsp/"/>
     <id>http://www.bestzhangjin.com/2016/03/12/jsp/</id>
@@ -148,41 +232,6 @@
       <category term="网站开发" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
     
       <category term="网站开发" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[网页设计之Html+css+javascript篇]]></title>
-    <link href="http://www.bestzhangjin.com/2016/03/12/html_css_javascript/"/>
-    <id>http://www.bestzhangjin.com/2016/03/12/html_css_javascript/</id>
-    <published>2016-03-12T10:53:03.000Z</published>
-    <updated>2016-03-15T11:40:23.526Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：Html，css，javascript<br><a id="more"></a></p>
-<!--more-->
-<h1 id="u7B2C_u4E00_u7AE0__u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B"><a href="#u7B2C_u4E00_u7AE0__u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B" class="headerlink" title="第一章 网页基础与网站开发流程"></a>第一章 网页基础与网站开发流程</h1><h2 id="1-_u8BA4_u8BC6_u7F51_u9875"><a href="#1-_u8BA4_u8BC6_u7F51_u9875" class="headerlink" title="1.认识网页"></a>1.认识网页</h2><p>网站由网页组成，需要域名和虚拟主机才能访问。<br>网页就是一个文件，通常是HTML文件，扩展名有.html、.htm、.asp、.aspx、.php、.jsp等。<br>动态网页是通过网页脚本与语言自动处理、自动更新的页面，如论坛中的帖子就是通过网站服务器运行程序，自动处理信息，按照流程更新网页。动态网页一般以.asp、.aspx、.php、.jsp作为文件扩展名，不同的扩展名的动态网页文件代表不同的服务器技术，要开发动态网站，需要先指定一种服务器端技术，目前动态网页服务器技术主要有CGI、ASP/ASP.NET、PHP、JSP等。<br>CGI:一种通用的网关接口，是外部程序与网页服务器之间的标准编程接口，可以使用不同的语言写CGI程序，如VB,Delphi,C/C++等，可以将写好的CGI代码放在网页服务器的计算机上运行，再将其运行结果通过网页服务器传输到客服端的网页浏览器上。CGI接收低、编写代码困难、效率低，现在基本不用。<br>ASP：在CGI技术基础上由微软开发的一种快速、简便的服务器技术，门槛低、功能强大，较为流行。<br>ASP.NET：微软在ASP基础上退出的一种服务器技术，解决了原来ASP技术的服务器代码与HTML混合导致页面冗长而复杂、程序难以理解的问题，而且能够与浏览器独立，支持VB.NET,C#、VC++.NET、JS.NET四种编程语言。<br>PHP:是一种HTML内嵌式语言，与微软的ASP相似，开放免费，广泛使用。<br>JSP:SUN公司推出的网站开放技术，是将纯Java代码嵌入HTML中实现动态功能的技术，已成为ASP有力竞争者。<br>ASP与JSP区别：<br>明显区别：ASP使用编程语言是VBScript之类的脚本语言，JSP使用的是Java。<br>本质区别：ASP的VBScript代码被ASP引擎解释执行，而JSP脚本在第一次被编译成Servlet并由java虚拟机执行。</p>
-<p>静态网页与动态网页<br>静态网页：<br><em>使用语言HTML
-</em>每个网页都有一个固定URL,网页URL以.htm、.html、.shtml等常见形式为后缀，不含有“？”<br><em>静态网页是实实在在保存网站服务器上的文件，每个网页是一个独立文件
-</em>静态网页内容相对稳定，容易被搜索引擎检索<br><em>没有数据库支持，当网站信息量大时完全依靠静态网页制作方式比较困难
-</em>交互性差，在功能方面有很大限制<br>动态网页：<br><em>使用语言HTML+ASP,HTML+PHP,HTML+JSP等
-</em>以数据库为基础，可以大大减少网站维护工作<br><em>动态网页技术可以实现更多的功能
-</em>不是独立存在于服务器上的独立网页文件，只有当用户请求服务器时才返回一个完整的网页<br>*动态网页中“？”对搜索引擎检索存在一定问题，搜索引擎的机器人一般不会抓取URL字符串的“？”，所以采用动态网站进行搜索引擎推广时需要做一定的技术处理才能适应搜索要求</p>
-<hr>
-<p>更新中…………</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容：Html，css，javascript<br>]]>
-    
-    </summary>
-    
-      <category term="Html" scheme="http://www.bestzhangjin.com/tags/Html/"/>
-    
-      <category term="css" scheme="http://www.bestzhangjin.com/tags/css/"/>
-    
-      <category term="javascript" scheme="http://www.bestzhangjin.com/tags/javascript/"/>
-    
-      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -1927,28 +1976,28 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Android studio配置常识]]></title>
+    <title><![CDATA[Android studio应用技巧]]></title>
     <link href="http://www.bestzhangjin.com/2016/01/16/android_studio_view/"/>
     <id>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</id>
     <published>2016-01-16T01:29:12.000Z</published>
-    <updated>2016-03-15T11:42:14.548Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：路径修改<br><a id="more"></a></p>
-<h1 id="u4E00-_u8DEF_u5F84_u95EE_u9898"><a href="#u4E00-_u8DEF_u5F84_u95EE_u9898" class="headerlink" title="一.路径问题"></a>一.路径问题</h1><h2 id="u9879_u76EE_u8DEF_u5F84_uFF1A"><a href="#u9879_u76EE_u8DEF_u5F84_uFF1A" class="headerlink" title="项目路径："></a>项目路径：</h2><p>查看当前项目的路径：navigate-&gt;File path<br>注意：Android Studio的project相当于eclipse的workspace，Android Studio的module相当于eclipse的project，android Stduio，把一个项目比喻成一个工程的一个个模块，外部的依赖也是一个个模块，这样一个项目的结构就很清晰明了。当然也有一个缺点，就是一个窗口只能打开一个project,不能像eclipse那样一次一个窗口打开多个项目。</p>
-<h2 id="SDK/JDK_u8DEF_u5F84"><a href="#SDK/JDK_u8DEF_u5F84" class="headerlink" title="SDK/JDK路径"></a>SDK/JDK路径</h2><p>查看和修改：Fiew-&gt;project strcture或者View-&gt;open module settings-&gt;SDK Location<br>打开会发现SDK/JDK路径设置</p>
-<h1 id="u4E8C-_u4FEE_u6539_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29"><a href="#u4E8C-_u4FEE_u6539_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29" class="headerlink" title="二.修改工程名(apk名称)"></a>二.修改工程名(apk名称)</h1><p>项目右键-&gt;refactor-&gt;rename</p>
+    <updated>2016-03-15T13:09:59.476Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：Android studio应用技巧<br><a id="more"></a></p>
+<h1 id="1-_u9879_u76EE_u8DEF_u5F84_u4FEE_u6539"><a href="#1-_u9879_u76EE_u8DEF_u5F84_u4FEE_u6539" class="headerlink" title="1.项目路径修改"></a>1.项目路径修改</h1><p>查看当前项目的路径：navigate-&gt;File path<br>注意：Android Studio的project相当于eclipse的workspace，Android Studio的module相当于eclipse的project，android Stduio，把一个项目比喻成一个工程的一个个模块，外部的依赖也是一个个模块，这样一个项目的结构就很清晰明了。当然也有一个缺点，就是一个窗口只能打开一个project,不能像eclipse那样一次一个窗口打开多个项目。</p>
+<h1 id="2-SDK/JDK_u8DEF_u5F84_u4FEE_u6539"><a href="#2-SDK/JDK_u8DEF_u5F84_u4FEE_u6539" class="headerlink" title="2.SDK/JDK路径修改"></a>2.SDK/JDK路径修改</h1><p>查看和修改：Fiew-&gt;project strcture或者View-&gt;open module settings-&gt;SDK Location<br>打开会发现SDK/JDK路径设置</p>
+<h1 id="3-_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29_u4FEE_u6539"><a href="#3-_u5DE5_u7A0B_u540D_28apk_u540D_u79F0_29_u4FEE_u6539" class="headerlink" title="3.工程名(apk名称)修改"></a>3.工程名(apk名称)修改</h1><p>项目右键-&gt;refactor-&gt;rename</p>
 <hr>
 <p>更新中…………</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>主要内容：路径修改<br>]]>
+    <![CDATA[<p>主要内容：Android studio应用技巧<br>]]>
     
     </summary>
     
-      <category term="APP" scheme="http://www.bestzhangjin.com/tags/APP/"/>
-    
       <category term="Android studio" scheme="http://www.bestzhangjin.com/tags/Android-studio/"/>
     
-      <category term="APP" scheme="http://www.bestzhangjin.com/categories/APP/"/>
+      <category term="应用技巧" scheme="http://www.bestzhangjin.com/tags/%E5%BA%94%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="Android studio" scheme="http://www.bestzhangjin.com/categories/Android-studio/"/>
     
   </entry>
   
@@ -1979,25 +2028,22 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Myeclipse搭建安卓环境（APP）及常见问题与解决方法]]></title>
+    <title><![CDATA[Myeclipse常见问题与解决方法]]></title>
     <link href="http://www.bestzhangjin.com/2016/01/15/myeclipse_APP_question/"/>
     <id>http://www.bestzhangjin.com/2016/01/15/myeclipse_APP_question/</id>
     <published>2016-01-15T05:51:52.000Z</published>
-    <updated>2016-03-15T11:43:30.183Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：Myeclipse搭建安卓环境，错误及解决方法<br><a id="more"></a></p>
-<h1 id="u4E00-Myeclipse_u642D_u5EFA_u5B89_u5353_u73AF_u5883"><a href="#u4E00-Myeclipse_u642D_u5EFA_u5B89_u5353_u73AF_u5883" class="headerlink" title="一.Myeclipse搭建安卓环境"></a>一.Myeclipse搭建安卓环境</h1><p>工具：Myeclipse,ADT,SDK<br>1.安装Myeclipse<br>2.ADT解压，将解压目录下的features与plugins文件夹放到Myeclipse安装目录的dropins目录下面<br>3.复制SDK，制定Myeclipse对应到这个SDK<br>  windows-&gt;perference-&gt;android-&gt;SDK目录</p>
-<h1 id="u4E8C-_u9519_u8BEF_u53CA_u89E3_u51B3_u65B9_u6CD5"><a href="#u4E8C-_u9519_u8BEF_u53CA_u89E3_u51B3_u65B9_u6CD5" class="headerlink" title="二.错误及解决方法"></a>二.错误及解决方法</h1><h2 id="1-Error_when_loading_the_SDK_3A_5Candroid-wear_5Carmeabi-v7a_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9_uFF0C_5Candroid-wear_5Cx86_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9"><a href="#1-Error_when_loading_the_SDK_3A_5Candroid-wear_5Carmeabi-v7a_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9_uFF0C_5Candroid-wear_5Cx86_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9" class="headerlink" title="1.Error when loading the SDK:\android-wear\armeabi-v7a\devices.xml发现以元素’d:skin’开头的无效内容，\android-wear\x86\devices.xml发现以元素’d:skin’开头的无效内容"></a>1.Error when loading the SDK:\android-wear\armeabi-v7a\devices.xml发现以元素’d:skin’开头的无效内容，\android-wear\x86\devices.xml发现以元素’d:skin’开头的无效内容</h2><p>解决：<br>方法1： 在SDK Manager里删除Android-wear相关的image<br>方法2： 进入sdk目录下，把..\android-sdk\system-images\android-22\android-wear\armeabi-v7a\devices.xml<br>和..\android-sdk\system-images\android-22\android-wear\x86\devices.xml文件删除，<br>再把sdk里面..\android-sdk\tools\lib\下的devices.xml拷贝到上述两个文件夹里，重启eclipse即可</p>
+    <updated>2016-03-15T12:59:23.338Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：Myeclipse错误及解决方法<br><a id="more"></a></p>
+<h1 id="u7B2C_u4E00_u7AE0__u642D_u5EFA_u5B89_u5353_u73AF_u5883_u9519_u8BEF"><a href="#u7B2C_u4E00_u7AE0__u642D_u5EFA_u5B89_u5353_u73AF_u5883_u9519_u8BEF" class="headerlink" title="第一章 搭建安卓环境错误"></a>第一章 搭建安卓环境错误</h1><h2 id="1-Error_when_loading_the_SDK_3A_5Candroid-wear_5Carmeabi-v7a_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9_uFF0C_5Candroid-wear_5Cx86_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9"><a href="#1-Error_when_loading_the_SDK_3A_5Candroid-wear_5Carmeabi-v7a_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9_uFF0C_5Candroid-wear_5Cx86_5Cdevices-xml_u53D1_u73B0_u4EE5_u5143_u7D20_u2019d_3Askin_u2019_u5F00_u5934_u7684_u65E0_u6548_u5185_u5BB9" class="headerlink" title="1.Error when loading the SDK:\android-wear\armeabi-v7a\devices.xml发现以元素’d:skin’开头的无效内容，\android-wear\x86\devices.xml发现以元素’d:skin’开头的无效内容"></a>1.Error when loading the SDK:\android-wear\armeabi-v7a\devices.xml发现以元素’d:skin’开头的无效内容，\android-wear\x86\devices.xml发现以元素’d:skin’开头的无效内容</h2><p>解决：<br>方法1： 在SDK Manager里删除Android-wear相关的image<br>方法2： 进入sdk目录下，把..\android-sdk\system-images\android-22\android-wear\armeabi-v7a\devices.xml<br>和..\android-sdk\system-images\android-22\android-wear\x86\devices.xml文件删除，<br>再把sdk里面..\android-sdk\tools\lib\下的devices.xml拷贝到上述两个文件夹里，重启eclipse即可</p>
 <h2 id="2-_u2019Open_Project_u2019_has_encountered_a_problem_2CThe_project_description_file_28-project_29_for__u2018APP_u2019_is_missing"><a href="#2-_u2019Open_Project_u2019_has_encountered_a_problem_2CThe_project_description_file_28-project_29_for__u2018APP_u2019_is_missing" class="headerlink" title="2.’Open Project’ has encountered a problem,The project description file(.project) for ‘APP’ is missing"></a>2.’Open Project’ has encountered a problem,The project description file(.project) for ‘APP’ is missing</h2><p>解决：<br>可能一：这种情况往往是工程文件夹中的.project文件丢失了，所以从别的工程复制过来，就可以用啦。<br>方法二：项目路径改变了，删除项目（不勾选删除文件）后，再重新导入</p>
 <h2 id="3-MyEclipse_u4E2D_u5BFC_u5165_u9879_u76EE_u51FA_u73B0Select_at_least_one_project"><a href="#3-MyEclipse_u4E2D_u5BFC_u5165_u9879_u76EE_u51FA_u73B0Select_at_least_one_project" class="headerlink" title="3.MyEclipse中导入项目出现Select at least one project"></a>3.MyEclipse中导入项目出现Select at least one project </h2><p>解决：在导入工程的时候出现的，这是因为有同名的工程的，<br>进入windows-&gt;show view-&gt;project explorer 这里找出来删掉再导入工程即可。</p>
 <hr>
 <p>更新中…………</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>主要内容：Myeclipse搭建安卓环境，错误及解决方法<br>]]>
+    <![CDATA[<p>主要内容：Myeclipse错误及解决方法<br>]]>
     
     </summary>
-    
-      <category term="APP" scheme="http://www.bestzhangjin.com/tags/APP/"/>
     
       <category term="Myeclipse" scheme="http://www.bestzhangjin.com/tags/Myeclipse/"/>
     
@@ -2108,12 +2154,13 @@
     <link href="http://www.bestzhangjin.com/2016/01/01/yuandan/"/>
     <id>http://www.bestzhangjin.com/2016/01/01/yuandan/</id>
     <published>2016-01-01T13:23:29.000Z</published>
-    <updated>2016-01-14T01:08:27.235Z</updated>
+    <updated>2016-03-15T12:48:38.689Z</updated>
     <content type="html"><![CDATA[<p>祝愿大家新年快乐！天天开开心心！<br><a id="more"></a></p>
 <blockquote>
 <p>新的一年到了！首先庆祝我的博客搭建成功！感谢父母和朋友！愿你们元旦快乐！</p>
-<p><hr><br>今天是2016.1.1，新的一年到了！这是一个新的开始。<br>新的一年，我会干些什么呢？想想还是很兴奋的—_—.<br>2016年，我要做到以下几个方面：<br>一.进一步加强安卓APP的开发，精通APP编写<br>二.总结嵌入式ARM的开发流程，多抽点时间在ARM上，精通ARM项目开发<br>三.复习C/C++/java语言，总结出来，并编写软件<br>四.复习单片机/multisim/Altium Designer,达到精通<br>五.了解大数据，熟悉Hadoop,能够搭建集群进行分布处理</p>
+<p><hr><br>今天是2016.1.1，新的一年到了！这是一个新的开始。<br>新的一年，我会干些什么呢？想想还是很兴奋的—_—.<br>2016年，主要做到以下几个方面：<br>一.JavaWeb前端后台开发，Struts2、Spring、hibernate等深入学习！<br>二.进一步加强安卓APP的开发，掌握APP开发的包括GPS应用、网络通信、硬件驱动等技术！<br>三.复习C/C++/java语言，总结面试笔试基础！<br>四.接触大数据，熟悉Hadoop,搭建集群进行分布处理！<br>五.搭建自己的搜索引擎，并进行深度搜索和广度搜索等编写，研究搜索算法!</p>
 </blockquote>
+<p>如果时间充足：<br>1.总结嵌入式ARM的开发流程，熟悉ARM项目开发<br>2.复习单片机/multisim/Altium Designer</p>
 <p>总结：以零心态面对一切知识，你才能够进步！</p>
 ]]></content>
     <summary type="html">
