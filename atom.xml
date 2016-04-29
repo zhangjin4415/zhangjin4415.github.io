@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.bestzhangjin.com/"/>
-  <updated>2016-04-28T08:51:30.000Z</updated>
+  <updated>2016-04-29T04:49:08.193Z</updated>
   <id>http://www.bestzhangjin.com/</id>
   
   <author>
@@ -19,15 +19,15 @@
     <link href="http://www.bestzhangjin.com/2016/04/27/centos_windows/"/>
     <id>http://www.bestzhangjin.com/2016/04/27/centos_windows/</id>
     <published>2016-04-27T08:31:00.000Z</published>
-    <updated>2016-04-28T08:51:30.000Z</updated>
+    <updated>2016-04-29T04:49:08.193Z</updated>
     <content type="html"><![CDATA[<p>本文以原电脑没有系统和数据操作，有系统或者数据的可以部分采纳！<br><a id="more"></a></p>
-<h1 id="1-_u78C1_u76D8_u5206_u533A"><a href="#1-_u78C1_u76D8_u5206_u533A" class="headerlink" title="1.磁盘分区"></a>1.磁盘分区</h1><p>将磁盘分为一个主分区+2个逻辑分区+一个空闲盘，主分区用来装windows系统,空闲盘用来装centos系统。我的分区如下：<br><img src="/img/centos_windows/1.jpg" alt="image"></p>
+<h1 id="1-_u78C1_u76D8_u5206_u533A"><a href="#1-_u78C1_u76D8_u5206_u533A" class="headerlink" title="1.磁盘分区"></a>1.磁盘分区</h1><p>将磁盘分为一个主分区+2个逻辑分区+一个空闲盘，主分区用来装windows系统,空闲盘用来装centos系统。我的分区如下：<br><img src="/img/centos_windows/1.png" alt="image"></p>
 <h1 id="2-windows_u7CFB_u7EDF_u5B89_u88C5"><a href="#2-windows_u7CFB_u7EDF_u5B89_u88C5" class="headerlink" title="2.windows系统安装"></a>2.windows系统安装</h1><p>windows系统安装较为简单，网上教程也多，这里不再详述！安装到主分区即可！</p>
-<h1 id="3-centos_u5B89_u88C5"><a href="#3-centos_u5B89_u88C5" class="headerlink" title="3.centos安装"></a>3.centos安装</h1><p>制作centos系统U盘，U盘启动，<br>选择Install or upgrade an existing system<br>选择语言(chinese(simplified))<br>选择键盘格式(us)<br>选择installation method:Hard drive<br>选择Select Partition:/dev/sda4  (选择sda项–就是有系统盘U盘项)备注：每个电脑不一样，有些是sdb,一般选择与其余不一样的就行。<br>之后如下：<br><img src="/img/centos_windows/2.jpg" alt="image"><br>点击下一步<br>选择基本储存设备，点击下一步<br>设置主机名，点击下一步<br>选择时钟（默认上海即可），下一步<br>设置密码，下一步<br>下面的设置较为关键！<br>选择哪种类型的安装，不能使用所有空间，否则电脑所有东西全部清空，选择自定义布局 如下：<br><img src="/img/centos_windows/3.jpg" alt="image"><br>点击下一步，弹出窗口如下：<br><img src="/img/centos_windows/4.jpg" alt="image"><br>谨记我们建立分区要点在那个空闲上面，进行创建，否则其他盘数据将丢失！<br>下面进行分区，我具体操作如下三步：<br>（1）/boot(启动分区)<br>选中空闲盘，点击右下角的创建按钮，选择标准分区，点击创建<br><img src="/img/centos_windows/5.jpg" alt="image"><br>之后选择如下（sda项不选，这里分区大小依每个人自己而定，盘小也可以只分100-200M）：<br><img src="/img/centos_windows/6.jpg" alt="image"><br>点击确定。</p>
-<p>(2)Swap(交换空间)<br>通常设置为1-2G，一般内存小于2G时，设置为内存的2倍;内存大于或等于2G时，设置为2G!<br>选中空闲，点击创建，选择标准分区，点击创建，设置如下：<br><img src="/img/centos_windows/7.jpg" alt="image"></p>
-<p>(3)/(根分区)<br>选中空闲盘，点击右下角的创建按钮，选择标准分区，点击创建,剩余空闲空间大小全部设置为其大小。如下：<br><img src="/img/centos_windows/8.jpg" alt="image"></p>
-<p>设置完毕后如下：<br><img src="/img/centos_windows/9.jpg" alt="image"><br>点击下一步。点击将修改写入磁盘。<br>之后弹出的界面需要仔细设置，点击更换设备，主引导记录选择MBR项，BIOS驱动器顺序选择第一项为电脑硬盘(sdb),第二才是U盘(sda).引导装载程序操作系统列表的Other代表的是windows系统，为了更加直观，建议将其编辑为windows或者windows10.设置完后如下：<br><img src="/img/centos_windows/10.jpg" alt="image"><br>之后点击下一步<br>下面一般默认选择即可，以后自定义和现在自定义建议选择现在自定义可以安装过程中更新自己选中的程序或者服务。<br>之后下一步就开始安装啦！<br>安装完毕显示恭喜你，已经成功安装，点击重新引导重新启动。<br>重启后会进入设置界面，这里比较简单，就是设置用户名密码什么的，设置完后就进入系统啦。如此系统安装完成。</p>
-<h1 id="4-_u542F_u52A8_u8BBE_u7F6E"><a href="#4-_u542F_u52A8_u8BBE_u7F6E" class="headerlink" title="4.启动设置"></a>4.启动设置</h1><p>在centos系统下，修改文件/etc/grub.conf，打开文件如下：<br><img src="/img/centos_windows/11.jpg" alt="image"><br>改动后如下：<br><img src="/img/centos_windows/12.jpg" alt="image"><br>之后保存重启系统。<br><img src="/img/centos_windows/13.jpg" alt="image"><br>如上显示window10将在10s后启动，此时不点击任何键将启动windows10，点击回车可以显示如下：<br><img src="/img/centos_windows/14.jpg" alt="image"><br>选择自己要进入的系统即可！</p>
+<h1 id="3-centos_u5B89_u88C5"><a href="#3-centos_u5B89_u88C5" class="headerlink" title="3.centos安装"></a>3.centos安装</h1><p>制作centos系统U盘，U盘启动，<br>选择Install or upgrade an existing system<br>选择语言(chinese(simplified))<br>选择键盘格式(us)<br>选择installation method:Hard drive<br>选择Select Partition:/dev/sda4  (选择sda项–就是有系统盘U盘项)备注：每个电脑不一样，有些是sdb,一般选择与其余不一样的就行。<br>之后如下：<br><img src="/img/centos_windows/2.png" alt="image"><br>点击下一步<br>选择基本储存设备，点击下一步<br>设置主机名，点击下一步<br>选择时钟（默认上海即可），下一步<br>设置密码，下一步<br>下面的设置较为关键！<br>选择哪种类型的安装，不能使用所有空间，否则电脑所有东西全部清空，选择自定义布局 如下：<br><img src="/img/centos_windows/3.png" alt="image"><br>点击下一步，弹出窗口如下：<br><img src="/img/centos_windows/4.png" alt="image"><br>谨记我们建立分区要点在那个空闲上面，进行创建，否则其他盘数据将丢失！<br>下面进行分区，我具体操作如下三步：<br>（1）/boot(启动分区)<br>选中空闲盘，点击右下角的创建按钮，选择标准分区，点击创建<br><img src="/img/centos_windows/5.png" alt="image"><br>之后选择如下（sda项不选，这里分区大小依每个人自己而定，盘小也可以只分100-200M）：<br><img src="/img/centos_windows/6.png" alt="image"><br>点击确定。</p>
+<p>(2)Swap(交换空间)<br>通常设置为1-2G，一般内存小于2G时，设置为内存的2倍;内存大于或等于2G时，设置为2G!<br>选中空闲，点击创建，选择标准分区，点击创建，设置如下：<br><img src="/img/centos_windows/7.png" alt="image"></p>
+<p>(3)/(根分区)<br>选中空闲盘，点击右下角的创建按钮，选择标准分区，点击创建,剩余空闲空间大小全部设置为其大小。如下：<br><img src="/img/centos_windows/8.png" alt="image"></p>
+<p>设置完毕后如下：<br><img src="/img/centos_windows/9.png" alt="image"><br>点击下一步。点击将修改写入磁盘。<br>之后弹出的界面需要仔细设置，点击更换设备，主引导记录选择MBR项，BIOS驱动器顺序选择第一项为电脑硬盘(sdb),第二才是U盘(sda).引导装载程序操作系统列表的Other代表的是windows系统，为了更加直观，建议将其编辑为windows或者windows10.设置完后如下：<br><img src="/img/centos_windows/10.png" alt="image"><br>之后点击下一步<br>下面一般默认选择即可，以后自定义和现在自定义建议选择现在自定义可以安装过程中更新自己选中的程序或者服务。<br>之后下一步就开始安装啦！<br>安装完毕显示恭喜你，已经成功安装，点击重新引导重新启动。<br>重启后会进入设置界面，这里比较简单，就是设置用户名密码什么的，设置完后就进入系统啦。如此系统安装完成。</p>
+<h1 id="4-_u542F_u52A8_u8BBE_u7F6E"><a href="#4-_u542F_u52A8_u8BBE_u7F6E" class="headerlink" title="4.启动设置"></a>4.启动设置</h1><p>在centos系统下，修改文件/etc/grub.conf，打开文件如下：<br><img src="/img/centos_windows/11.png" alt="image"><br>改动后如下：<br><img src="/img/centos_windows/12.png" alt="image"><br>之后保存重启系统。<br><img src="/img/centos_windows/13.png" alt="image"><br>如上显示window10将在10s后启动，此时不点击任何键将启动windows10，点击回车可以显示如下：<br><img src="/img/centos_windows/14.png" alt="image"><br>选择自己要进入的系统即可！</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>本文以原电脑没有系统和数据操作，有系统或者数据的可以部分采纳！<br>]]>

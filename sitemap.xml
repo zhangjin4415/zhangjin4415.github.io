@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
-    <lastmod>2016-04-29T04:21:23.775Z</lastmod>
+    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
+    <lastmod>2016-04-29T04:49:08.193Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
-    <lastmod>2016-04-28T08:51:30.000Z</lastmod>
+    <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
+    <lastmod>2016-04-29T04:39:09.237Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
+    <lastmod>2016-04-29T04:21:23.775Z</lastmod>
   </url>
   
   <url>
@@ -89,11 +94,6 @@
   <url>
     <loc>http://www.bestzhangjin.com/2016/02/26/ubuntu_use/</loc>
     <lastmod>2016-03-15T12:01:28.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
-    <lastmod>2016-03-15T11:51:38.000Z</lastmod>
   </url>
   
   <url>

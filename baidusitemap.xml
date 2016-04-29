@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
+    <lastmod>2016-04-29T04:49:08.193Z</lastmod>
+    <data>
+        <display>
+        <title>U盘装Windows10/CentOS双系统</title>
+        <pubTime>2016-04-27T08:31:00.000Z</pubTime>
+        
+        <tag>CentOS</tag>
+         
+         
+           
+             
+              <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
+    <lastmod>2016-04-29T04:39:09.237Z</lastmod>
+    <data>
+        <display>
+        <title>Github和Hexo搭建属于自己的博客</title>
+        <pubTime>2016-01-03T02:19:50.000Z</pubTime>
+        
+        <tag>Github</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="博客" url="http://www.bestzhangjin.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
     <lastmod>2016-04-29T04:21:23.775Z</lastmod>
     <data>
@@ -24,26 +66,6 @@
           
              
               <breadCrumb title="大数据" url="http://www.bestzhangjin.com/categories/CentOS/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
-    <lastmod>2016-04-28T08:51:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>U盘装Windows10/CentOS双系统</title>
-        <pubTime>2016-04-27T08:31:00.000Z</pubTime>
-        
-        <tag>CentOS</tag>
-         
-         
-           
-             
-              <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
           
         </display>
     </data>
@@ -361,28 +383,6 @@
            
              
               <breadCrumb title="Ubuntu" url="http://www.bestzhangjin.com/categories/Ubuntu/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
-    <lastmod>2016-03-15T11:51:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>Github和Hexo搭建属于自己的博客</title>
-        <pubTime>2016-01-03T02:19:50.000Z</pubTime>
-        
-        <tag>Github</tag>
-         
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="博客" url="http://www.bestzhangjin.com/categories/%E5%8D%9A%E5%AE%A2/"/>
           
         </display>
     </data>
