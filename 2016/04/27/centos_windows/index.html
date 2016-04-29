@@ -1,0 +1,728 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="google-site-verification" content="SxtUWZeCB1kdMgucSmFlZL9HwwJmgQHGcp9w_p4Xtgc" />
+<meta name="baidu-site-verification" content="Sil1fR2zak" />
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CentOS," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="做最好的自己" type="application/atom+xml" />
+
+
+
+
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="本文以原电脑没有系统和数据操作，有系统或者数据的可以部分采纳！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="U盘装Windows10/CentOS双系统">
+<meta property="og:url" content="http://www.bestzhangjin.com/2016/04/27/centos_windows/index.html">
+<meta property="og:site_name" content="做最好的自己">
+<meta property="og:description" content="本文以原电脑没有系统和数据操作，有系统或者数据的可以部分采纳！">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/1.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/2.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/3.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/4.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/5.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/6.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/7.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/8.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/9.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/10.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/11.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/12.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/13.jpg">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/centos_windows/14.jpg">
+<meta property="og:updated_time" content="2016-04-28T08:51:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="U盘装Windows10/CentOS双系统">
+<meta name="twitter:description" content="本文以原电脑没有系统和数据操作，有系统或者数据的可以部分采纳！">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> U盘装Windows10/CentOS双系统 | 做最好的自己 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">做最好的自己</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                U盘装Windows10/CentOS双系统
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-04-27T16:31:00+08:00" content="2016-04-27">
+              2016-04-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CentOS/" itemprop="url" rel="index">
+                    <span itemprop="name">CentOS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/27/centos_windows/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/27/centos_windows/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>本文以原电脑没有系统和数据操作，有系统或者数据的可以部分采纳！<br><a id="more"></a></p>
+<h1 id="1-_u78C1_u76D8_u5206_u533A"><a href="#1-_u78C1_u76D8_u5206_u533A" class="headerlink" title="1.磁盘分区"></a>1.磁盘分区</h1><p>将磁盘分为一个主分区+2个逻辑分区+一个空闲盘，主分区用来装windows系统,空闲盘用来装centos系统。我的分区如下：<br><img src="/img/centos_windows/1.jpg" alt="image"></p>
+<h1 id="2-windows_u7CFB_u7EDF_u5B89_u88C5"><a href="#2-windows_u7CFB_u7EDF_u5B89_u88C5" class="headerlink" title="2.windows系统安装"></a>2.windows系统安装</h1><p>windows系统安装较为简单，网上教程也多，这里不再详述！安装到主分区即可！</p>
+<h1 id="3-centos_u5B89_u88C5"><a href="#3-centos_u5B89_u88C5" class="headerlink" title="3.centos安装"></a>3.centos安装</h1><p>制作centos系统U盘，U盘启动，<br>选择Install or upgrade an existing system<br>选择语言(chinese(simplified))<br>选择键盘格式(us)<br>选择installation method:Hard drive<br>选择Select Partition:/dev/sda4  (选择sda项–就是有系统盘U盘项)备注：每个电脑不一样，有些是sdb,一般选择与其余不一样的就行。<br>之后如下：<br><img src="/img/centos_windows/2.jpg" alt="image"><br>点击下一步<br>选择基本储存设备，点击下一步<br>设置主机名，点击下一步<br>选择时钟（默认上海即可），下一步<br>设置密码，下一步<br>下面的设置较为关键！<br>选择哪种类型的安装，不能使用所有空间，否则电脑所有东西全部清空，选择自定义布局 如下：<br><img src="/img/centos_windows/3.jpg" alt="image"><br>点击下一步，弹出窗口如下：<br><img src="/img/centos_windows/4.jpg" alt="image"><br>谨记我们建立分区要点在那个空闲上面，进行创建，否则其他盘数据将丢失！<br>下面进行分区，我具体操作如下三步：<br>（1）/boot(启动分区)<br>选中空闲盘，点击右下角的创建按钮，选择标准分区，点击创建<br><img src="/img/centos_windows/5.jpg" alt="image"><br>之后选择如下（sda项不选，这里分区大小依每个人自己而定，盘小也可以只分100-200M）：<br><img src="/img/centos_windows/6.jpg" alt="image"><br>点击确定。</p>
+<p>(2)Swap(交换空间)<br>通常设置为1-2G，一般内存小于2G时，设置为内存的2倍;内存大于或等于2G时，设置为2G!<br>选中空闲，点击创建，选择标准分区，点击创建，设置如下：<br><img src="/img/centos_windows/7.jpg" alt="image"></p>
+<p>(3)/(根分区)<br>选中空闲盘，点击右下角的创建按钮，选择标准分区，点击创建,剩余空闲空间大小全部设置为其大小。如下：<br><img src="/img/centos_windows/8.jpg" alt="image"></p>
+<p>设置完毕后如下：<br><img src="/img/centos_windows/9.jpg" alt="image"><br>点击下一步。点击将修改写入磁盘。<br>之后弹出的界面需要仔细设置，点击更换设备，主引导记录选择MBR项，BIOS驱动器顺序选择第一项为电脑硬盘(sdb),第二才是U盘(sda).引导装载程序操作系统列表的Other代表的是windows系统，为了更加直观，建议将其编辑为windows或者windows10.设置完后如下：<br><img src="/img/centos_windows/10.jpg" alt="image"><br>之后点击下一步<br>下面一般默认选择即可，以后自定义和现在自定义建议选择现在自定义可以安装过程中更新自己选中的程序或者服务。<br>之后下一步就开始安装啦！<br>安装完毕显示恭喜你，已经成功安装，点击重新引导重新启动。<br>重启后会进入设置界面，这里比较简单，就是设置用户名密码什么的，设置完后就进入系统啦。如此系统安装完成。</p>
+<h1 id="4-_u542F_u52A8_u8BBE_u7F6E"><a href="#4-_u542F_u52A8_u8BBE_u7F6E" class="headerlink" title="4.启动设置"></a>4.启动设置</h1><p>在centos系统下，修改文件/etc/grub.conf，打开文件如下：<br><img src="/img/centos_windows/11.jpg" alt="image"><br>改动后如下：<br><img src="/img/centos_windows/12.jpg" alt="image"><br>之后保存重启系统。<br><img src="/img/centos_windows/13.jpg" alt="image"><br>如上显示window10将在10s后启动，此时不点击任何键将启动windows10，点击回车可以显示如下：<br><img src="/img/centos_windows/14.jpg" alt="image"><br>选择自己要进入的系统即可！</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CentOS/" rel="tag">#CentOS</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/25/CentOS/" rel="next" title="CentOS与大数据处理">
+                <i class="fa fa-chevron-left"></i> CentOS与大数据处理
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/04/27/centos_windows/"
+     data-title="U盘装Windows10/CentOS双系统"
+     data-content=""
+     data-url="http://www.bestzhangjin.com/2016/04/27/centos_windows/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/27/centos_windows/"
+           data-title="U盘装Windows10/CentOS双系统" data-url="http://www.bestzhangjin.com/2016/04/27/centos_windows/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/avatar.jpeg" alt="Jin Zhang" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Jin Zhang</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">天高任鸟飞，海阔凭鱼跃。</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">25</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-_u78C1_u76D8_u5206_u533A"><span class="nav-number">1.</span> <span class="nav-text">1.磁盘分区</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-windows_u7CFB_u7EDF_u5B89_u88C5"><span class="nav-number">2.</span> <span class="nav-text">2.windows系统安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-centos_u5B89_u88C5"><span class="nav-number">3.</span> <span class="nav-text">3.centos安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-_u542F_u52A8_u8BBE_u7F6E"><span class="nav-number">4.</span> <span class="nav-text">4.启动设置</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin Zhang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"bestzhangjin"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>

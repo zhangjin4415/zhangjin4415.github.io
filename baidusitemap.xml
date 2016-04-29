@@ -4,8 +4,75 @@
 
     
   <url>
+    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
+    <lastmod>2016-04-29T04:21:23.775Z</lastmod>
+    <data>
+        <display>
+        <title>CentOS与大数据处理</title>
+        <pubTime>2016-04-25T01:57:00.000Z</pubTime>
+        
+        <tag>CentOS</tag>
+         
+        <tag>linux</tag>
+         
+        <tag>大数据</tag>
+         
+         
+           
+             
+              <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
+          
+             
+              <breadCrumb title="大数据" url="http://www.bestzhangjin.com/categories/CentOS/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
+    <lastmod>2016-04-28T08:51:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>U盘装Windows10/CentOS双系统</title>
+        <pubTime>2016-04-27T08:31:00.000Z</pubTime>
+        
+        <tag>CentOS</tag>
+         
+         
+           
+             
+              <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/30/jQuery/</loc>
+    <lastmod>2016-04-18T14:54:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>jQuery教程</title>
+        <pubTime>2016-03-30T01:30:00.000Z</pubTime>
+        
+        <tag>jQuery</tag>
+         
+         
+           
+             
+              <breadCrumb title="jQuery" url="http://www.bestzhangjin.com/categories/jQuery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
-    <lastmod>2016-04-10T01:46:05.159Z</lastmod>
+    <lastmod>2016-04-10T01:46:06.000Z</lastmod>
     <data>
         <display>
         <title>Android开发</title>
@@ -25,7 +92,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/30/webstorm/</loc>
-    <lastmod>2016-04-10T01:34:10.256Z</lastmod>
+    <lastmod>2016-04-10T01:34:12.000Z</lastmod>
     <data>
         <display>
         <title>webstorm应用与常见问题</title>
@@ -44,28 +111,8 @@
 
     
   <url>
-    <loc>http://www.bestzhangjin.com/2016/03/30/jQuery/</loc>
-    <lastmod>2016-04-10T01:29:24.694Z</lastmod>
-    <data>
-        <display>
-        <title>jQuery教程</title>
-        <pubTime>2016-03-30T01:30:00.000Z</pubTime>
-        
-        <tag>jQuery</tag>
-         
-         
-           
-             
-              <breadCrumb title="jQuery" url="http://www.bestzhangjin.com/categories/jQuery/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
-    <lastmod>2016-04-01T15:20:55.637Z</lastmod>
+    <lastmod>2016-04-01T15:20:56.000Z</lastmod>
     <data>
         <display>
         <title>Javaweb框架</title>
@@ -88,7 +135,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/02/18/markdown/</loc>
-    <lastmod>2016-03-30T07:59:45.570Z</lastmod>
+    <lastmod>2016-03-30T07:59:46.000Z</lastmod>
     <data>
         <display>
         <title>markdown详解</title>
@@ -108,7 +155,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/30/Web_skill/</loc>
-    <lastmod>2016-03-30T01:31:44.373Z</lastmod>
+    <lastmod>2016-03-30T01:31:46.000Z</lastmod>
     <data>
         <display>
         <title>Web页面设计技巧总结</title>
@@ -128,7 +175,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/12/jsp/</loc>
-    <lastmod>2016-03-27T00:50:42.089Z</lastmod>
+    <lastmod>2016-03-27T00:50:44.000Z</lastmod>
     <data>
         <display>
         <title>JSP网站开发</title>
@@ -150,7 +197,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/27/MySql/</loc>
-    <lastmod>2016-03-25T01:50:22.229Z</lastmod>
+    <lastmod>2016-03-25T01:50:24.000Z</lastmod>
     <data>
         <display>
         <title>MySql</title>
@@ -172,7 +219,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/15/myeclipse_question/</loc>
-    <lastmod>2016-03-21T12:21:29.722Z</lastmod>
+    <lastmod>2016-03-21T12:21:30.000Z</lastmod>
     <data>
         <display>
         <title>Myeclipse常见问题与解决方法</title>
@@ -194,7 +241,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/14/structs2/</loc>
-    <lastmod>2016-03-21T11:23:25.200Z</lastmod>
+    <lastmod>2016-03-21T11:23:26.000Z</lastmod>
     <data>
         <display>
         <title>Struts 2框架详解</title>
@@ -216,7 +263,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/15/myeclipse_view/</loc>
-    <lastmod>2016-03-16T04:26:11.235Z</lastmod>
+    <lastmod>2016-03-16T04:26:12.000Z</lastmod>
     <data>
         <display>
         <title>Myeclipse应用技巧</title>
@@ -238,7 +285,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
-    <lastmod>2016-03-15T13:09:59.476Z</lastmod>
+    <lastmod>2016-03-15T13:10:00.000Z</lastmod>
     <data>
         <display>
         <title>Android studio应用技巧</title>
@@ -260,7 +307,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/01/yuandan/</loc>
-    <lastmod>2016-03-15T12:48:38.689Z</lastmod>
+    <lastmod>2016-03-15T12:48:40.000Z</lastmod>
     <data>
         <display>
         <title>新年新气象</title>
@@ -280,7 +327,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/15/question/</loc>
-    <lastmod>2016-03-15T12:21:59.358Z</lastmod>
+    <lastmod>2016-03-15T12:22:00.000Z</lastmod>
     <data>
         <display>
         <title>软件工程师常见问题汇总</title>
@@ -302,7 +349,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/02/26/ubuntu_use/</loc>
-    <lastmod>2016-03-15T12:01:27.924Z</lastmod>
+    <lastmod>2016-03-15T12:01:28.000Z</lastmod>
     <data>
         <display>
         <title>Ubuntu学习</title>
@@ -322,7 +369,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
-    <lastmod>2016-03-15T11:51:36.793Z</lastmod>
+    <lastmod>2016-03-15T11:51:38.000Z</lastmod>
     <data>
         <display>
         <title>Github和Hexo搭建属于自己的博客</title>
@@ -344,7 +391,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/02/19/java_learn/</loc>
-    <lastmod>2016-03-15T11:41:45.805Z</lastmod>
+    <lastmod>2016-03-15T11:41:46.000Z</lastmod>
     <data>
         <display>
         <title>JAVA范例篇</title>
@@ -364,7 +411,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/15/webpage_ps_fl_dream_fire/</loc>
-    <lastmod>2016-03-15T11:41:07.942Z</lastmod>
+    <lastmod>2016-03-15T11:41:08.000Z</lastmod>
     <data>
         <display>
         <title>网页设计之photoshop+firework+flash+dreamwearver篇</title>
@@ -392,7 +439,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/12/html_css_javascript/</loc>
-    <lastmod>2016-03-15T11:40:23.526Z</lastmod>
+    <lastmod>2016-03-15T11:40:24.000Z</lastmod>
     <data>
         <display>
         <title>网页设计之Html+css+javascript篇</title>
@@ -418,7 +465,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/04/aliyun/</loc>
-    <lastmod>2016-03-04T09:51:30.440Z</lastmod>
+    <lastmod>2016-03-04T09:51:32.000Z</lastmod>
     <data>
         <display>
         <title>阿里云ECS（linux）搭建web环境</title>
@@ -440,7 +487,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/02/02/java_use/</loc>
-    <lastmod>2016-03-03T07:30:35.964Z</lastmod>
+    <lastmod>2016-03-03T07:30:36.000Z</lastmod>
     <data>
         <display>
         <title>JAVA学习篇</title>
@@ -460,7 +507,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/07/hexo-use/</loc>
-    <lastmod>2016-01-27T08:27:14.363Z</lastmod>
+    <lastmod>2016-01-27T08:27:16.000Z</lastmod>
     <data>
         <display>
         <title>hexo用法讲解</title>
@@ -480,7 +527,7 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
-    <lastmod>2016-01-22T04:17:04.459Z</lastmod>
+    <lastmod>2016-01-22T04:17:06.000Z</lastmod>
     <data>
         <display>
         <title>android studio（APP）常见问题与解决方法</title>

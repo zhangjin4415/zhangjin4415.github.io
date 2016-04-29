@@ -1,0 +1,763 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="google-site-verification" content="SxtUWZeCB1kdMgucSmFlZL9HwwJmgQHGcp9w_p4Xtgc" />
+<meta name="baidu-site-verification" content="Sil1fR2zak" />
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CentOS,linux,大数据," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="做最好的自己" type="application/atom+xml" />
+
+
+
+
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="主要内容：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS与大数据处理">
+<meta property="og:url" content="http://www.bestzhangjin.com/2016/04/25/CentOS/index.html">
+<meta property="og:site_name" content="做最好的自己">
+<meta property="og:description" content="主要内容：">
+<meta property="og:updated_time" content="2016-04-29T04:21:23.775Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CentOS与大数据处理">
+<meta name="twitter:description" content="主要内容：">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> CentOS与大数据处理 | 做最好的自己 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">做最好的自己</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CentOS与大数据处理
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-04-25T09:57:00+08:00" content="2016-04-25">
+              2016-04-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CentOS/" itemprop="url" rel="index">
+                    <span itemprop="name">CentOS</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CentOS/大数据/" itemprop="url" rel="index">
+                    <span itemprop="name">大数据</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/25/CentOS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/25/CentOS/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>主要内容：<br><a id="more"></a></p>
+<h1 id="u7B2C_u4E00_u7AE0_centos_u5E38_u89C1_u95EE_u9898"><a href="#u7B2C_u4E00_u7AE0_centos_u5E38_u89C1_u95EE_u9898" class="headerlink" title="第一章 centos常见问题"></a>第一章 centos常见问题</h1><h2 id="1-_u66F4_u65B0"><a href="#1-_u66F4_u65B0" class="headerlink" title="1.更新"></a>1.更新</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># yum check-update</span></span><br><span class="line"><span class="preprocessor"># yum update -y</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-_u7F51_u9875_u89C6_u9891_u64AD_u653E_u95EE_u9898"><a href="#2-_u7F51_u9875_u89C6_u9891_u64AD_u653E_u95EE_u9898" class="headerlink" title="2.网页视频播放问题"></a>2.网页视频播放问题</h2><p>将下载的flash安装包.tar.gz解压到/home/用户名/.mozilla/plugins下即可</p>
+<h1 id="u7B2C_u4E8C_u7AE0_hadoop_u5B89_u88C5_u524D_u671F_u77E5_u8BC6"><a href="#u7B2C_u4E8C_u7AE0_hadoop_u5B89_u88C5_u524D_u671F_u77E5_u8BC6" class="headerlink" title="第二章 hadoop安装前期知识"></a>第二章 hadoop安装前期知识</h1><h2 id="1-_u901A_u8FC7_u4E3B_u673A_u540D_u4EE3_u66FFip_u8BBF_u95EE_u4E3B_u673A"><a href="#1-_u901A_u8FC7_u4E3B_u673A_u540D_u4EE3_u66FFip_u8BBF_u95EE_u4E3B_u673A" class="headerlink" title="1.通过主机名代替ip访问主机"></a>1.通过主机名代替ip访问主机</h2><p>主机名修改：<br>su下命令:<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>sysconfig<span class="regexp">/network</span></span><br></pre></td></tr></table></figure></p>
+<p>修改里面的HOSTNAME就可以，之后重启机器或者命令sudo hostname 你的新主机名，即可生效！需要exit后重新登录一下发现改变。<br>可以通过配置实现主机名与ip一一对应。需要在su下操作。<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>hosts</span><br></pre></td></tr></table></figure></p>
+<p>备注：windows在C:\Windows\System32\drivers\etc\hosts中可以改。<br>在文件后面加上需要的ip与对应主机名即可：<br><figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">ip</span>地址 主机名</span><br></pre></td></tr></table></figure></p>
+<p>集群搭建需要全部都配置这个文件！<br>然后<br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ping</span> 主机名</span><br></pre></td></tr></table></figure></p>
+<p>可以连通。</p>
+<h2 id="2-_u67E5_u770Bhodoop_u7248_u672C64_u4F4D_u8FD8_u662F32_u4F4D"><a href="#2-_u67E5_u770Bhodoop_u7248_u672C64_u4F4D_u8FD8_u662F32_u4F4D" class="headerlink" title="2.查看hodoop版本64位还是32位"></a>2.查看hodoop版本64位还是32位</h2><p>解压后进入$hadoop_home/lib/native,使用file命令。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">file</span> <span class="tag">libhadoop</span><span class="class">.so</span><span class="class">.1</span><span class="class">.0</span><span class="class">.0</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="u7B2C_u4E09_u7AE0_centos_u642D_u5EFAhadoop_u73AF_u5883"><a href="#u7B2C_u4E09_u7AE0_centos_u642D_u5EFAhadoop_u73AF_u5883" class="headerlink" title="第三章 centos搭建hadoop环境"></a>第三章 centos搭建hadoop环境</h1><h2 id="1-jdk_u5B89_u88C5"><a href="#1-jdk_u5B89_u88C5" class="headerlink" title="1.jdk安装"></a>1.jdk安装</h2><p>下载jdk压缩包解压到目录/home/用户名/software/java/下，然后配置环境变量，vi ~/.bashrc在后面添加如下代码：<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/home/用户名/software/java/jdk1.<span class="number">8.0_74</span></span><br><span class="line">export JAVA_BIN=<span class="variable">$JAVA</span>_HOME/bin</span><br><span class="line">export JAVA_LIB=<span class="variable">$JAVA</span>_HOME/lib</span><br><span class="line">export CLASSPATH=.:<span class="variable">$JAVA</span>_LIB/tools.jar:<span class="variable">$JAVA</span>_LIB/dt.jar</span><br><span class="line">export PATH=<span class="variable">$JAVA</span>_BIN:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure></p>
+<p>输入生效命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>有人说上面针对当前用户有效，针对所有用户有效需要在/etc/profile下配置，然后再source /etc/profile生效。<br>现在在任意目录下运行java,javac有反应，不会提示命令不存在，说明jdk安装成功！</p>
+<h2 id="2-hadoop_u914D_u7F6E"><a href="#2-hadoop_u914D_u7F6E" class="headerlink" title="2.hadoop配置"></a>2.hadoop配置</h2><p>下载hadoop并解压到目录hadoop下，进入其etc目录改配置。<br>备注：cmd文档代表在windows下的，而sh文档代表在linux下的。<br>(1) hadoop-env.sh<br>env==environment环境变量，修改内容：JAVA_HOME。<br>输入命令：<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">vi</span> hadoop-env.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure></p>
+<p>打开文档找到<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#The java implementation to use.</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=<span class="variable">$&#123;JAVA_HOME&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>将其改为绝对路径，因为不改的话经常找不到java目录。修改后如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># The java implementation to use.</span></span><br><span class="line"><span class="keyword">export</span> JAVA_HOME=/home/zhang/software/java/jdk1<span class="number">.8</span><span class="number">.0</span>_74</span><br></pre></td></tr></table></figure></p>
+<p>(2) core-site.xml<br>找到<br><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;configuration&gt;</span></span><br><span class="line"><span class="tag">&lt;/configuration&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>添加如下：<br><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">&lt;configuration&gt;</span></span><br><span class="line"><span class="variable">&lt;property&gt;</span></span><br><span class="line"><span class="variable">&lt;name&gt;</span>fs.<span class="keyword">default</span>FS<span class="variable">&lt;/name&gt;</span></span><br><span class="line"><span class="variable">&lt;value&gt;</span>hdfs://zhang:<span class="number">9000</span>/<span class="variable">&lt;/value&gt;</span></span><br><span class="line"><span class="variable">&lt;/property&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="variable">&lt;property&gt;</span></span><br><span class="line"><span class="variable">&lt;name&gt;</span>hadoop.tmp.dir<span class="variable">&lt;/name&gt;</span></span><br><span class="line"><span class="variable">&lt;value&gt;</span>/home/zhang/software/hadoop/data/<span class="variable">&lt;/value&gt;</span></span><br><span class="line"><span class="variable">&lt;/property&gt;</span></span><br><span class="line"><span class="variable">&lt;/configuration&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>fs.defaultFS 默认文件系统</p>
+<p><value>hdfs://zhang:9000/</value> 采用uri格式，hdfs-协议为hdfs,zhang-主节点地址为zhang(因为前面已经配置主机地址与主机名对应)，9000-默认端口号。<br>hadoop.tmp.dir 共同工作目录</p>
+<p>(3) hdfs-site.xml<br>配置运行的细节<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">name</span>&gt;</span>dfs.replication<span class="tag">&lt;/<span class="title">name</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="title">value</span>&gt;</span>2<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>其中dfs.replication-配置副本数量， 3个为最佳，会放在不同的主机上，放在同一主机没有任何意义，会报错，这里我用两个data节点（data主机），存2个副本。<br>切块大小也可用在这里配置，默认128M。<br>上面配置好后hdfs可以运行啦，但是yarn不能运行，还需要配置.</p>
+<p>(4) mapred-site.xml<br>mv mapred-site.xml.template mapred-site.xml<br>对于.xml才能找到执行，所以需要改后缀名。<br>配置如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">name</span>&gt;</span>mapreduce.framework.name<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">value</span>&gt;</span>yarn<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>map-reduce应该放到哪个资源调度集群上跑，指定用yarn这个集群跑，hdfs与yarn都是集群，其在物理主机上没有分开，但是是不同的。</p>
+<p>(5) yarn-site.xml<br>配置yarn中的老大以及node节点采用mapreduce_shuffle机制（map产生的中间结果传递给reduce采用哪种机制）。<br>配置如下：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">configuration</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Site specific YARN configuration properties --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">name</span>&gt;</span>yarn.resourcemanager.hostname<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">value</span>&gt;</span>zhang<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">name</span>&gt;</span>yarn.nodemanager.aux-services<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">value</span>&gt;</span>mapreduce_shuffle<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="3-_u542F_u52A8_u524D_u51C6_u5907_u5DE5_u4F5C"><a href="#3-_u542F_u52A8_u524D_u51C6_u5907_u5DE5_u4F5C" class="headerlink" title="3.启动前准备工作"></a>3.启动前准备工作</h2><p>(1) 防火墙设置<br>hadoop都是一些网络服务，伪分布式情况端口号被防火墙屏蔽，需要打开端口号或者关闭防火墙。<br>hodoop一般就是公司内部一个网络，不会与外界联系，所有可以使用关闭防火墙情况更加简单。<br>root用户下命令如下：<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">service iptables <span class="built_in">stop</span>  <span class="comment"> //关闭防火墙</span></span><br><span class="line">service iptables status<span class="comment"> //查看状态</span></span><br></pre></td></tr></table></figure></p>
+<p>下次打开又会开启，因为这是一个自启动服务，可以使用下面命令让其不自启动<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sudo</span> chkconfig iptables <span class="built_in">off</span> //如果是<span class="built_in">on</span>则打开</span><br><span class="line">sudo chkconfig iptables --list//查看状态 此时所有级别全部<span class="built_in">off</span></span><br></pre></td></tr></table></figure></p>
+<p>(2) 格式化<br>未来方面起见，首先将hadoop命令添加环境变量，以便在任何地方可以调用hadoop命令.<br>root权限下<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">vi</span> /etc/<span class="keyword">profile</span></span><br></pre></td></tr></table></figure></p>
+<p>添加如下代码：<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export HADOOP_HOME=/home/zhang/software/hadoop/hadoop-<span class="number">2.6</span>.<span class="number">4</span></span><br><span class="line">export HADOOP_BIN=<span class="variable">$HADOOP</span>_HOME/bin</span><br><span class="line">export PATH=<span class="variable">$HADOOP</span>_BIN:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure></p>
+<p>利用source /etc/profile 生效,我重启才生效！</p>
+<p>格式化命令：<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hadoop namenode -<span class="built_in">format</span></span><br></pre></td></tr></table></figure></p>
+<p>看到如下语句说明格式化成功：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">16</span>/<span class="number">04</span>/<span class="number">26</span> <span class="number">11</span>:<span class="number">53</span>:<span class="number">24</span> INFO common.Storage: Storage directory /home/zhang/software/hadoop/data/dfs/name has been successfully formatted.</span><br></pre></td></tr></table></figure></p>
+<p>格式化时在data目录下新建目录/dfs/name 里面初始化一些文件.<br>查看目录：<br><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[zhang<span class="variable">@zhang</span> hadoop-<span class="number">2.6</span>.<span class="number">4</span>]<span class="variable">$ </span>cd /home/zhang/software/hadoop/data/dfs/name</span><br><span class="line">[zhang<span class="variable">@zhang</span> name]<span class="variable">$ </span>ls</span><br><span class="line">current</span><br><span class="line">[zhang<span class="variable">@zhang</span> name]<span class="variable">$ </span>cd current</span><br><span class="line">[zhang<span class="variable">@zhang</span> current]<span class="variable">$ </span>ls</span><br><span class="line">fsimage_0000000000000000000  fsimage_0000000000000000000.md5  seen_txid  <span class="constant">VERSION</span></span><br></pre></td></tr></table></figure></p>
+<p>因为namenode指定的是这台机器192.168.0.107,所以文件会建到这个主机上。<br>fsimage储存原数据(管理datanode节点的数据)。<br>现在可以进行启动！</p>
+<p>(3) datanode节点与sbin环境变量<br>启动命令在hadoop安装目录下的sbin目录下。一般不用start-all，用start-dfs,start-yarn更能够理解操作。<br>用时首先将sbin加入环境变量。</p>
+<p>/etc/hadoop下有slaves文件，可以配置datanode主机.<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>hadoop<span class="regexp">/slaves</span></span><br></pre></td></tr></table></figure></p>
+<p>内容如下(3台datanode主机)：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">zhang</span></span><br><span class="line">mem1</span><br><span class="line">mem2</span><br></pre></td></tr></table></figure></p>
+<h2 id="4__u542F_u52A8"><a href="#4__u542F_u52A8" class="headerlink" title="4 启动"></a>4 启动</h2><h1 id="u5907_u6CE8_uFF1A"><a href="#u5907_u6CE8_uFF1A" class="headerlink" title="备注："></a>备注：</h1><p>1.为保证内存充分利用，尽量采用64位系统。</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CentOS/" rel="tag">#CentOS</a>
+          
+            <a href="/tags/linux/" rel="tag">#linux</a>
+          
+            <a href="/tags/大数据/" rel="tag">#大数据</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/01/Hibernate/" rel="next" title="Javaweb框架">
+                <i class="fa fa-chevron-left"></i> Javaweb框架
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/27/centos_windows/" rel="prev" title="U盘装Windows10/CentOS双系统">
+                U盘装Windows10/CentOS双系统 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/04/25/CentOS/"
+     data-title="CentOS与大数据处理"
+     data-content=""
+     data-url="http://www.bestzhangjin.com/2016/04/25/CentOS/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/25/CentOS/"
+           data-title="CentOS与大数据处理" data-url="http://www.bestzhangjin.com/2016/04/25/CentOS/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/avatar.jpeg" alt="Jin Zhang" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Jin Zhang</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">天高任鸟飞，海阔凭鱼跃。</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">25</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u7B2C_u4E00_u7AE0_centos_u5E38_u89C1_u95EE_u9898"><span class="nav-number">1.</span> <span class="nav-text">第一章 centos常见问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u66F4_u65B0"><span class="nav-number">1.1.</span> <span class="nav-text">1.更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u7F51_u9875_u89C6_u9891_u64AD_u653E_u95EE_u9898"><span class="nav-number">1.2.</span> <span class="nav-text">2.网页视频播放问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u7B2C_u4E8C_u7AE0_hadoop_u5B89_u88C5_u524D_u671F_u77E5_u8BC6"><span class="nav-number">2.</span> <span class="nav-text">第二章 hadoop安装前期知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-_u901A_u8FC7_u4E3B_u673A_u540D_u4EE3_u66FFip_u8BBF_u95EE_u4E3B_u673A"><span class="nav-number">2.1.</span> <span class="nav-text">1.通过主机名代替ip访问主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-_u67E5_u770Bhodoop_u7248_u672C64_u4F4D_u8FD8_u662F32_u4F4D"><span class="nav-number">2.2.</span> <span class="nav-text">2.查看hodoop版本64位还是32位</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u7B2C_u4E09_u7AE0_centos_u642D_u5EFAhadoop_u73AF_u5883"><span class="nav-number">3.</span> <span class="nav-text">第三章 centos搭建hadoop环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-jdk_u5B89_u88C5"><span class="nav-number">3.1.</span> <span class="nav-text">1.jdk安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-hadoop_u914D_u7F6E"><span class="nav-number">3.2.</span> <span class="nav-text">2.hadoop配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-_u542F_u52A8_u524D_u51C6_u5907_u5DE5_u4F5C"><span class="nav-number">3.3.</span> <span class="nav-text">3.启动前准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4__u542F_u52A8"><span class="nav-number">3.4.</span> <span class="nav-text">4 启动</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#u5907_u6CE8_uFF1A"><span class="nav-number">4.</span> <span class="nav-text">备注：</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jin Zhang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"bestzhangjin"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>
