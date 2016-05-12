@@ -2,13 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
-    <lastmod>2016-04-29T04:49:08.193Z</lastmod>
+    <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
+    <lastmod>2016-05-12T12:13:23.851Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
-    <lastmod>2016-04-29T04:39:09.237Z</lastmod>
+    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
+    <lastmod>2016-05-12T11:11:51.821Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
+    <lastmod>2016-05-09T03:23:25.496Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
+    <lastmod>2016-05-08T03:12:00.054Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
+    <lastmod>2016-05-07T01:53:17.082Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
+    <lastmod>2016-04-29T04:49:08.193Z</lastmod>
   </url>
   
   <url>
@@ -22,18 +42,8 @@
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
-    <lastmod>2016-04-10T01:46:06.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.bestzhangjin.com/2016/03/30/webstorm/</loc>
     <lastmod>2016-04-10T01:34:12.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
-    <lastmod>2016-04-01T15:20:56.000Z</lastmod>
   </url>
   
   <url>
@@ -74,11 +84,6 @@
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/15/myeclipse_view/</loc>
     <lastmod>2016-03-16T04:26:12.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
-    <lastmod>2016-03-15T13:10:00.000Z</lastmod>
   </url>
   
   <url>
@@ -124,11 +129,6 @@
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/07/hexo-use/</loc>
     <lastmod>2016-01-27T08:27:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
-    <lastmod>2016-01-22T04:17:06.000Z</lastmod>
   </url>
   
   <url>

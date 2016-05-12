@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
-    <lastmod>2016-04-29T04:49:08.193Z</lastmod>
-    <data>
-        <display>
-        <title>U盘装Windows10/CentOS双系统</title>
-        <pubTime>2016-04-27T08:31:00.000Z</pubTime>
-        
-        <tag>CentOS</tag>
-         
-         
-           
-             
-              <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
-    <lastmod>2016-04-29T04:39:09.237Z</lastmod>
+    <lastmod>2016-05-12T12:13:23.851Z</lastmod>
     <data>
         <display>
         <title>Github和Hexo搭建属于自己的博客</title>
@@ -39,6 +19,114 @@
            
              
               <breadCrumb title="博客" url="http://www.bestzhangjin.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
+    <lastmod>2016-05-12T11:11:51.821Z</lastmod>
+    <data>
+        <display>
+        <title>Javaweb框架</title>
+        <pubTime>2016-04-01T06:15:00.000Z</pubTime>
+        
+        <tag>Javaweb</tag>
+         
+        <tag>框架</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javaweb" url="http://www.bestzhangjin.com/categories/Javaweb/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
+    <lastmod>2016-05-09T03:23:25.496Z</lastmod>
+    <data>
+        <display>
+        <title>Android开发</title>
+        <pubTime>2016-03-24T11:42:20.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://www.bestzhangjin.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
+    <lastmod>2016-05-08T03:12:00.054Z</lastmod>
+    <data>
+        <display>
+        <title>Android studio应用技巧</title>
+        <pubTime>2016-01-16T01:29:12.000Z</pubTime>
+        
+        <tag>Android studio</tag>
+         
+        <tag>应用技巧</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android studio" url="http://www.bestzhangjin.com/categories/Android-studio/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
+    <lastmod>2016-05-07T01:53:17.082Z</lastmod>
+    <data>
+        <display>
+        <title>android studio（APP）常见问题与解决方法</title>
+        <pubTime>2016-01-15T05:51:52.000Z</pubTime>
+        
+        <tag>APP</tag>
+         
+        <tag>Android studio</tag>
+         
+        <tag>常见问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="APP" url="http://www.bestzhangjin.com/categories/APP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
+    <lastmod>2016-04-29T04:49:08.193Z</lastmod>
+    <data>
+        <display>
+        <title>U盘装Windows10/CentOS双系统</title>
+        <pubTime>2016-04-27T08:31:00.000Z</pubTime>
+        
+        <tag>CentOS</tag>
+         
+         
+           
+             
+              <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
           
         </display>
     </data>
@@ -93,26 +181,6 @@
 
     
   <url>
-    <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
-    <lastmod>2016-04-10T01:46:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android开发</title>
-        <pubTime>2016-03-24T11:42:20.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://www.bestzhangjin.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.bestzhangjin.com/2016/03/30/webstorm/</loc>
     <lastmod>2016-04-10T01:34:12.000Z</lastmod>
     <data>
@@ -126,28 +194,6 @@
            
              
               <breadCrumb title="webstorm" url="http://www.bestzhangjin.com/categories/webstorm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
-    <lastmod>2016-04-01T15:20:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>Javaweb框架</title>
-        <pubTime>2016-04-01T06:15:00.000Z</pubTime>
-        
-        <tag>Javaweb</tag>
-         
-        <tag>框架</tag>
-         
-         
-           
-             
-              <breadCrumb title="Javaweb" url="http://www.bestzhangjin.com/categories/Javaweb/"/>
           
         </display>
     </data>
@@ -299,28 +345,6 @@
            
              
               <breadCrumb title="Myeclipse" url="http://www.bestzhangjin.com/categories/Myeclipse/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
-    <lastmod>2016-03-15T13:10:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>Android studio应用技巧</title>
-        <pubTime>2016-01-16T01:29:12.000Z</pubTime>
-        
-        <tag>Android studio</tag>
-         
-        <tag>应用技巧</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android studio" url="http://www.bestzhangjin.com/categories/Android-studio/"/>
           
         </display>
     </data>
@@ -519,30 +543,6 @@
            
              
               <breadCrumb title="博客" url="http://www.bestzhangjin.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
-    <lastmod>2016-01-22T04:17:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>android studio（APP）常见问题与解决方法</title>
-        <pubTime>2016-01-15T05:51:52.000Z</pubTime>
-        
-        <tag>APP</tag>
-         
-        <tag>Android studio</tag>
-         
-        <tag>常见问题</tag>
-         
-         
-           
-             
-              <breadCrumb title="APP" url="http://www.bestzhangjin.com/categories/APP/"/>
           
         </display>
     </data>
