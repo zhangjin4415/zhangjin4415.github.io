@@ -4,6 +4,114 @@
 
     
   <url>
+    <loc>http://www.bestzhangjin.com/2016/06/15/python/</loc>
+    <lastmod>2016-06-20T13:22:45.129Z</lastmod>
+    <data>
+        <display>
+        <title>Python</title>
+        <pubTime>2016-06-15T12:36:00.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://www.bestzhangjin.com/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/15/question/</loc>
+    <lastmod>2016-05-30T14:05:21.710Z</lastmod>
+    <data>
+        <display>
+        <title>软件工程师常见问题汇总</title>
+        <pubTime>2016-03-15T13:23:59.000Z</pubTime>
+        
+        <tag>常见问题</tag>
+         
+        <tag>软件工程师</tag>
+         
+         
+           
+             
+              <breadCrumb title="常见问题" url="http://www.bestzhangjin.com/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
+    <lastmod>2016-05-28T02:10:14.684Z</lastmod>
+    <data>
+        <display>
+        <title>Android开发</title>
+        <pubTime>2016-03-24T11:42:20.000Z</pubTime>
+        
+        <tag>Android</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://www.bestzhangjin.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
+    <lastmod>2016-05-28T01:56:32.926Z</lastmod>
+    <data>
+        <display>
+        <title>android studio（APP）常见问题与解决方法</title>
+        <pubTime>2016-01-15T05:51:52.000Z</pubTime>
+        
+        <tag>APP</tag>
+         
+        <tag>Android studio</tag>
+         
+        <tag>常见问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="APP" url="http://www.bestzhangjin.com/categories/APP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
+    <lastmod>2016-05-12T14:07:32.473Z</lastmod>
+    <data>
+        <display>
+        <title>Javaweb框架</title>
+        <pubTime>2016-04-01T06:15:00.000Z</pubTime>
+        
+        <tag>Javaweb</tag>
+         
+        <tag>框架</tag>
+         
+         
+           
+             
+              <breadCrumb title="Javaweb" url="http://www.bestzhangjin.com/categories/Javaweb/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
     <lastmod>2016-05-12T12:13:23.851Z</lastmod>
     <data>
@@ -26,48 +134,6 @@
 
     
   <url>
-    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
-    <lastmod>2016-05-12T11:11:51.821Z</lastmod>
-    <data>
-        <display>
-        <title>Javaweb框架</title>
-        <pubTime>2016-04-01T06:15:00.000Z</pubTime>
-        
-        <tag>Javaweb</tag>
-         
-        <tag>框架</tag>
-         
-         
-           
-             
-              <breadCrumb title="Javaweb" url="http://www.bestzhangjin.com/categories/Javaweb/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
-    <lastmod>2016-05-09T03:23:25.496Z</lastmod>
-    <data>
-        <display>
-        <title>Android开发</title>
-        <pubTime>2016-03-24T11:42:20.000Z</pubTime>
-        
-        <tag>Android</tag>
-         
-         
-           
-             
-              <breadCrumb title="Android" url="http://www.bestzhangjin.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
     <lastmod>2016-05-08T03:12:00.054Z</lastmod>
     <data>
@@ -83,30 +149,6 @@
            
              
               <breadCrumb title="Android studio" url="http://www.bestzhangjin.com/categories/Android-studio/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
-    <lastmod>2016-05-07T01:53:17.082Z</lastmod>
-    <data>
-        <display>
-        <title>android studio（APP）常见问题与解决方法</title>
-        <pubTime>2016-01-15T05:51:52.000Z</pubTime>
-        
-        <tag>APP</tag>
-         
-        <tag>Android studio</tag>
-         
-        <tag>常见问题</tag>
-         
-         
-           
-             
-              <breadCrumb title="APP" url="http://www.bestzhangjin.com/categories/APP/"/>
           
         </display>
     </data>
@@ -365,28 +407,6 @@
            
              
               <breadCrumb title="杂谈" url="http://www.bestzhangjin.com/categories/%E6%9D%82%E8%B0%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/15/question/</loc>
-    <lastmod>2016-03-15T12:22:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>软件工程师常见问题汇总</title>
-        <pubTime>2016-03-15T13:23:59.000Z</pubTime>
-        
-        <tag>常见问题</tag>
-         
-        <tag>软件工程师</tag>
-         
-         
-           
-             
-              <breadCrumb title="常见问题" url="http://www.bestzhangjin.com/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
           
         </display>
     </data>

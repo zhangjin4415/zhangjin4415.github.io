@@ -61,7 +61,7 @@
 <meta property="og:url" content="http://www.bestzhangjin.com/2016/03/15/question/index.html">
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="好记性不如烂笔头，本文收集了我在学习过程中遇到的常见问题">
-<meta property="og:updated_time" content="2016-03-15T12:22:00.000Z">
+<meta property="og:updated_time" content="2016-05-30T14:05:21.710Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="软件工程师常见问题汇总">
 <meta name="twitter:description" content="好记性不如烂笔头，本文收集了我在学习过程中遇到的常见问题">
@@ -273,6 +273,10 @@
       
         <span itemprop="articleBody"><p>好记性不如烂笔头，本文收集了我在学习过程中遇到的常见问题<br><a id="more"></a></p>
 <h1 id="1-_u7AEF_u53E3_u51B2_u7A81_u95EE_u9898"><a href="#1-_u7AEF_u53E3_u51B2_u7A81_u95EE_u9898" class="headerlink" title="1.端口冲突问题"></a>1.端口冲突问题</h1><p>win+R打开运行，然后输入cmd即可。<br>在dos命令中输入以下命令查询正在被使用的端口号(第二列)以及使用它的程序。<br>命令：netstat -ano<br>看到后面一列是有一个PID，然后把占用端口的PID号记下来。<br>打开任务管理器，选择服务，找到对应PID进程结束进程即可。</p>
+<h1 id="2-ubuntu_u4E2D_u6587_u4E71_u7801-_u6CA1_u6709_u4E2D_u6587_u5E93"><a href="#2-ubuntu_u4E2D_u6587_u4E71_u7801-_u6CA1_u6709_u4E2D_u6587_u5E93" class="headerlink" title="2.ubuntu中文乱码-没有中文库"></a>2.ubuntu中文乱码-没有中文库</h1><p>安装中文语言包：<br>apt-get install language-pack-zh-hans<br>不行的话先更新下源:apt-get update</p>
+<p>用vim配置语言环境变量：<br>vim /etc/environment<br>在下面添加如下两行<br>LANG=”zh_CN.UTF-8″<br>LANGUAGE=”zh_CN:zh:en_US:en”<br>如果你想用英文环境了，改成这两行就OK<br>LANG=”en_US.UTF-8″<br>LANGUAGE=”en_US:en” </p>
+<p>重启Ubuntu Server：<br>reboot </p>
+<p>可以用locale查看一下环境变量：<br>locale</p>
 <hr>
 <p>更新中…………</p>
 </span>
@@ -395,21 +399,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">25</span>
+              <span class="site-state-item-count">26</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -448,7 +452,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-_u7AEF_u53E3_u51B2_u7A81_u95EE_u9898"><span class="nav-number">1.</span> <span class="nav-text">1.端口冲突问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-_u7AEF_u53E3_u51B2_u7A81_u95EE_u9898"><span class="nav-number">1.</span> <span class="nav-text">1.端口冲突问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-ubuntu_u4E2D_u6587_u4E71_u7801-_u6CA1_u6709_u4E2D_u6587_u5E93"><span class="nav-number">2.</span> <span class="nav-text">2.ubuntu中文乱码-没有中文库</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

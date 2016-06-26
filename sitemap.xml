@@ -2,28 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.bestzhangjin.com/2016/06/15/python/</loc>
+    <lastmod>2016-06-20T13:22:45.129Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/15/question/</loc>
+    <lastmod>2016-05-30T14:05:21.710Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
+    <lastmod>2016-05-28T02:10:14.684Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
+    <lastmod>2016-05-28T01:56:32.926Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
+    <lastmod>2016-05-12T14:07:32.473Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
     <lastmod>2016-05-12T12:13:23.851Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
-    <lastmod>2016-05-12T11:11:51.821Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
-    <lastmod>2016-05-09T03:23:25.496Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
     <lastmod>2016-05-08T03:12:00.054Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
-    <lastmod>2016-05-07T01:53:17.082Z</lastmod>
   </url>
   
   <url>
@@ -89,11 +99,6 @@
   <url>
     <loc>http://www.bestzhangjin.com/2016/01/01/yuandan/</loc>
     <lastmod>2016-03-15T12:48:40.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/15/question/</loc>
-    <lastmod>2016-03-15T12:22:00.000Z</lastmod>
   </url>
   
   <url>
