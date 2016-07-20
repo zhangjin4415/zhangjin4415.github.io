@@ -4,8 +4,72 @@
 
     
   <url>
+    <loc>http://www.bestzhangjin.com/2016/07/19/PHP/</loc>
+    <lastmod>2016-07-20T03:36:59.297Z</lastmod>
+    <data>
+        <display>
+        <title>PHP</title>
+        <pubTime>2016-07-19T09:25:00.000Z</pubTime>
+        
+        <tag>PHP</tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="http://www.bestzhangjin.com/categories/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
+    <lastmod>2016-07-16T13:51:06.596Z</lastmod>
+    <data>
+        <display>
+        <title>android studio（APP）常见问题与解决方法</title>
+        <pubTime>2016-01-15T05:51:52.000Z</pubTime>
+        
+        <tag>APP</tag>
+         
+        <tag>Android studio</tag>
+         
+        <tag>常见问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="APP" url="http://www.bestzhangjin.com/categories/APP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/07/06/Ardunio/</loc>
+    <lastmod>2016-07-15T05:06:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>Ardunio</title>
+        <pubTime>2016-07-06T08:28:00.000Z</pubTime>
+        
+        <tag>Ardunio</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ardunio" url="http://www.bestzhangjin.com/categories/Ardunio/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.bestzhangjin.com/2016/06/15/python/</loc>
-    <lastmod>2016-07-09T06:00:54.747Z</lastmod>
+    <lastmod>2016-07-14T07:05:13.525Z</lastmod>
     <data>
         <display>
         <title>Python</title>
@@ -17,6 +81,46 @@
            
              
               <breadCrumb title="Python" url="http://www.bestzhangjin.com/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/07/13/zigbee/</loc>
+    <lastmod>2016-07-13T11:05:58.000Z</lastmod>
+    <data>
+        <display>
+        <title>ZigBee</title>
+        <pubTime>2016-07-13T05:28:00.000Z</pubTime>
+        
+        <tag>ZigBee</tag>
+         
+         
+           
+             
+              <breadCrumb title="ZigBee" url="http://www.bestzhangjin.com/categories/ZigBee/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/07/09/chuanganqi/</loc>
+    <lastmod>2016-07-09T11:50:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>传感器与外部设备</title>
+        <pubTime>2016-07-09T11:18:00.000Z</pubTime>
+        
+        <tag>传感器</tag>
+         
+         
+           
+             
+              <breadCrumb title="传感器" url="http://www.bestzhangjin.com/categories/%E4%BC%A0%E6%84%9F%E5%99%A8/"/>
           
         </display>
     </data>
@@ -59,30 +163,6 @@
            
              
               <breadCrumb title="Android" url="http://www.bestzhangjin.com/categories/Android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
-    <lastmod>2016-05-28T01:56:32.926Z</lastmod>
-    <data>
-        <display>
-        <title>android studio（APP）常见问题与解决方法</title>
-        <pubTime>2016-01-15T05:51:52.000Z</pubTime>
-        
-        <tag>APP</tag>
-         
-        <tag>Android studio</tag>
-         
-        <tag>常见问题</tag>
-         
-         
-           
-             
-              <breadCrumb title="APP" url="http://www.bestzhangjin.com/categories/APP/"/>
           
         </display>
     </data>

@@ -2,8 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.bestzhangjin.com/2016/07/19/PHP/</loc>
+    <lastmod>2016-07-20T03:36:59.297Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
+    <lastmod>2016-07-16T13:51:06.596Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/07/06/Ardunio/</loc>
+    <lastmod>2016-07-15T05:06:06.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.bestzhangjin.com/2016/06/15/python/</loc>
-    <lastmod>2016-07-09T06:00:54.747Z</lastmod>
+    <lastmod>2016-07-14T07:05:13.525Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/07/13/zigbee/</loc>
+    <lastmod>2016-07-13T11:05:58.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/07/09/chuanganqi/</loc>
+    <lastmod>2016-07-09T11:50:24.000Z</lastmod>
   </url>
   
   <url>
@@ -14,11 +39,6 @@
   <url>
     <loc>http://www.bestzhangjin.com/2016/03/24/android/</loc>
     <lastmod>2016-05-28T02:10:14.684Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
-    <lastmod>2016-05-28T01:56:32.926Z</lastmod>
   </url>
   
   <url>
