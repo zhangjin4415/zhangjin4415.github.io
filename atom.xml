@@ -365,7 +365,7 @@
     <link href="http://www.bestzhangjin.com/2016/04/01/Hibernate/"/>
     <id>http://www.bestzhangjin.com/2016/04/01/Hibernate/</id>
     <published>2016-04-01T06:15:00.000Z</published>
-    <updated>2016-09-26T08:06:46.381Z</updated>
+    <updated>2016-09-26T08:21:13.595Z</updated>
     <content type="html"><![CDATA[<p>主要内容：<br><a id="more"></a></p>
 <h1 id="u7B2C_u4E00_u7AE0__u6301_u4E45_u5C42Hibernate"><a href="#u7B2C_u4E00_u7AE0__u6301_u4E45_u5C42Hibernate" class="headerlink" title="第一章 持久层Hibernate"></a>第一章 持久层Hibernate</h1><p>本章介绍：本章讲解Hibernate基础，核心，与Mysql集合开发</p>
 <h2 id="1-Hibernate_u57FA_u7840"><a href="#1-Hibernate_u57FA_u7840" class="headerlink" title="1.Hibernate基础"></a>1.Hibernate基础</h2><p>1.1 介绍<br>Hibernate提供与数据库无关的API接口，可以让开发人员不关心数据库的差异，而是关心业务层的开发。Hibernate对JDBC进行了轻量级的封装。<br>Hibernate是一个JDO工具，通过文件把值对象和数据库表之间建立起映射关系。我们通过操作这些值对象和Hibernate提供的一些基本类就可以达到使用数据库目的。<br>操作数据库经历了三个阶段:操作JDBC,封装JDBC，ORM；这里只是介绍ORM。<br>ORM（Object Relational Mapping）对象关系映射是解决面向对象与关系数据库存在的不匹配的技术，ORM通过描述对象和数据库之间映射的元数据将java对象自动持久化到关系数据库。<br>数据实体3种表现形式：数据实体，数据表，映射对象。<br>部分流行ORM产品：Apache OJB,Hibernate,iBATIS,Cayenne等。<br>持久层框架方向：直接编写JDBC等SQL语句（eg:iBATIS）;O/R Mapping(eg:Hibernate)和JDO技术；EJB中实体Bean技术。</p>
@@ -429,8 +429,27 @@
 <p>1.4 自动生成工具MiddleGen<br>可以选择手写XML映射文件，也可以使用一些工具来生成映射文件。如：XDoclet,MiddleGen,AndroMDA.<br>有一些工具可以实现数据库SQL、Hibernate映射文件、Hibernate持久化类之间的相互转化。<br><img src="/img/hibernate/1.png" alt="image"><br>MiddleGen应用流程：<br>(1)安装Ant<br>MiddleGen依赖于Ant运行，可以在<a href="http://ant.apache.org下载Ant版本apache-ant-1.9.7.bin.zip" target="_blank" rel="external">http://ant.apache.org下载Ant版本apache-ant-1.9.7.bin.zip</a>.<br>Ant是免安装的，解压到安装目录后配置环境变量即可。<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="constant">ANT_HOME</span><span class="symbol">:D</span><span class="symbol">:</span>\<span class="constant">SSH2</span>\apache-ant-<span class="number">1.9</span>.<span class="number">7</span></span><br><span class="line">path添加<span class="symbol">:%ANT_HOME%</span>\bin</span><br></pre></td></tr></table></figure></p>
 <p>添加后输入ant命令有反应就说明安装成功，具体如下：<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\zhang&gt;ant</span><br><span class="line"><span class="keyword">Buildfile: </span><span class="keyword">build.xml </span>does not exist!</span><br><span class="line"><span class="keyword">Build </span>failed</span><br></pre></td></tr></table></figure></p>
 <p>(2)安装MiddleGen<br>下载MiddleGen包，这里下载middlegen-2.1.zip解压<br>安装后使用，鉴于时间问题，这里不在详解，详见《java高手真经-Java web核心框架篇》84页s</p>
-<h2 id="2-Hibernate_u6838_u5FC3"><a href="#2-Hibernate_u6838_u5FC3" class="headerlink" title="2.Hibernate核心"></a>2.Hibernate核心</h2><p>2.1 Hibernate映射文件hbm.xml<br>hbm.xml反映持久化类与关系数据库之间的映射关系。</p>
-<p><hibernate-mapping><br>根元素—-每个hbm.xml文件只有唯一一个。<br>属性列表：<br>| 属性名称  | 描述 | 可选值 | 默认值  | 是否必选  |<br>| ———| —–| ——| ——-| ———-|<br>| package| 指定包名，映射文档没有指定全限定的类名时用其作为包名| | | 否|</hibernate-mapping></p>
+<h2 id="2-Hibernate_u6838_u5FC3"><a href="#2-Hibernate_u6838_u5FC3" class="headerlink" title="2.Hibernate核心"></a>2.Hibernate核心</h2><p>2.1 Hibernate映射文件hbm.xml<br>hbm.xml反映持久化类与关系数据库之间的映射关系。<br>\<hibernate-mapping\><br>根元素—-每个hbm.xml文件只有唯一一个。<br>属性列表：</hibernate-mapping\></p>
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>描述</th>
+<th>可选值</th>
+<th>默认值</th>
+<th>是否必选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>package</td>
+<td>指定包名，映射文档没有指定全限定的类名时用其作为包名</td>
+<td></td>
+<td></td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
 <h2 id="3-Hibernate_u2014_u2014mysql_u5F00_u53D1"><a href="#3-Hibernate_u2014_u2014mysql_u5F00_u53D1" class="headerlink" title="3.Hibernate——mysql开发"></a>3.Hibernate——mysql开发</h2><h1 id="u9519_u8BEF_u603B_u7ED3"><a href="#u9519_u8BEF_u603B_u7ED3" class="headerlink" title="错误总结"></a>错误总结</h1><h2 id="1-hibernate_uFF0C_u81EA_u5DF1_u5199_u7684xxx-hbm-xml_u6587_u4EF6__u51FA_u73B0_u9519_u8BEF_uFF1AAttribute__u201Ccolumn_u201D_must_be_declared_for_element_type_u201Dproperty_u201D"><a href="#1-hibernate_uFF0C_u81EA_u5DF1_u5199_u7684xxx-hbm-xml_u6587_u4EF6__u51FA_u73B0_u9519_u8BEF_uFF1AAttribute__u201Ccolumn_u201D_must_be_declared_for_element_type_u201Dproperty_u201D" class="headerlink" title="1.hibernate，自己写的xxx.hbm.xml文件 出现错误：Attribute “column” must be declared for element type”property”"></a>1.hibernate，自己写的xxx.hbm.xml文件 出现错误：Attribute “column” must be declared for element type”property”</h2><p>因为复制了hibernate.cfg.xml的头部文件<br>&lt;?xmlversion=’1.0’ encoding=’UTF-8’?&gt;<br>&lt;!DOCTYPE hibernate-configuration PUBLIC<br>         “-//Hibernate/Hibernate Configuration DTD 3.0//EN”<br>         “<a href="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;&gt;" target="_blank" rel="external">http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;&gt;</a></p>
 <p>改为mapping的头文件就行了<br>&lt;?xmlversion=”1.0” encoding=”UTF-8”?&gt;<br>&lt;!DOCTYPEhibernate-mapping PUBLIC<br>         “-//Hibernate/Hibernate Mapping DTD 3.0//EN”<br>         “<a href="http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt;" target="_blank" rel="external">http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt;</a></p>
 <h2 id="2-org-hibernate-PropertyNotFoundException_3ACould_not_find_a_setter_for_property_username_in_class_com-zhang-hibernate-User"><a href="#2-org-hibernate-PropertyNotFoundException_3ACould_not_find_a_setter_for_property_username_in_class_com-zhang-hibernate-User" class="headerlink" title="2.org.hibernate.PropertyNotFoundException:Could not find a setter for property username in class com.zhang.hibernate.User"></a>2.org.hibernate.PropertyNotFoundException:Could not find a setter for property username in class com.zhang.hibernate.User</h2><p>编写持久化类User.java时getXXX()、setXXX方法必须如getUsername形式，getUSERNAME、getusername等运行会提示异常</p>

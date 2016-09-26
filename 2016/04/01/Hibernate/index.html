@@ -62,7 +62,7 @@
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：">
 <meta property="og:image" content="http://www.bestzhangjin.com/img/hibernate/1.png">
-<meta property="og:updated_time" content="2016-09-26T08:06:46.381Z">
+<meta property="og:updated_time" content="2016-09-26T08:21:13.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javaweb框架">
 <meta name="twitter:description" content="主要内容：">
@@ -335,8 +335,27 @@
 <p>1.4 自动生成工具MiddleGen<br>可以选择手写XML映射文件，也可以使用一些工具来生成映射文件。如：XDoclet,MiddleGen,AndroMDA.<br>有一些工具可以实现数据库SQL、Hibernate映射文件、Hibernate持久化类之间的相互转化。<br><img src="/img/hibernate/1.png" alt="image"><br>MiddleGen应用流程：<br>(1)安装Ant<br>MiddleGen依赖于Ant运行，可以在<a href="http://ant.apache.org下载Ant版本apache-ant-1.9.7.bin.zip" target="_blank" rel="external">http://ant.apache.org下载Ant版本apache-ant-1.9.7.bin.zip</a>.<br>Ant是免安装的，解压到安装目录后配置环境变量即可。<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="constant">ANT_HOME</span><span class="symbol">:D</span><span class="symbol">:</span>\<span class="constant">SSH2</span>\apache-ant-<span class="number">1.9</span>.<span class="number">7</span></span><br><span class="line">path添加<span class="symbol">:%ANT_HOME%</span>\bin</span><br></pre></td></tr></table></figure></p>
 <p>添加后输入ant命令有反应就说明安装成功，具体如下：<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\zhang&gt;ant</span><br><span class="line"><span class="keyword">Buildfile: </span><span class="keyword">build.xml </span>does not exist!</span><br><span class="line"><span class="keyword">Build </span>failed</span><br></pre></td></tr></table></figure></p>
 <p>(2)安装MiddleGen<br>下载MiddleGen包，这里下载middlegen-2.1.zip解压<br>安装后使用，鉴于时间问题，这里不在详解，详见《java高手真经-Java web核心框架篇》84页s</p>
-<h2 id="2-Hibernate_u6838_u5FC3"><a href="#2-Hibernate_u6838_u5FC3" class="headerlink" title="2.Hibernate核心"></a>2.Hibernate核心</h2><p>2.1 Hibernate映射文件hbm.xml<br>hbm.xml反映持久化类与关系数据库之间的映射关系。</p>
-<p><hibernate-mapping><br>根元素—-每个hbm.xml文件只有唯一一个。<br>属性列表：<br>| 属性名称  | 描述 | 可选值 | 默认值  | 是否必选  |<br>| ———| —–| ——| ——-| ———-|<br>| package| 指定包名，映射文档没有指定全限定的类名时用其作为包名| | | 否|</hibernate-mapping></p>
+<h2 id="2-Hibernate_u6838_u5FC3"><a href="#2-Hibernate_u6838_u5FC3" class="headerlink" title="2.Hibernate核心"></a>2.Hibernate核心</h2><p>2.1 Hibernate映射文件hbm.xml<br>hbm.xml反映持久化类与关系数据库之间的映射关系。<br>\<hibernate-mapping\><br>根元素—-每个hbm.xml文件只有唯一一个。<br>属性列表：</hibernate-mapping\></p>
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>描述</th>
+<th>可选值</th>
+<th>默认值</th>
+<th>是否必选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>package</td>
+<td>指定包名，映射文档没有指定全限定的类名时用其作为包名</td>
+<td></td>
+<td></td>
+<td>否</td>
+</tr>
+</tbody>
+</table>
 <h2 id="3-Hibernate_u2014_u2014mysql_u5F00_u53D1"><a href="#3-Hibernate_u2014_u2014mysql_u5F00_u53D1" class="headerlink" title="3.Hibernate——mysql开发"></a>3.Hibernate——mysql开发</h2><h1 id="u9519_u8BEF_u603B_u7ED3"><a href="#u9519_u8BEF_u603B_u7ED3" class="headerlink" title="错误总结"></a>错误总结</h1><h2 id="1-hibernate_uFF0C_u81EA_u5DF1_u5199_u7684xxx-hbm-xml_u6587_u4EF6__u51FA_u73B0_u9519_u8BEF_uFF1AAttribute__u201Ccolumn_u201D_must_be_declared_for_element_type_u201Dproperty_u201D"><a href="#1-hibernate_uFF0C_u81EA_u5DF1_u5199_u7684xxx-hbm-xml_u6587_u4EF6__u51FA_u73B0_u9519_u8BEF_uFF1AAttribute__u201Ccolumn_u201D_must_be_declared_for_element_type_u201Dproperty_u201D" class="headerlink" title="1.hibernate，自己写的xxx.hbm.xml文件 出现错误：Attribute “column” must be declared for element type”property”"></a>1.hibernate，自己写的xxx.hbm.xml文件 出现错误：Attribute “column” must be declared for element type”property”</h2><p>因为复制了hibernate.cfg.xml的头部文件<br>&lt;?xmlversion=’1.0’ encoding=’UTF-8’?&gt;<br>&lt;!DOCTYPE hibernate-configuration PUBLIC<br>         “-//Hibernate/Hibernate Configuration DTD 3.0//EN”<br>         “<a href="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;&gt;" target="_blank" rel="external">http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;&gt;</a></p>
 <p>改为mapping的头文件就行了<br>&lt;?xmlversion=”1.0” encoding=”UTF-8”?&gt;<br>&lt;!DOCTYPEhibernate-mapping PUBLIC<br>         “-//Hibernate/Hibernate Mapping DTD 3.0//EN”<br>         “<a href="http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt;" target="_blank" rel="external">http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt;</a></p>
 <h2 id="2-org-hibernate-PropertyNotFoundException_3ACould_not_find_a_setter_for_property_username_in_class_com-zhang-hibernate-User"><a href="#2-org-hibernate-PropertyNotFoundException_3ACould_not_find_a_setter_for_property_username_in_class_com-zhang-hibernate-User" class="headerlink" title="2.org.hibernate.PropertyNotFoundException:Could not find a setter for property username in class com.zhang.hibernate.User"></a>2.org.hibernate.PropertyNotFoundException:Could not find a setter for property username in class com.zhang.hibernate.User</h2><p>编写持久化类User.java时getXXX()、setXXX方法必须如getUsername形式，getUSERNAME、getusername等运行会提示异常</p>
