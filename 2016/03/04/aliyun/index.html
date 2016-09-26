@@ -66,7 +66,7 @@
 <meta property="og:image" content="http://www.bestzhangjin.com/img/aliyun/5.png">
 <meta property="og:image" content="http://www.bestzhangjin.com/img/aliyun/1.png">
 <meta property="og:image" content="http://www.bestzhangjin.com/img/aliyun/2.png">
-<meta property="og:updated_time" content="2016-03-04T09:51:32.000Z">
+<meta property="og:updated_time" content="2016-09-14T02:09:13.672Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里云ECS（linux）搭建web环境">
 <meta name="twitter:description" content="主要内容：阿里云ECS（linux）搭建web环境">
@@ -291,19 +291,11 @@
 <h2 id="3-3_tomcat_u5B89_u88C5"><a href="#3-3_tomcat_u5B89_u88C5" class="headerlink" title="3.3 tomcat安装"></a>3.3 tomcat安装</h2><p>(1)下载<br>官网下载：<a href="http://tomcat.apache.org/download-80.cgi" target="_blank" rel="external">http://tomcat.apache.org/download-80.cgi</a><br>本文下载的是apache-tomcat-8.0.32.tar.gz<br>tomcat需要java环境，所以先安装了jdk</p>
 <p>(2)安装<br>解压：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">tar</span> <span class="tag">-xvzf</span> <span class="tag">apache-tomcat-8</span><span class="class">.0</span><span class="class">.32</span><span class="class">.tar</span><span class="class">.gz</span></span><br></pre></td></tr></table></figure></p>
 <p>解压得到文件夹:apache-tomcat-8.0.32<br>当解压成功以后，我们直接进入到tomcat bin目录中。<br>输入 ./startup.sh启动Tomcat，假如显示Tomcat started，则表明启动成功。<br>tomcat默认是8080端口。<br>所以浏览器上输入地址：<a href="http://你的服务器地址:8080/就可以访问到默认的tomcat主页面了" target="_blank" rel="external">http://你的服务器地址:8080/就可以访问到默认的tomcat主页面了</a></p>
-<p>(3)更改tomcat的8080端口为80端口<br>找到tomcat的安装目录下的conf下的server.xml将8080改为80<br>找到如下一段：<br><!-- A "Connector" represents an endpoint by which requests are received  
-         and responses are returned. Documentation at :  
-         Java HTTP Connector: /docs/config/http.html (blocking & non-blocking)  
-         Java AJP  Connector: /docs/config/ajp.html  
-         APR (HTTP/AJP) Connector: /docs/apr.html  
-         Define a non-SSL HTTP/1.1 Connector on port 8080  
-    --></p>
-<connectorport="8080"protocol="http 1.1"="" connectiontimeout="20000" redirectport="8443" uriencoding="UTF-8">
-
+<p>(3)更改tomcat的8080端口为80端口<br>找到tomcat的安装目录下的conf下的server.xml将8080改为80<br>找到如下一段：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- A "Connector" represents an endpoint by which requests are received  </span><br><span class="line">         and responses are returned. Documentation at :  </span><br><span class="line">         Java HTTP Connector: /docs/config/http.html (blocking &amp; non-blocking)  </span><br><span class="line">         Java AJP  Connector: /docs/config/ajp.html  </span><br><span class="line">         APR (HTTP/AJP) Connector: /docs/apr.html  </span><br><span class="line">         Define a non-SSL HTTP/1.1 Connector on port 8080  </span><br><span class="line">    --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">Connectorport="8080"protocol="HTTP</span>/<span class="attribute">1.1</span>"</span><br><span class="line"><span class="attribute">connectionTimeout</span>=<span class="value">"20000"</span></span><br><span class="line"><span class="attribute">redirectPort</span>=<span class="value">"8443"</span><span class="value">URIEncoding="UTF-8"</span>/&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>把那上面port=”8080”里面的8080改成80就可以了.保存后，记的重启下tomcat，这样就可以了。<br>现在直接<a href="http://你的服务器ip地址/就可以访问了" target="_blank" rel="external">http://你的服务器ip地址/就可以访问了</a></p>
 <h1 id="4-_u670D_u52A1_u5668ip_u4E0E_u57DF_u540D_u7ED1_u5B9A"><a href="#4-_u670D_u52A1_u5668ip_u4E0E_u57DF_u540D_u7ED1_u5B9A" class="headerlink" title="4.服务器ip与域名绑定"></a>4.服务器ip与域名绑定</h1><p>我在阿里云处买的万维网域名。设置比较简单。<br>登录阿里云，点击域名-&gt;解析-&gt;设置网站解析-&gt;输入ip地址提交即可。<br>然后输入你的域名就可以访问服务器。</p>
 <h1 id="5-_u4E0A_u4F20_u7F51_u7AD9"><a href="#5-_u4E0A_u4F20_u7F51_u7AD9" class="headerlink" title="5.上传网站"></a>5.上传网站</h1><p>将编写好的网站传入服务器上的tomcat对应目录下就可以实现访问。</p>
-</connectorport="8080"protocol="http></span>
+</span>
       
     </div>
 
