@@ -62,9 +62,9 @@
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：">
 <meta property="og:image" content="http://www.bestzhangjin.com/img/hibernate/1.png">
-<meta property="og:image" content="http://www.bestzhangjin.com/img/hibernate/2.jpg">
-<meta property="og:image" content="http://www.bestzhangjin.com/img/hibernate/3.jpg">
-<meta property="og:updated_time" content="2016-09-26T09:20:29.304Z">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/hibernate/2.png">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/hibernate/3.png">
+<meta property="og:updated_time" content="2016-09-26T09:39:37.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javaweb框架">
 <meta name="twitter:description" content="主要内容：">
@@ -403,7 +403,7 @@
 </table>
 <p>指定了schema和catalog属性则表名会加上所指定的schema和catalog的名字扩展为全限定名，如果没有指定，则表名不会使用全限定名。<br>auto-import属性默认让我们在查询语言中可以使用非全限定名的类名，如果两个非全限定名是一样的（两个类名字一样，包不一样），那么应该设置auto-import=”false”,否则会出现异常。</p>
 <p>备注：&lt;hibernate-mapping&gt;元素允许嵌套多个&lt;class&gt;映射，但建议一个持久化类一个映射文件，并以持久化类名命名。</p>
-<p>&lt;class&gt;<br>&lt;hibernate-mapping&gt;的子元素，用以定义一个持久化类与数据表的映射关系。<br>属性列表：<br><img src="/img/hibernate/2.jpg" alt="image"><br><img src="/img/hibernate/3.jpg" alt="image"></p>
+<p>&lt;class&gt;<br>&lt;hibernate-mapping&gt;的子元素，用以定义一个持久化类与数据表的映射关系。<br>属性列表：<br><img src="/img/hibernate/2.png" alt="image"><br><img src="/img/hibernate/3.png" alt="image"></p>
 <h2 id="3-Hibernate_u2014_u2014mysql_u5F00_u53D1"><a href="#3-Hibernate_u2014_u2014mysql_u5F00_u53D1" class="headerlink" title="3.Hibernate——mysql开发"></a>3.Hibernate——mysql开发</h2><h1 id="u9519_u8BEF_u603B_u7ED3"><a href="#u9519_u8BEF_u603B_u7ED3" class="headerlink" title="错误总结"></a>错误总结</h1><h2 id="1-hibernate_uFF0C_u81EA_u5DF1_u5199_u7684xxx-hbm-xml_u6587_u4EF6__u51FA_u73B0_u9519_u8BEF_uFF1AAttribute__u201Ccolumn_u201D_must_be_declared_for_element_type_u201Dproperty_u201D"><a href="#1-hibernate_uFF0C_u81EA_u5DF1_u5199_u7684xxx-hbm-xml_u6587_u4EF6__u51FA_u73B0_u9519_u8BEF_uFF1AAttribute__u201Ccolumn_u201D_must_be_declared_for_element_type_u201Dproperty_u201D" class="headerlink" title="1.hibernate，自己写的xxx.hbm.xml文件 出现错误：Attribute “column” must be declared for element type”property”"></a>1.hibernate，自己写的xxx.hbm.xml文件 出现错误：Attribute “column” must be declared for element type”property”</h2><p>因为复制了hibernate.cfg.xml的头部文件<br>&lt;?xmlversion=’1.0’ encoding=’UTF-8’?&gt;<br>&lt;!DOCTYPE hibernate-configuration PUBLIC<br>         “-//Hibernate/Hibernate Configuration DTD 3.0//EN”<br>         “<a href="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;&gt;" target="_blank" rel="external">http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;&gt;</a></p>
 <p>改为mapping的头文件就行了<br>&lt;?xmlversion=”1.0” encoding=”UTF-8”?&gt;<br>&lt;!DOCTYPEhibernate-mapping PUBLIC<br>         “-//Hibernate/Hibernate Mapping DTD 3.0//EN”<br>         “<a href="http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt;" target="_blank" rel="external">http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt;</a></p>
 <h2 id="2-org-hibernate-PropertyNotFoundException_3ACould_not_find_a_setter_for_property_username_in_class_com-zhang-hibernate-User"><a href="#2-org-hibernate-PropertyNotFoundException_3ACould_not_find_a_setter_for_property_username_in_class_com-zhang-hibernate-User" class="headerlink" title="2.org.hibernate.PropertyNotFoundException:Could not find a setter for property username in class com.zhang.hibernate.User"></a>2.org.hibernate.PropertyNotFoundException:Could not find a setter for property username in class com.zhang.hibernate.User</h2><p>编写持久化类User.java时getXXX()、setXXX方法必须如getUsername形式，getUSERNAME、getusername等运行会提示异常</p>
