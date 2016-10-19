@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.bestzhangjin.com/"/>
-  <updated>2016-10-10T12:13:22.361Z</updated>
+  <updated>2016-10-09T08:59:12.158Z</updated>
   <id>http://www.bestzhangjin.com/</id>
   
   <author>
@@ -13,25 +13,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[Ext JS]]></title>
-    <link href="http://www.bestzhangjin.com/2016/10/09/ext_js/"/>
-    <id>http://www.bestzhangjin.com/2016/10/09/ext_js/</id>
-    <published>2016-10-09T08:47:28.000Z</published>
-    <updated>2016-10-10T12:13:22.361Z</updated>
-    <content type="html"><![CDATA[<p>ExtJS可以用来开发RIA也即富客户端的AJAX应用，是一个用javascript写的，主要用于创建前端用户界面，是一个与后台技术无关的前端ajax框架<br><a id="more"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>ExtJS可以用来开发RIA也即富客户端的AJAX应用，是一个用javascript写的，主要用于创建前端用户界面，是一个与后台技术无关的前端ajax框架<br>]]>
-    
-    </summary>
-    
-      <category term="Ext JS" scheme="http://www.bestzhangjin.com/tags/Ext-JS/"/>
-    
-      <category term="前端" scheme="http://www.bestzhangjin.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[AJAX]]></title>
@@ -48,6 +29,25 @@
     </summary>
     
       <category term="AJAX" scheme="http://www.bestzhangjin.com/tags/AJAX/"/>
+    
+      <category term="前端" scheme="http://www.bestzhangjin.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Ext JS]]></title>
+    <link href="http://www.bestzhangjin.com/2016/10/09/ext_js/"/>
+    <id>http://www.bestzhangjin.com/2016/10/09/ext_js/</id>
+    <published>2016-10-09T08:47:28.000Z</published>
+    <updated>2016-10-10T12:13:22.361Z</updated>
+    <content type="html"><![CDATA[<p>ExtJS可以用来开发RIA也即富客户端的AJAX应用，是一个用javascript写的，主要用于创建前端用户界面，是一个与后台技术无关的前端ajax框架<br><a id="more"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>ExtJS可以用来开发RIA也即富客户端的AJAX应用，是一个用javascript写的，主要用于创建前端用户界面，是一个与后台技术无关的前端ajax框架<br>]]>
+    
+    </summary>
+    
+      <category term="Ext JS" scheme="http://www.bestzhangjin.com/tags/Ext-JS/"/>
     
       <category term="前端" scheme="http://www.bestzhangjin.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
@@ -709,6 +709,25 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Web页面设计技巧总结]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/30/Web_skill/"/>
+    <id>http://www.bestzhangjin.com/2016/03/30/Web_skill/</id>
+    <published>2016-03-30T01:30:00.000Z</published>
+    <updated>2016-03-30T01:31:46.000Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：Web页面设计技巧总结<br><a id="more"></a></p>
+<h1 id="u7B2C_u4E00_u7AE0__u7F51_u9875_u63D2_u5165_u65E5_u5386"><a href="#u7B2C_u4E00_u7AE0__u7F51_u9875_u63D2_u5165_u65E5_u5386" class="headerlink" title="第一章 网页插入日历"></a>第一章 网页插入日历</h1>]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：Web页面设计技巧总结<br>]]>
+    
+    </summary>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[jQuery教程]]></title>
     <link href="http://www.bestzhangjin.com/2016/03/30/jQuery/"/>
     <id>http://www.bestzhangjin.com/2016/03/30/jQuery/</id>
@@ -857,25 +876,6 @@
       <category term="jQuery" scheme="http://www.bestzhangjin.com/tags/jQuery/"/>
     
       <category term="jQuery" scheme="http://www.bestzhangjin.com/categories/jQuery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Web页面设计技巧总结]]></title>
-    <link href="http://www.bestzhangjin.com/2016/03/30/Web_skill/"/>
-    <id>http://www.bestzhangjin.com/2016/03/30/Web_skill/</id>
-    <published>2016-03-30T01:30:00.000Z</published>
-    <updated>2016-03-30T01:31:46.000Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：Web页面设计技巧总结<br><a id="more"></a></p>
-<h1 id="u7B2C_u4E00_u7AE0__u7F51_u9875_u63D2_u5165_u65E5_u5386"><a href="#u7B2C_u4E00_u7AE0__u7F51_u9875_u63D2_u5165_u65E5_u5386" class="headerlink" title="第一章 网页插入日历"></a>第一章 网页插入日历</h1>]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容：Web页面设计技巧总结<br>]]>
-    
-    </summary>
-    
-      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
