@@ -61,7 +61,8 @@
 <meta property="og:url" content="http://www.bestzhangjin.com/2016/10/20/bucong/index.html">
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="千里之行始于足下，千里之堤溃于蚁穴">
-<meta property="og:updated_time" content="2016-10-20T02:43:07.016Z">
+<meta property="og:image" content="http://www.bestzhangjin.com/img/bucong/1.png">
+<meta property="og:updated_time" content="2016-10-20T08:16:53.684Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="孤陋寡闻">
 <meta name="twitter:description" content="千里之行始于足下，千里之堤溃于蚁穴">
@@ -282,6 +283,20 @@
 </li>
 </ol>
 <p>二、位域的使用位域的使用和结构成员的使用相同，其一般形式为： 位域变量名·位域名 位域允许用各种格式输出。<br>main(){<br>struct bs<br>{<br>unsigned a:1;<br>unsigned b:3;<br>unsigned c:4;<br>} bit,*pbit;<br>bit.a=1;<br>bit.b=7;<br>bit.c=15;<br>printf(“%d,%d,%d\n”,bit.a,bit.b,bit.c);<br>pbit=&bit;<br>pbit-&gt;a=0;<br>pbit-&gt;b&amp;=3;<br>pbit-&gt;c|=1;<br>printf(“%d,%d,%d\n”,pbit-&gt;a,pbit-&gt;b,pbit-&gt;c);<br>}<br>上例程序中定义了位域结构bs，三个位域为a,b,c。说明了bs类型的变量bit和指向bs类型的指针变量pbit。这表示位域也是可以使用指针的。<br>程序的9、10、11三行分别给三个位域赋值。( 应注意赋值不能超过该位域的允许范围)程序第12行以整型量格式输出三个域的内容。第13行把位域变量bit的地址送给指针变量pbit。第14行用指针方式给位域a重新赋值，赋为0。第15行使用了复合的位运算符”&amp;=”， 该行相当于： pbit-&gt;b=pbit-&gt;b&amp;3位域b中原有值为7，与3作按位与运算的结果为3(111&amp;011=011,十进制值为3)。同样，程序第16行中使用了复合位运算”|=”， 相当于： pbit-&gt;c=pbit-&gt;c|1其结果为15。程序第17行用指针方式输出了这三个域的值。</p>
+<h2 id="u94FE_u8868_u56DE_u8DEF_u95EE_u9898"><a href="#u94FE_u8868_u56DE_u8DEF_u95EE_u9898" class="headerlink" title="链表回路问题"></a>链表回路问题</h2><p>来自：<a href="http://www.cnblogs.com/kqingchao/archive/2011/07/06/whether_there_is_a_loop_in_link.html" target="_blank" rel="external">http://www.cnblogs.com/kqingchao/archive/2011/07/06/whether_there_is_a_loop_in_link.html</a><br>如果你曾经想过要参加面试，像我一样，你一定看过这个问题：如何判断链表中存在环路。（我不太清楚这个问题的应用在哪里，烦请各位读者能够提示一下。）</p>
+<p>先简单说一下我之前看到的方法。</p>
+<p>方法一：蛮力法。</p>
+<p>方法二：在链表中增加一个域visited，初始化都为0，从链表的头部开始走，每走过一个链表就标记visited为1，如果要访问的下一个节点的visited域为1，那么证明链表中有环。</p>
+<p>方法三：如果不能增加域，可以设置一个数组，将已经访问的链表节点依次放入到数组中，在访问下一个节点时，如果这个节点的地址已经在数组中，那么也能证明链表中有环。</p>
+<p>进入正题之前，先简单说一下今天的面试。今天下午我参加面试的时候也被问到了这个问题，面试官是个南开的MM。似乎她也意识到诸如此类的问题已经在网上司空见惯，所以就试探性的问我是不是之前已经在网上看到了方法。我很老实，回答：嗯。我俩相视而笑。</p>
+<p>然后，她又问我一个问题：如何找到一个链表的中间元素？我想了想，灵光一闪，说：设置两个指针p和q，p一次走一下，q一次走两下，这样当q走到链表的尾部的时候，p应该正好走到链表的中间（我当时很佩服我自己。。。）。那个MM笑了一下，表示赞同，接下来随口的一句话把我带入了漩涡：嗯，刚才那个判断链表是否有环的问题也可以用这个方法。顿时，我脸上呈现出迷茫的表情，好奇心驱使着我问道：真的？MM一看我竟然不知道这个方法，说：哦，原来你不知道啊！正好，你想想用你刚才说的方法解决一下链表有环的问题。同志们，好奇心害死猫啊！</p>
+<p>然后我就囧了，折腾了半天，画了个链表，在上面试着画了一下，发现如果链表有环，有可能q会追上p，相当与长跑中的套圈。但是，有一个问题：p是不是一定会和q重合？</p>
+<p>这个问题看起来有些复杂，我们现在来抽象一下，这个问题不是很难。</p>
+<p>假设此时p点刚刚进入到链表中的环中，q在环中的某一个位置，如图所示。<br><img src="/img/bucong/1.png" alt="image"><br>设t时间后，p和q在环中的某一点相遇，初始时p和q相隔k个节点（0&lt;=k&lt;=n-1，其中n为环中的节点数；图中p和q相隔3个节点，而不是2个：因为假如q不动，p需要经过3步移动才可以和q重合），那么可得：</p>
+<p>t(mod n) = k + 2t(mod n)</p>
+<p>那么，对任意的正整数m，使得：t + mn  = k + 2t</p>
+<p>那么显然此时 t = mn-k，m&gt;=1。</p>
+<p>靠！原来这么简单。。。</p>
 </span>
       
     </div>
@@ -449,7 +464,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u4F4D_u57DF"><span class="nav-number">1.</span> <span class="nav-text">位域</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u4F4D_u57DF"><span class="nav-number">1.</span> <span class="nav-text">位域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u94FE_u8868_u56DE_u8DEF_u95EE_u9898"><span class="nav-number">2.</span> <span class="nav-text">链表回路问题</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
