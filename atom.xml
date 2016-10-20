@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.bestzhangjin.com/"/>
-  <updated>2016-10-19T05:10:11.409Z</updated>
+  <updated>2016-10-20T02:43:07.016Z</updated>
   <id>http://www.bestzhangjin.com/</id>
   
   <author>
@@ -15,11 +15,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[AJAX技术]]></title>
+    <title><![CDATA[孤陋寡闻]]></title>
+    <link href="http://www.bestzhangjin.com/2016/10/20/bucong/"/>
+    <id>http://www.bestzhangjin.com/2016/10/20/bucong/</id>
+    <published>2016-10-20T02:40:20.000Z</published>
+    <updated>2016-10-20T02:43:07.016Z</updated>
+    <content type="html"><![CDATA[<p>千里之行始于足下，千里之堤溃于蚁穴<br><a id="more"></a></p>
+<h2 id="u4F4D_u57DF"><a href="#u4F4D_u57DF" class="headerlink" title="位域"></a>位域</h2><p>引用自：<a href="http://bbs.csdn.net/topics/330120699" target="_blank" rel="external">http://bbs.csdn.net/topics/330120699</a><br>有些信息在存储时，并不需要占用一个完整的字节， 而只需占几个或一个二进制位。例如在存放一个开关量时，只有0和1 两种状态， 用一位二进位即可。为了节省存储空间，并使处理简便，Ｃ语言又提供了一种数据结构，称为“位域”或“位段”。所谓“位域”是把一个字节中的二进位划分为几个不同的区域， 并说明每个区域的位数。每个域有一个域名，允许在程序中按域名进行操作。 这样就可以把几个不同的对象用一个字节的二进制位域来表示。一、位域的定义和位域变量的说明位域定义与结构定义相仿，其形式为：<br>struct 位域结构名<br>{ 位域列表 };<br>其中位域列表的形式为： 类型说明符 位域名：位域长度<br>例如：<br>struct bs<br>{<br>int a:8;<br>int b:2;<br>int c:6;<br>};<br>位域变量的说明与结构变量说明的方式相同。 可采用先定义后说明，同时定义说明或者直接说明这三种方式。例如：<br>struct bs<br>{<br>int a:8;<br>int b:2;<br>int c:6;<br>}data;<br>说明data为bs变量，共占两个字节。其中位域a占8位，位域b占2位，位域c占6位。对于位域的定义尚有以下几点说明：</p>
+<ol>
+<li><p>一个位域必须存储在同一个字节中，不能跨两个字节。如一个字节所剩空间不够存放另一位域时，应从下一单元起存放该位域。也可以有意使某位域从下一单元开始。例如：<br>struct bs<br>{<br>unsigned a:4<br>unsigned :0 /<em>空域</em>/<br>unsigned b:4 /<em>从下一单元开始存放</em>/<br>unsigned c:4<br>}<br>在这个位域定义中，a占第一字节的4位，后4位填0表示不使用，b从第二字节开始，占用4位，c占用4位。</p>
+</li>
+<li><p>由于位域不允许跨两个字节，因此位域的长度不能大于一个字节的长度，也就是说不能超过8位二进位。</p>
+</li>
+<li><p>位域可以无位域名，这时它只用来作填充或调整位置。无名的位域是不能使用的。例如：<br>struct k<br>{<br>int a:1<br>int :2 /<em>该2位不能使用</em>/<br>int b:3<br>int c:2<br>};<br>从以上分析可以看出，位域在本质上就是一种结构类型， 不过其成员是按二进位分配的。</p>
+</li>
+</ol>
+<p>二、位域的使用位域的使用和结构成员的使用相同，其一般形式为： 位域变量名·位域名 位域允许用各种格式输出。<br>main(){<br>struct bs<br>{<br>unsigned a:1;<br>unsigned b:3;<br>unsigned c:4;<br>} bit,*pbit;<br>bit.a=1;<br>bit.b=7;<br>bit.c=15;<br>printf(“%d,%d,%d\n”,bit.a,bit.b,bit.c);<br>pbit=&bit;<br>pbit-&gt;a=0;<br>pbit-&gt;b&amp;=3;<br>pbit-&gt;c|=1;<br>printf(“%d,%d,%d\n”,pbit-&gt;a,pbit-&gt;b,pbit-&gt;c);<br>}<br>上例程序中定义了位域结构bs，三个位域为a,b,c。说明了bs类型的变量bit和指向bs类型的指针变量pbit。这表示位域也是可以使用指针的。<br>程序的9、10、11三行分别给三个位域赋值。( 应注意赋值不能超过该位域的允许范围)程序第12行以整型量格式输出三个域的内容。第13行把位域变量bit的地址送给指针变量pbit。第14行用指针方式给位域a重新赋值，赋为0。第15行使用了复合的位运算符”&amp;=”， 该行相当于： pbit-&gt;b=pbit-&gt;b&amp;3位域b中原有值为7，与3作按位与运算的结果为3(111&amp;011=011,十进制值为3)。同样，程序第16行中使用了复合位运算”|=”， 相当于： pbit-&gt;c=pbit-&gt;c|1其结果为15。程序第17行用指针方式输出了这三个域的值。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>千里之行始于足下，千里之堤溃于蚁穴<br>]]>
+    
+    </summary>
+    
+      <category term="孤陋寡闻" scheme="http://www.bestzhangjin.com/tags/%E5%AD%A4%E9%99%8B%E5%AF%A1%E9%97%BB/"/>
+    
+      <category term="知识补充" scheme="http://www.bestzhangjin.com/categories/%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[AJAX]]></title>
     <link href="http://www.bestzhangjin.com/2016/10/09/ajax/"/>
     <id>http://www.bestzhangjin.com/2016/10/09/ajax/</id>
     <published>2016-10-09T08:47:28.000Z</published>
-    <updated>2016-10-19T05:10:11.409Z</updated>
+    <updated>2016-10-19T05:13:26.088Z</updated>
     <content type="html"><![CDATA[<p>AJAX是一种创建交互式网页应用的网页开发技术。<br><a id="more"></a></p>
 <h1 id="u4ECB_u7ECD"><a href="#u4ECB_u7ECD" class="headerlink" title="介绍"></a>介绍</h1><p>AJAX即“Asynchronous Javascript And XML”（异步JavaScript和XML），是指一种创建交互式网页应用的网页开发技术。<br>传统的网页（不使用 AJAX）如果需要更新内容，必须重载整个网页页面。<br>AJAX不是一种新的编程语言，而是一种用于创建更好更快以及交互性更强的Web应用程序的技术。<br>使用Javascript向服务器提出请求并处理响应而不阻塞用户！核心对象XMLHTTPRequest。通过这个对象，您的 JavaScript 可在不重载页面的情况与Web服务器交换数据，即在不需要刷新页面的情况下，就可以产生局部刷新的效果。<br>AJAX应用程序与浏览器和平台无关的！</p>
 ]]></content>
@@ -1840,41 +1869,6 @@
       <category term="Web框架" scheme="http://www.bestzhangjin.com/tags/Web%E6%A1%86%E6%9E%B6/"/>
     
       <category term="Struts 2" scheme="http://www.bestzhangjin.com/categories/Struts-2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[网页设计之Html+css+javascript篇]]></title>
-    <link href="http://www.bestzhangjin.com/2016/03/12/html_css_javascript/"/>
-    <id>http://www.bestzhangjin.com/2016/03/12/html_css_javascript/</id>
-    <published>2016-03-12T10:53:03.000Z</published>
-    <updated>2016-03-15T11:40:24.000Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：Html，css，javascript<br><a id="more"></a></p>
-<!--more-->
-<h1 id="u7B2C_u4E00_u7AE0__u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B"><a href="#u7B2C_u4E00_u7AE0__u7F51_u9875_u57FA_u7840_u4E0E_u7F51_u7AD9_u5F00_u53D1_u6D41_u7A0B" class="headerlink" title="第一章 网页基础与网站开发流程"></a>第一章 网页基础与网站开发流程</h1><h2 id="1-_u8BA4_u8BC6_u7F51_u9875"><a href="#1-_u8BA4_u8BC6_u7F51_u9875" class="headerlink" title="1.认识网页"></a>1.认识网页</h2><p>网站由网页组成，需要域名和虚拟主机才能访问。<br>网页就是一个文件，通常是HTML文件，扩展名有.html、.htm、.asp、.aspx、.php、.jsp等。<br>动态网页是通过网页脚本与语言自动处理、自动更新的页面，如论坛中的帖子就是通过网站服务器运行程序，自动处理信息，按照流程更新网页。动态网页一般以.asp、.aspx、.php、.jsp作为文件扩展名，不同的扩展名的动态网页文件代表不同的服务器技术，要开发动态网站，需要先指定一种服务器端技术，目前动态网页服务器技术主要有CGI、ASP/ASP.NET、PHP、JSP等。<br>CGI:一种通用的网关接口，是外部程序与网页服务器之间的标准编程接口，可以使用不同的语言写CGI程序，如VB,Delphi,C/C++等，可以将写好的CGI代码放在网页服务器的计算机上运行，再将其运行结果通过网页服务器传输到客服端的网页浏览器上。CGI接收低、编写代码困难、效率低，现在基本不用。<br>ASP：在CGI技术基础上由微软开发的一种快速、简便的服务器技术，门槛低、功能强大，较为流行。<br>ASP.NET：微软在ASP基础上退出的一种服务器技术，解决了原来ASP技术的服务器代码与HTML混合导致页面冗长而复杂、程序难以理解的问题，而且能够与浏览器独立，支持VB.NET,C#、VC++.NET、JS.NET四种编程语言。<br>PHP:是一种HTML内嵌式语言，与微软的ASP相似，开放免费，广泛使用。<br>JSP:SUN公司推出的网站开放技术，是将纯Java代码嵌入HTML中实现动态功能的技术，已成为ASP有力竞争者。<br>ASP与JSP区别：<br>明显区别：ASP使用编程语言是VBScript之类的脚本语言，JSP使用的是Java。<br>本质区别：ASP的VBScript代码被ASP引擎解释执行，而JSP脚本在第一次被编译成Servlet并由java虚拟机执行。</p>
-<p>静态网页与动态网页<br>静态网页：<br><em>使用语言HTML
-</em>每个网页都有一个固定URL,网页URL以.htm、.html、.shtml等常见形式为后缀，不含有“？”<br><em>静态网页是实实在在保存网站服务器上的文件，每个网页是一个独立文件
-</em>静态网页内容相对稳定，容易被搜索引擎检索<br><em>没有数据库支持，当网站信息量大时完全依靠静态网页制作方式比较困难
-</em>交互性差，在功能方面有很大限制<br>动态网页：<br><em>使用语言HTML+ASP,HTML+PHP,HTML+JSP等
-</em>以数据库为基础，可以大大减少网站维护工作<br><em>动态网页技术可以实现更多的功能
-</em>不是独立存在于服务器上的独立网页文件，只有当用户请求服务器时才返回一个完整的网页<br>*动态网页中“？”对搜索引擎检索存在一定问题，搜索引擎的机器人一般不会抓取URL字符串的“？”，所以采用动态网站进行搜索引擎推广时需要做一定的技术处理才能适应搜索要求</p>
-<hr>
-<p>更新中…………</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容：Html，css，javascript<br>]]>
-    
-    </summary>
-    
-      <category term="Html" scheme="http://www.bestzhangjin.com/tags/Html/"/>
-    
-      <category term="css" scheme="http://www.bestzhangjin.com/tags/css/"/>
-    
-      <category term="javascript" scheme="http://www.bestzhangjin.com/tags/javascript/"/>
-    
-      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
