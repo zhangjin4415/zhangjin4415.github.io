@@ -4,8 +4,75 @@
 
     
   <url>
+    <loc>http://www.bestzhangjin.com/2016/11/17/linux_centos/</loc>
+    <lastmod>2016-11-18T11:45:26.864Z</lastmod>
+    <data>
+        <display>
+        <title>CentOS</title>
+        <pubTime>2016-11-17T10:59:00.000Z</pubTime>
+        
+        <tag>CentOS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="http://www.bestzhangjin.com/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/11/09/Hadoop/</loc>
+    <lastmod>2016-11-17T14:46:44.601Z</lastmod>
+    <data>
+        <display>
+        <title>Hadoop</title>
+        <pubTime>2016-11-09T13:10:12.000Z</pubTime>
+        
+        <tag>Hadoop</tag>
+         
+         
+           
+             
+              <breadCrumb title="大数据" url="http://www.bestzhangjin.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
+    <lastmod>2016-11-17T11:45:09.980Z</lastmod>
+    <data>
+        <display>
+        <title>CentOS与大数据处理</title>
+        <pubTime>2016-04-25T01:57:00.000Z</pubTime>
+        
+        <tag>CentOS</tag>
+         
+        <tag>linux</tag>
+         
+        <tag>大数据</tag>
+         
+         
+           
+             
+              <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
+          
+             
+              <breadCrumb title="大数据" url="http://www.bestzhangjin.com/categories/CentOS/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.bestzhangjin.com/2016/10/07/suanfa/</loc>
-    <lastmod>2016-10-30T14:33:08.116Z</lastmod>
+    <lastmod>2016-11-03T04:10:44.255Z</lastmod>
     <data>
         <display>
         <title>数据结构与算法</title>
@@ -353,33 +420,6 @@
            
              
               <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
-    <lastmod>2016-04-29T04:21:23.775Z</lastmod>
-    <data>
-        <display>
-        <title>CentOS与大数据处理</title>
-        <pubTime>2016-04-25T01:57:00.000Z</pubTime>
-        
-        <tag>CentOS</tag>
-         
-        <tag>linux</tag>
-         
-        <tag>大数据</tag>
-         
-         
-           
-             
-              <breadCrumb title="CentOS" url="http://www.bestzhangjin.com/categories/CentOS/"/>
-          
-             
-              <breadCrumb title="大数据" url="http://www.bestzhangjin.com/categories/CentOS/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
           
         </display>
     </data>

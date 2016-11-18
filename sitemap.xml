@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.bestzhangjin.com/2016/11/17/linux_centos/</loc>
+    <lastmod>2016-11-18T11:45:26.864Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/11/09/Hadoop/</loc>
+    <lastmod>2016-11-17T14:46:44.601Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
+    <lastmod>2016-11-17T11:45:09.980Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.bestzhangjin.com/2016/10/07/suanfa/</loc>
-    <lastmod>2016-10-30T14:33:08.116Z</lastmod>
+    <lastmod>2016-11-03T04:10:44.255Z</lastmod>
   </url>
   
   <url>
@@ -84,11 +99,6 @@
   <url>
     <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
     <lastmod>2016-04-29T04:49:08.193Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
-    <lastmod>2016-04-29T04:21:23.775Z</lastmod>
   </url>
   
   <url>

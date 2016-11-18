@@ -61,7 +61,7 @@
 <meta property="og:url" content="http://www.bestzhangjin.com/2016/04/25/CentOS/index.html">
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：">
-<meta property="og:updated_time" content="2016-04-29T04:21:23.775Z">
+<meta property="og:updated_time" content="2016-11-17T11:45:09.980Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS与大数据处理">
 <meta name="twitter:description" content="主要内容：">
@@ -285,7 +285,7 @@
       
         <span itemprop="articleBody"><p>主要内容：<br><a id="more"></a></p>
 <h1 id="u7B2C_u4E00_u7AE0_centos_u5E38_u89C1_u95EE_u9898"><a href="#u7B2C_u4E00_u7AE0_centos_u5E38_u89C1_u95EE_u9898" class="headerlink" title="第一章 centos常见问题"></a>第一章 centos常见问题</h1><h2 id="1-_u66F4_u65B0"><a href="#1-_u66F4_u65B0" class="headerlink" title="1.更新"></a>1.更新</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># yum check-update</span></span><br><span class="line"><span class="preprocessor"># yum update -y</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-_u7F51_u9875_u89C6_u9891_u64AD_u653E_u95EE_u9898"><a href="#2-_u7F51_u9875_u89C6_u9891_u64AD_u653E_u95EE_u9898" class="headerlink" title="2.网页视频播放问题"></a>2.网页视频播放问题</h2><p>将下载的flash安装包.tar.gz解压到/home/用户名/.mozilla/plugins下即可</p>
+<h2 id="2-_u7F51_u9875_u89C6_u9891_u64AD_u653E_u95EE_u9898"><a href="#2-_u7F51_u9875_u89C6_u9891_u64AD_u653E_u95EE_u9898" class="headerlink" title="2.网页视频播放问题"></a>2.网页视频播放问题</h2><p>将下载的flash安装包.tar.gz解压到/home/用户名/.mozilla/plugins下即可<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf <span class="class">.tar</span><span class="class">.gz</span>文件 -C 解压到的目录</span><br></pre></td></tr></table></figure></p>
 <h1 id="u7B2C_u4E8C_u7AE0_hadoop_u5B89_u88C5_u524D_u671F_u77E5_u8BC6"><a href="#u7B2C_u4E8C_u7AE0_hadoop_u5B89_u88C5_u524D_u671F_u77E5_u8BC6" class="headerlink" title="第二章 hadoop安装前期知识"></a>第二章 hadoop安装前期知识</h1><h2 id="1-_u901A_u8FC7_u4E3B_u673A_u540D_u4EE3_u66FFip_u8BBF_u95EE_u4E3B_u673A"><a href="#1-_u901A_u8FC7_u4E3B_u673A_u540D_u4EE3_u66FFip_u8BBF_u95EE_u4E3B_u673A" class="headerlink" title="1.通过主机名代替ip访问主机"></a>1.通过主机名代替ip访问主机</h2><p>主机名修改：<br>su下命令:<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>sysconfig<span class="regexp">/network</span></span><br></pre></td></tr></table></figure></p>
 <p>修改里面的HOSTNAME就可以，之后重启机器或者命令sudo hostname 你的新主机名，即可生效！需要exit后重新登录一下发现改变。<br>可以通过配置实现主机名与ip一一对应。需要在su下操作。<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>hosts</span><br></pre></td></tr></table></figure></p>
 <p>备注：windows在C:\Windows\System32\drivers\etc\hosts中可以改。<br>在文件后面加上需要的ip与对应主机名即可：<br><figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">ip</span>地址 主机名</span><br></pre></td></tr></table></figure></p>
@@ -442,21 +442,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">34</span>
+              <span class="site-state-item-count">36</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-count">30</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">46</span>
+              <span class="site-state-item-count">47</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
