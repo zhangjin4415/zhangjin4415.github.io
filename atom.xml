@@ -38,44 +38,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Hadoop]]></title>
-    <link href="http://www.bestzhangjin.com/2016/11/09/Hadoop/"/>
-    <id>http://www.bestzhangjin.com/2016/11/09/Hadoop/</id>
-    <published>2016-11-09T13:10:12.000Z</published>
-    <updated>2016-11-17T14:46:44.601Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：Hadoop大数据分布式处理实践<br><a id="more"></a></p>
-<h1 id="u7B2C_u4E00_u7AE0_Hadoop_u96C6_u7FA4_u642D_u5EFA"><a href="#u7B2C_u4E00_u7AE0_Hadoop_u96C6_u7FA4_u642D_u5EFA" class="headerlink" title="第一章 Hadoop集群搭建"></a>第一章 Hadoop集群搭建</h1><h2 id="1-_u73AF_u5883_u51C6_u5907"><a href="#1-_u73AF_u5883_u51C6_u5907" class="headerlink" title="1.环境准备"></a>1.环境准备</h2><p>准备4台电脑，安装上centos系统,准备一台路由器，将4台电脑连上此路由器，即4台电脑在同一个局域网。</p>
-<p>(1)设置静态IP<br>设置4台电脑的静态IP地址：<br>192.168.1.100<br>192.168.1.101<br>192.168.1.102<br>192.168.1.103</p>
-<p>备注：192.168.1.100作为namenode  192.168.1.101-103作为datanode<br>说明：静态IP设置：<br>进入目录:<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/</span>sysconfig<span class="regexp">/network-scripts/</span></span><br></pre></td></tr></table></figure></p>
-<p>查看是否有ifcfg-eth0文件<br>没有则复制ifcfg-lo:<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cp</span> ifcfg-<span class="keyword">lo</span> ifcfg-eth0</span><br></pre></td></tr></table></figure></p>
-<p>然后对ifcfg-eth0进行修改(root模式下)：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">vi</span> ifcfg-eth0</span><br></pre></td></tr></table></figure></p>
-<p>修改如下：<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="setting">DEVICE=<span class="value">eth0</span></span></span><br><span class="line"><span class="setting">IPADDR=<span class="value"><span class="number">192.168</span>.<span class="number">1.100</span></span></span></span><br><span class="line"><span class="setting">NETMASK=<span class="value"><span class="number">255.255</span>.<span class="number">255.0</span></span></span></span><br><span class="line"><span class="setting">NETWORK=<span class="value"><span class="number">192.168</span>.<span class="number">1.0</span></span></span></span><br><span class="line"><span class="comment"># If you're having problems with gated making 127.0.0.0/8 a martian,</span></span><br><span class="line"><span class="comment"># you can change this to something else (255.255.255.255, for example)</span></span><br><span class="line"><span class="setting">BROADCAST=<span class="value"><span class="number">127.255</span>.<span class="number">255.255</span></span></span></span><br><span class="line"><span class="setting">ONBOOT=<span class="value"><span class="keyword">yes</span></span></span></span><br><span class="line"><span class="setting">BOOTPROTO=<span class="value"><span class="string">"static"</span></span></span></span><br><span class="line"><span class="setting">GATEWAY=<span class="value"><span class="number">192.168</span>.<span class="number">1.1</span></span></span></span><br><span class="line"><span class="setting">NM_CONTROLLED=<span class="value"><span class="string">"no"</span></span></span></span><br></pre></td></tr></table></figure></p>
-<p>NM_CONTROLLED=”no” 可以使得重启电脑后ip不变<br>静态IP设置后通过命令service network start生效<br>设置好静态IP后ping一下，保证四台电脑之间相互能够连通</p>
-<p>如果电脑太多，不方便一个一个改的话可以用scp复制(scp用于不同电脑/系统的文件/文件夹(-r)复制)<br>如下命令可以将本机的ifcfg-eth0文件复制到192.168.1.101电脑下的tmp目录下<br>用这个要先安装有SSH（看下面(2)）<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp ifcfg-eth0 zhang@<span class="number">192.168</span><span class="number">.1</span><span class="number">.101</span>：/tmp/</span><br></pre></td></tr></table></figure></p>
-<p>如果提示Pemission denied（证明没有权限） 只需要将其复制到有权限的目录然后再用ssh进入对方电脑进行cp就可以；也可以通过修改对方文件夹权限实现。</p>
-<p>(2)ssh配置与防火墙设置<br>安装SSH<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="operator"><span class="keyword">install</span> openssh-<span class="keyword">server</span></span></span><br></pre></td></tr></table></figure></p>
-<p>开启SSH服务<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service sshd <span class="literal">start</span></span><br></pre></td></tr></table></figure></p>
-<p>之后可以连接和退出其他电脑:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh <span class="number">192.168</span><span class="number">.1</span><span class="number">.101</span> <span class="comment">//连接ip为192.168.1.101的电脑</span></span><br><span class="line">logout            <span class="comment">//退出连接的电脑</span></span><br></pre></td></tr></table></figure></p>
-<p>重点：<br>以上设置后重启电脑(reboot)后又需要重新弄，所以必须改成永久性的<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chkconfig sshd <span class="keyword">on</span> <span class="comment">//ssh开机即启动</span></span><br><span class="line">chkconfig iptables off <span class="comment">//防火墙永久关闭</span></span><br></pre></td></tr></table></figure></p>
-<p>但是上面的连接需要输入对方的密码才能访问，下面搭建免密码SSH<br>配置SSH免密码访问<br>运行ssh-keygen -t rsa 这里遇到输入时直接回车<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="comment">@localhost zhang]# ssh-keygen -t rsa</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/root/.ssh/id_rsa): </span><br><span class="line">Enter passphrase (empty for no passphrase): </span><br><span class="line">Enter same passphrase again: </span><br><span class="line">Your identification has been saved in /root/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /root/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">63:fc:01:3e:8d:21:cf:5f:ce:c3:49:c5:e0:1d:84:6f root<span class="comment">@localhost.localdomain</span></span><br><span class="line">The key's randomart image is:</span><br><span class="line">+--[ RSA 2048]----+</span><br><span class="line">|<span class="string">            .oo  </span>|</span><br><span class="line">|<span class="string">           ..+ . </span>|</span><br><span class="line">|<span class="string">      . o   ..+  </span>|</span><br><span class="line">|<span class="string">       * =   .E  </span>|</span><br><span class="line">|<span class="string">        S o o.   </span>|</span><br><span class="line">|<span class="string">       . = B .   </span>|</span><br><span class="line">|<span class="string">          o *    </span>|</span><br><span class="line">|<span class="string">             .   </span>|</span><br><span class="line">|<span class="string">                 </span>|</span><br><span class="line">+-----------------+</span><br></pre></td></tr></table></figure></p>
-<p>之后进入目录/root/.ssh 通过ls -a可以看到.ssh文件夹目录<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="property">@localhost</span> .ssh]<span class="comment"># ls -a</span></span><br><span class="line">.  ..  id_rsa  id_rsa.pub  known_hosts</span><br></pre></td></tr></table></figure></p>
-<p>其他三台电脑同理，运行如上。</p>
-<p>(3)常见错误分析：<br>SSH登陆错误 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!<br><figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Connection to <span class="number">192.168</span><span class="number">.10</span><span class="number">.20</span> closed.</span><br><span class="line">[root<span class="variable">@localhost</span> ~]# ssh <span class="number">192.168</span><span class="number">.10</span><span class="number">.88</span></span><br><span class="line"><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span>@</span><br><span class="line">@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @</span><br><span class="line"><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span><span class="variable">@@</span>@</span><br><span class="line">IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!</span><br><span class="line">Someone could be eavesdropping on you right now (man-<span class="keyword">in</span>-the-middle attack)!</span><br><span class="line">It is also possible that the RSA host key has just been changed.</span><br><span class="line">The fingerprint <span class="keyword">for</span> the RSA key sent by the remote host is</span><br><span class="line">b6:<span class="number">0</span>c:<span class="number">41</span>:<span class="number">43</span>:<span class="number">60</span>:<span class="number">79</span>:eb:<span class="number">05</span>:<span class="number">9</span>e:c9:<span class="number">72</span>:<span class="number">1</span>d:a0:<span class="number">41</span>:<span class="number">9</span>a:<span class="number">50.</span></span><br><span class="line">Please contact your <span class="keyword">system</span> administrator.</span><br><span class="line">Add correct host key <span class="keyword">in</span> /root/.ssh/known_hosts to get rid of this message.</span><br><span class="line">Offending key <span class="keyword">in</span> /root/.ssh/known_hosts:<span class="number">5</span></span><br><span class="line">RSA host key <span class="keyword">for</span> <span class="number">192.168</span><span class="number">.10</span><span class="number">.88</span> has changed and you have requested strict checking.</span><br><span class="line">Host key verification failed.</span><br></pre></td></tr></table></figure></p>
-<p>方法1.在客户端执行下述指令即可 #mv /root/.ssh/known_hosts /tmp<br>方法2.当然也可以直接编辑known_hosts文件,把里面与所要连接IP(192.168.10.20)相关的内容删掉即可.</p>
-<p>(4)参考文献：<br><a href="http://www.cnblogs.com/ylh1223/archive/2012/05/31/2528517.html" target="_blank" rel="external">http://www.cnblogs.com/ylh1223/archive/2012/05/31/2528517.html</a><br><a href="http://jingyan.baidu.com/article/3ea51489f9efbf52e61bba05.html" target="_blank" rel="external">http://jingyan.baidu.com/article/3ea51489f9efbf52e61bba05.html</a><br><a href="http://www.jb51.net/LINUXjishu/70474.html" target="_blank" rel="external">http://www.jb51.net/LINUXjishu/70474.html</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容：Hadoop大数据分布式处理实践<br>]]>
-    
-    </summary>
-    
-      <category term="Hadoop" scheme="http://www.bestzhangjin.com/tags/Hadoop/"/>
-    
-      <category term="大数据" scheme="http://www.bestzhangjin.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[孤陋寡闻]]></title>
     <link href="http://www.bestzhangjin.com/2016/10/20/bucong/"/>
     <id>http://www.bestzhangjin.com/2016/10/20/bucong/</id>
@@ -850,6 +812,25 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Web页面设计技巧总结]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/30/Web_skill/"/>
+    <id>http://www.bestzhangjin.com/2016/03/30/Web_skill/</id>
+    <published>2016-03-30T01:30:00.000Z</published>
+    <updated>2016-03-30T01:31:46.000Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：Web页面设计技巧总结<br><a id="more"></a></p>
+<h1 id="u7B2C_u4E00_u7AE0__u7F51_u9875_u63D2_u5165_u65E5_u5386"><a href="#u7B2C_u4E00_u7AE0__u7F51_u9875_u63D2_u5165_u65E5_u5386" class="headerlink" title="第一章 网页插入日历"></a>第一章 网页插入日历</h1>]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：Web页面设计技巧总结<br>]]>
+    
+    </summary>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[webstorm应用与常见问题]]></title>
     <link href="http://www.bestzhangjin.com/2016/03/30/webstorm/"/>
     <id>http://www.bestzhangjin.com/2016/03/30/webstorm/</id>
@@ -867,25 +848,6 @@
       <category term="webstorm" scheme="http://www.bestzhangjin.com/tags/webstorm/"/>
     
       <category term="webstorm" scheme="http://www.bestzhangjin.com/categories/webstorm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Web页面设计技巧总结]]></title>
-    <link href="http://www.bestzhangjin.com/2016/03/30/Web_skill/"/>
-    <id>http://www.bestzhangjin.com/2016/03/30/Web_skill/</id>
-    <published>2016-03-30T01:30:00.000Z</published>
-    <updated>2016-03-30T01:31:46.000Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：Web页面设计技巧总结<br><a id="more"></a></p>
-<h1 id="u7B2C_u4E00_u7AE0__u7F51_u9875_u63D2_u5165_u65E5_u5386"><a href="#u7B2C_u4E00_u7AE0__u7F51_u9875_u63D2_u5165_u65E5_u5386" class="headerlink" title="第一章 网页插入日历"></a>第一章 网页插入日历</h1>]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容：Web页面设计技巧总结<br>]]>
-    
-    </summary>
-    
-      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -1326,6 +1288,35 @@
       <category term="应用技巧" scheme="http://www.bestzhangjin.com/tags/%E5%BA%94%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     
       <category term="Myeclipse" scheme="http://www.bestzhangjin.com/categories/Myeclipse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[网页设计之photoshop+firework+flash+dreamwearver篇]]></title>
+    <link href="http://www.bestzhangjin.com/2016/03/15/webpage_ps_fl_dream_fire/"/>
+    <id>http://www.bestzhangjin.com/2016/03/15/webpage_ps_fl_dream_fire/</id>
+    <published>2016-03-15T11:39:03.000Z</published>
+    <updated>2016-03-15T11:41:08.000Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：网页设计之dreamwearver篇<br><a id="more"></a></p>
+<h1 id="u7B2C_u4E00_u7AE0__u4ECB_u7ECD"><a href="#u7B2C_u4E00_u7AE0__u4ECB_u7ECD" class="headerlink" title="第一章 介绍"></a>第一章 介绍</h1><hr>
+<p>更新中…………</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：网页设计之dreamwearver篇<br>]]>
+    
+    </summary>
+    
+      <category term="dreamwearver" scheme="http://www.bestzhangjin.com/tags/dreamwearver/"/>
+    
+      <category term="firework" scheme="http://www.bestzhangjin.com/tags/firework/"/>
+    
+      <category term="flash" scheme="http://www.bestzhangjin.com/tags/flash/"/>
+    
+      <category term="photoshop" scheme="http://www.bestzhangjin.com/tags/photoshop/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/tags/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="网页设计" scheme="http://www.bestzhangjin.com/categories/%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
