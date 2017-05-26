@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://www.bestzhangjin.com/2016/01/27/MySql/</loc>
+    <lastmod>2017-04-16T14:27:29.090Z</lastmod>
+    <data>
+        <display>
+        <title>MySql</title>
+        <pubTime>2016-01-27T10:00:00.000Z</pubTime>
+        
+        <tag>MySql</tag>
+         
+        <tag>数据库</tag>
+         
+         
+           
+             
+              <breadCrumb title="MySql" url="http://www.bestzhangjin.com/categories/MySql/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.bestzhangjin.com/2016/11/17/linux_centos/</loc>
     <lastmod>2016-11-18T11:45:26.864Z</lastmod>
     <data>
@@ -17,6 +39,26 @@
            
              
               <breadCrumb title="Linux" url="http://www.bestzhangjin.com/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/11/09/Hadoop/</loc>
+    <lastmod>2016-11-17T14:46:44.601Z</lastmod>
+    <data>
+        <display>
+        <title>Hadoop</title>
+        <pubTime>2016-11-09T13:10:12.000Z</pubTime>
+        
+        <tag>Hadoop</tag>
+         
+         
+           
+             
+              <breadCrumb title="大数据" url="http://www.bestzhangjin.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
           
         </display>
     </data>
@@ -503,28 +545,6 @@
            
              
               <breadCrumb title="网站开发" url="http://www.bestzhangjin.com/categories/%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/27/MySql/</loc>
-    <lastmod>2016-03-25T01:50:24.000Z</lastmod>
-    <data>
-        <display>
-        <title>MySql</title>
-        <pubTime>2016-01-27T10:00:00.000Z</pubTime>
-        
-        <tag>MySql</tag>
-         
-        <tag>数据库</tag>
-         
-         
-           
-             
-              <breadCrumb title="MySql" url="http://www.bestzhangjin.com/categories/MySql/"/>
           
         </display>
     </data>
