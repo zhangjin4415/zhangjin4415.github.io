@@ -37,7 +37,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="APP,Android studio,常见问题," />
+  <meta name="keywords" content="常见问题," />
 
 
 
@@ -62,7 +62,7 @@
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题">
 <meta property="og:image" content="http://www.bestzhangjin.com/img/android_studio_question/1.png">
-<meta property="og:updated_time" content="2016-07-16T13:51:06.596Z">
+<meta property="og:updated_time" content="2017-10-11T13:33:41.406Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="android studio（APP）常见问题与解决方法">
 <meta name="twitter:description" content="主要内容：ADB,AVD’s configuration,ANDROID_SDK_ROOT，架包问题">
@@ -236,8 +236,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/APP/" itemprop="url" rel="index">
-                    <span itemprop="name">APP</span>
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
                   </a>
                 </span>
 
@@ -281,7 +281,7 @@
 <h1 id="5-Error_3AExecution_failed_for_task__u2018_3Aapp_3AdexDebug_u2019-com-android-ide-common-process-ProcessException_3A_org-gradle-process-internal-ExecException_3A_Process__u2018command__u2018D_3A_5CJava_5Cjdk1-8-0_65_5Cbin_5Cjava-exe_u2019_u2019_finished_with_non-zero_exit_value_2"><a href="#5-Error_3AExecution_failed_for_task__u2018_3Aapp_3AdexDebug_u2019-com-android-ide-common-process-ProcessException_3A_org-gradle-process-internal-ExecException_3A_Process__u2018command__u2018D_3A_5CJava_5Cjdk1-8-0_65_5Cbin_5Cjava-exe_u2019_u2019_finished_with_non-zero_exit_value_2" class="headerlink" title="5.Error:Execution failed for task ‘:app:dexDebug’.com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process ‘command ‘D:\Java\jdk1.8.0_65\bin\java.exe’’ finished with non-zero exit value 2"></a>5.Error:Execution failed for task ‘:app:dexDebug’.com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process ‘command ‘D:\Java\jdk1.8.0_65\bin\java.exe’’ finished with non-zero exit value 2</h1><p>解决：<br>build.gradle文件中添加<br>defaultConfig {<br>    multiDexEnabled true<br>}</p>
 <h2 id="6-Error_3Afailed_to_find_Build_Tools_revision_24-0-0_rc3"><a href="#6-Error_3Afailed_to_find_Build_Tools_revision_24-0-0_rc3" class="headerlink" title="6.Error:failed to find Build Tools revision 24.0.0 rc3"></a>6.Error:failed to find Build Tools revision 24.0.0 rc3</h2><p>每个项目的build.gradle里可以设置，例如<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    <span class="attribute">...</span><span class="built_in">.</span><br><span class="line">    </span>buildToolsVersion <span class="string">'24.0.0 rc3'</span></span><br><span class="line">    <span class="attribute">...</span><span class="built_in">.</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure></p>
 <p>如下图，我的Android SDK 没有安装Build-tools 24 rc3<br><img src="/img/android_studio_question/1.png" alt="image"><br>所以 ，在build.gradle里面改成如下：<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    <span class="attribute">...</span><span class="built_in">.</span><br><span class="line">    </span>buildToolsVersion <span class="string">'23.0.3'</span></span><br><span class="line">    <span class="attribute">...</span><span class="built_in">.</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure></p>
-<p>再执行Tools–&gt;Android–&gt;Sync Project with Gradle Files即可 </p>
+<p>再执行Tools–&gt;Android–&gt;Sync Project with Gradle Files即可</p>
 </span>
       
     </div>
@@ -289,10 +289,6 @@
     <footer class="post-footer">
       
         <div class="post-tags">
-          
-            <a href="/tags/APP/" rel="tag">#APP</a>
-          
-            <a href="/tags/Android-studio/" rel="tag">#Android studio</a>
           
             <a href="/tags/常见问题/" rel="tag">#常见问题</a>
           
@@ -404,21 +400,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">47</span>
+              <span class="site-state-item-count">29</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

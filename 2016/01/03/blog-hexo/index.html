@@ -65,7 +65,7 @@
 <meta property="og:image" content="http://www.bestzhangjin.com/img/blog-hexo/2.png">
 <meta property="og:image" content="http://www.bestzhangjin.com/img/blog-hexo/3.png">
 <meta property="og:image" content="http://www.bestzhangjin.com/img/blog-hexo/4.png">
-<meta property="og:updated_time" content="2016-05-12T12:13:23.851Z">
+<meta property="og:updated_time" content="2017-10-11T13:35:17.426Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github和Hexo搭建属于自己的博客">
 <meta name="twitter:description" content="主要内容：hexo环境搭建，相关软件安装，Github配置，域名绑定">
@@ -300,7 +300,7 @@
 <p>在E:\hexo内执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
 <p>然后用浏览器访问<a href="http://localhost:4000/，" target="_blank" rel="external">http://localhost:4000/，</a><br>此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。</p>
 <h2 id="3-_u914D_u7F6EHexo"><a href="#3-_u914D_u7F6EHexo" class="headerlink" title="3.配置Hexo"></a>3.配置Hexo</h2><p>进入hexo文件夹，找到__config.yml在最后加代码如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:      </span><br><span class="line"><span class="built_in">type</span>: git   <span class="comment">#最新版3.X把这个github缩写成git了     </span></span><br><span class="line">repository: https://github.com/你的github账号/你的github账号.github.io.git      </span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
-<p>执行下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<p>执行下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
 <p>如果上面的hexo d命令没有反应，ERROR Deployer not found: git解决<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
 <p>之后就可以执行hexo d了。<br>中间会提示输入账号，密码<br>如此完成！<br>在浏览器上输入：你的githun账号.github.io就可以访问你的博客了<br>但是如果你有自己的域名并且要绑定的话，请看第五步</p>
 <h1 id="u4E94-_u57DF_u540D_u7ED1_u5B9A"><a href="#u4E94-_u57DF_u540D_u7ED1_u5B9A" class="headerlink" title="五.域名绑定"></a>五.域名绑定</h1><h2 id="1-_u8D2D_u4E70_u57DF_u540D"><a href="#1-_u8D2D_u4E70_u57DF_u540D" class="headerlink" title="1.购买域名"></a>1.购买域名</h2><p>购买域名比较简单，此处不再介绍，我的是万维的：www.bestzhangjin.com</p>
@@ -427,21 +427,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">47</span>
+              <span class="site-state-item-count">29</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

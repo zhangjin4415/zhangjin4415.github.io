@@ -2,13 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.bestzhangjin.com/2016/02/26/ubuntu_use/</loc>
+    <lastmod>2017-10-11T13:45:24.622Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/10/07/suanfa/</loc>
+    <lastmod>2017-10-11T13:44:19.994Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/14/structs2/</loc>
+    <lastmod>2017-10-11T13:44:11.114Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.bestzhangjin.com/2016/01/27/MySql/</loc>
-    <lastmod>2017-04-16T14:27:29.090Z</lastmod>
+    <lastmod>2017-10-11T13:43:43.110Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/15/myeclipse_view/</loc>
+    <lastmod>2017-10-11T13:43:27.786Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/myeclipse_question/</loc>
+    <lastmod>2017-10-11T13:43:08.790Z</lastmod>
   </url>
   
   <url>
     <loc>http://www.bestzhangjin.com/2016/11/17/linux_centos/</loc>
-    <lastmod>2016-11-18T11:45:26.864Z</lastmod>
+    <lastmod>2017-10-11T13:42:28.826Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/12/jsp/</loc>
+    <lastmod>2017-10-11T13:41:52.942Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/07/06/Ardunio/</loc>
+    <lastmod>2017-10-11T13:41:17.510Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/07/09/chuanganqi/</loc>
+    <lastmod>2017-10-11T13:40:53.538Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/02/02/java_use/</loc>
+    <lastmod>2017-10-11T13:40:03.770Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
+    <lastmod>2017-10-11T13:39:36.734Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/30/jQuery/</loc>
+    <lastmod>2017-10-11T13:38:55.538Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
+    <lastmod>2017-10-11T13:36:30.954Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
+    <lastmod>2017-10-11T13:36:20.106Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/10/20/bucong/</loc>
+    <lastmod>2017-10-11T13:36:10.062Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
+    <lastmod>2017-10-11T13:35:17.426Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/03/04/aliyun/</loc>
+    <lastmod>2017-10-11T13:34:17.238Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
+    <lastmod>2017-10-11T13:33:41.406Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
+    <lastmod>2017-10-11T13:33:18.106Z</lastmod>
   </url>
   
   <url>
@@ -17,68 +107,13 @@
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/04/25/CentOS/</loc>
-    <lastmod>2016-11-17T11:45:09.980Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/10/07/suanfa/</loc>
-    <lastmod>2016-11-03T04:10:44.255Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/10/20/bucong/</loc>
-    <lastmod>2016-10-20T08:16:53.684Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/10/09/ajax/</loc>
-    <lastmod>2016-10-19T05:13:26.088Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/10/09/ext_js/</loc>
-    <lastmod>2016-10-10T12:13:22.361Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/04/01/Hibernate/</loc>
-    <lastmod>2016-09-26T12:28:24.261Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/04/aliyun/</loc>
-    <lastmod>2016-09-14T02:09:13.672Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.bestzhangjin.com/2016/07/19/PHP/</loc>
     <lastmod>2016-09-13T13:30:27.398Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/android_studio_question/</loc>
-    <lastmod>2016-07-16T13:51:06.596Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/07/06/Ardunio/</loc>
-    <lastmod>2016-07-15T05:06:06.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.bestzhangjin.com/2016/06/15/python/</loc>
     <lastmod>2016-07-14T07:05:13.525Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/07/13/zigbee/</loc>
-    <lastmod>2016-07-13T11:05:58.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/07/09/chuanganqi/</loc>
-    <lastmod>2016-07-09T11:50:24.000Z</lastmod>
   </url>
   
   <url>
@@ -92,93 +127,13 @@
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/01/03/blog-hexo/</loc>
-    <lastmod>2016-05-12T12:13:23.851Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/16/android_studio_view/</loc>
-    <lastmod>2016-05-08T03:12:00.054Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/04/27/centos_windows/</loc>
-    <lastmod>2016-04-29T04:49:08.193Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/30/jQuery/</loc>
-    <lastmod>2016-04-18T14:54:32.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/30/webstorm/</loc>
-    <lastmod>2016-04-10T01:34:12.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.bestzhangjin.com/about/index.html</loc>
     <lastmod>2016-03-30T12:50:36.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bestzhangjin.com/2016/02/18/markdown/</loc>
-    <lastmod>2016-03-30T07:59:46.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/30/Web_skill/</loc>
-    <lastmod>2016-03-30T01:31:46.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/12/jsp/</loc>
-    <lastmod>2016-03-27T00:50:44.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/01/15/myeclipse_question/</loc>
-    <lastmod>2016-03-21T12:21:30.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/14/structs2/</loc>
-    <lastmod>2016-03-21T11:23:26.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/15/myeclipse_view/</loc>
-    <lastmod>2016-03-16T04:26:12.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.bestzhangjin.com/2016/01/01/yuandan/</loc>
     <lastmod>2016-03-15T12:48:40.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/02/26/ubuntu_use/</loc>
-    <lastmod>2016-03-15T12:01:28.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/02/19/java_learn/</loc>
-    <lastmod>2016-03-15T11:41:46.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/15/webpage_ps_fl_dream_fire/</loc>
-    <lastmod>2016-03-15T11:41:08.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/03/12/html_css_javascript/</loc>
-    <lastmod>2016-03-15T11:40:24.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.bestzhangjin.com/2016/02/02/java_use/</loc>
-    <lastmod>2016-03-03T07:30:36.000Z</lastmod>
   </url>
   
   <url>

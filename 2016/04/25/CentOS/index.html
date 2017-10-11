@@ -61,7 +61,7 @@
 <meta property="og:url" content="http://www.bestzhangjin.com/2016/04/25/CentOS/index.html">
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：">
-<meta property="og:updated_time" content="2016-11-17T11:45:09.980Z">
+<meta property="og:updated_time" content="2017-10-11T13:36:30.954Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS与大数据处理">
 <meta name="twitter:description" content="主要内容：">
@@ -235,19 +235,7 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/CentOS/" itemprop="url" rel="index">
-                    <span itemprop="name">CentOS</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/CentOS/大数据/" itemprop="url" rel="index">
+                  <a href="/categories/大数据/" itemprop="url" rel="index">
                     <span itemprop="name">大数据</span>
                   </a>
                 </span>
@@ -302,7 +290,7 @@
 <p>添加如下：<br><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">&lt;configuration&gt;</span></span><br><span class="line"><span class="variable">&lt;property&gt;</span></span><br><span class="line"><span class="variable">&lt;name&gt;</span>fs.<span class="keyword">default</span>FS<span class="variable">&lt;/name&gt;</span></span><br><span class="line"><span class="variable">&lt;value&gt;</span>hdfs://zhang:<span class="number">9000</span>/<span class="variable">&lt;/value&gt;</span></span><br><span class="line"><span class="variable">&lt;/property&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="variable">&lt;property&gt;</span></span><br><span class="line"><span class="variable">&lt;name&gt;</span>hadoop.tmp.dir<span class="variable">&lt;/name&gt;</span></span><br><span class="line"><span class="variable">&lt;value&gt;</span>/home/zhang/software/hadoop/data/<span class="variable">&lt;/value&gt;</span></span><br><span class="line"><span class="variable">&lt;/property&gt;</span></span><br><span class="line"><span class="variable">&lt;/configuration&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>fs.defaultFS 默认文件系统</p>
 <p><value>hdfs://zhang:9000/</value> 采用uri格式，hdfs-协议为hdfs,zhang-主节点地址为zhang(因为前面已经配置主机地址与主机名对应)，9000-默认端口号。<br>hadoop.tmp.dir 共同工作目录</p>
-<p>(3) hdfs-site.xml<br>配置运行的细节<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">name</span>&gt;</span>dfs.replication<span class="tag">&lt;/<span class="title">name</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="title">value</span>&gt;</span>2<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>(3) hdfs-site.xml<br>配置运行的细节<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">name</span>&gt;</span>dfs.replication<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">value</span>&gt;</span>2<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>其中dfs.replication-配置副本数量， 3个为最佳，会放在不同的主机上，放在同一主机没有任何意义，会报错，这里我用两个data节点（data主机），存2个副本。<br>切块大小也可用在这里配置，默认128M。<br>上面配置好后hdfs可以运行啦，但是yarn不能运行，还需要配置.</p>
 <p>(4) mapred-site.xml<br>mv mapred-site.xml.template mapred-site.xml<br>对于.xml才能找到执行，所以需要改后缀名。<br>配置如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">name</span>&gt;</span>mapreduce.framework.name<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">value</span>&gt;</span>yarn<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>map-reduce应该放到哪个资源调度集群上跑，指定用yarn这个集群跑，hdfs与yarn都是集群，其在物理主机上没有分开，但是是不同的。</p>
@@ -442,21 +430,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">47</span>
+              <span class="site-state-item-count">29</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
