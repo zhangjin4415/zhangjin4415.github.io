@@ -5,13 +5,33 @@
     
   <url>
     <loc>http://www.bestzhangjin.com/2017/10/13/deeplearn/</loc>
-    <lastmod>2017-10-25T07:02:36.693Z</lastmod>
+    <lastmod>2018-01-31T13:57:28.931Z</lastmod>
     <data>
         <display>
         <title>深度学习之Mxnet--李沐视频</title>
         <pubTime>2017-10-13T11:44:22.000Z</pubTime>
         
         <tag>Mxnet</tag>
+         
+         
+           
+             
+              <breadCrumb title="深度学习" url="http://www.bestzhangjin.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.bestzhangjin.com/2017/11/24/tensorflowinstall/</loc>
+    <lastmod>2017-11-24T07:37:55.138Z</lastmod>
+    <data>
+        <display>
+        <title>tensorflow安装</title>
+        <pubTime>2017-11-24T07:05:00.000Z</pubTime>
+        
+        <tag>tensorflow</tag>
          
          
            
