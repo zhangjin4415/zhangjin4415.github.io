@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.bestzhangjin.com/"/>
-  <updated>2018-07-17T14:38:06.009Z</updated>
+  <updated>2018-07-25T15:20:55.131Z</updated>
   <id>http://www.bestzhangjin.com/</id>
   
   <author>
@@ -19,9 +19,10 @@
     <link href="http://www.bestzhangjin.com/2018/07/17/docker/"/>
     <id>http://www.bestzhangjin.com/2018/07/17/docker/</id>
     <published>2018-07-17T13:44:21.000Z</published>
-    <updated>2018-07-17T14:38:06.009Z</updated>
+    <updated>2018-07-25T15:20:55.131Z</updated>
     <content type="html"><![CDATA[<h2 id="1-1__u5B9E_u9A8C_u73AF_u5883"><a href="#1-1__u5B9E_u9A8C_u73AF_u5883" class="headerlink" title="1.1 实验环境"></a>1.1 实验环境</h2><p>本教程实验环境:ubuntu16.04 64位 。<br><a id="more"></a></p>
-<h2 id="1-2_docker__u5B89_u88C5"><a href="#1-2_docker__u5B89_u88C5" class="headerlink" title="1.2 docker 安装"></a>1.2 docker 安装</h2>]]></content>
+<h2 id="1-2_docker__u5B89_u88C5"><a href="#1-2_docker__u5B89_u88C5" class="headerlink" title="1.2 docker 安装"></a>1.2 docker 安装</h2><p>参考<a href="http://www.runoob.com/docker/ubuntu-docker-install.html" target="_blank" rel="external">菜鸟教程</a></p>
+]]></content>
     <summary type="html">
     <![CDATA[<h2 id="1-1__u5B9E_u9A8C_u73AF_u5883"><a href="#1-1__u5B9E_u9A8C_u73AF_u5883" class="headerlink" title="1.1 实验环境"></a>1.1 实验环境</h2><p>本教程实验环境:ubuntu16.04 64位 。<br>]]>
     
