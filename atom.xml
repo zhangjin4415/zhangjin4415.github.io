@@ -63,12 +63,14 @@
     <link href="http://www.bestzhangjin.com/2018/07/17/docker/"/>
     <id>http://www.bestzhangjin.com/2018/07/17/docker/</id>
     <published>2018-07-17T13:44:21.000Z</published>
-    <updated>2018-09-17T13:37:11.862Z</updated>
+    <updated>2018-09-17T13:48:35.783Z</updated>
     <content type="html"><![CDATA[<h2 id="1-1__u5B9E_u9A8C_u73AF_u5883"><a href="#1-1__u5B9E_u9A8C_u73AF_u5883" class="headerlink" title="1.1 实验环境"></a>1.1 实验环境</h2><p>本教程实验环境:ubuntu16.04 64位 。<br><a id="more"></a></p>
 <h2 id="1-2_docker__u5B89_u88C5"><a href="#1-2_docker__u5B89_u88C5" class="headerlink" title="1.2 docker 安装"></a>1.2 docker 安装</h2><p>可以参考<a href="http://www.runoob.com/docker/ubuntu-docker-install.html" target="_blank" rel="external">菜鸟教程</a><br>安转完成后启动docker<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service docker <span class="literal">start</span></span><br></pre></td></tr></table></figure></p>
 <p>运行docker默认的hello-world程序<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker <span class="command">run</span> hello-world</span><br></pre></td></tr></table></figure></p>
 <p>运行界面如下，说明docker安转成功：<br><img src="/img/docker/im1.jpg" alt="image"><br>如果需要关闭docker,命令为：<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service docker <span class="literal">stop</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="1-3"><a href="#1-3" class="headerlink" title="1.3"></a>1.3</h2>]]></content>
+<h2 id="1-3_docker_u5E38_u7528_u547D_u4EE4"><a href="#1-3_docker_u5E38_u7528_u547D_u4EE4" class="headerlink" title="1.3 docker常用命令"></a>1.3 docker常用命令</h2><p>查看docker镜像<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sudo</span> docker images</span><br></pre></td></tr></table></figure></p>
+<p><img src="/img/docker/im2.jpg" alt="image"><br>可以看到我的电脑上有<br>mxnet-docker3, mxnet-docker2, mxnet-docker, nvidia/cuda, hello-world共5个镜像<br>上图镜像中显示的内容介绍如下：<br><figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">REPOSITORY:镜像名</span><br><span class="line">TAG：镜像标签名</span><br><span class="line"><span class="built_in">IMAGE</span> ID：镜像id号</span><br><span class="line">CREATED：镜像创建时间</span><br><span class="line"><span class="built_in">SIZE</span>：镜像文件大小</span><br></pre></td></tr></table></figure></p>
+]]></content>
     <summary type="html">
     <![CDATA[<h2 id="1-1__u5B9E_u9A8C_u73AF_u5883"><a href="#1-1__u5B9E_u9A8C_u73AF_u5883" class="headerlink" title="1.1 实验环境"></a>1.1 实验环境</h2><p>本教程实验环境:ubuntu16.04 64位 。<br>]]>
     
