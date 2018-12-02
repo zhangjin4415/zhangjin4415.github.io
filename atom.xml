@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.bestzhangjin.com/"/>
-  <updated>2018-11-20T15:06:42.650Z</updated>
+  <updated>2018-12-02T13:53:00.675Z</updated>
   <id>http://www.bestzhangjin.com/</id>
   
   <author>
@@ -13,6 +13,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[React16.4 开发简书项目]]></title>
+    <link href="http://www.bestzhangjin.com/2018/12/02/react/"/>
+    <id>http://www.bestzhangjin.com/2018/12/02/react/</id>
+    <published>2018-12-02T12:02:12.000Z</published>
+    <updated>2018-12-02T13:53:00.675Z</updated>
+    <content type="html"><![CDATA[<p>主要内容：React16.4 开发简书项目<br><a id="more"></a></p>
+<h1 id="1-_u4ECB_u7ECD"><a href="#1-_u4ECB_u7ECD" class="headerlink" title="1.介绍"></a>1.介绍</h1><p><img src="/img/react/1.png" alt="img"></p>
+<p>部分内容：</p>
+<p><img src="/img/react/2.png" alt="img"></p>
+<p>react16以后版本称为react fiber</p>
+<h1 id="2-_u5F00_u53D1_u73AF_u5883_u642D_u5EFA"><a href="#2-_u5F00_u53D1_u73AF_u5883_u642D_u5EFA" class="headerlink" title="2.开发环境搭建"></a>2.开发环境搭建</h1><p>搭建的两种方式：<br>1.引入.js文件来使用react<br>2.通过脚手架工具来编码（本文使用）脚手架工具很多，本文使用官方推荐的reactApp</p>
+<p>create react App安装：</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -<span class="keyword">g</span> create-react-<span class="keyword">app</span> <span class="comment">//没有npm时自行安装</span></span><br><span class="line">sudo create-react-<span class="keyword">app</span> todolist <span class="comment">//会创建一个 todolist文件夹，构建react工程</span></span><br><span class="line"><span class="keyword">cd</span> todolist</span><br><span class="line">npm start <span class="comment">//其会自动打开首页 也可以用npm run start</span></span><br></pre></td></tr></table></figure>
+<p>项目工作目录介绍：</p>
+<p><img src="/img/react/3.png" alt="img"></p>
+<p>README.md:项目说明文件<br>package.json:代表脚手架工具是一个node包文件，里面包含有项目相关信息，npm run start之所以运行也是因为有这个文件:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "<span class="attribute">name</span>": <span class="value"><span class="string">"todolist"</span></span>,</span><br><span class="line">  "<span class="attribute">version</span>": <span class="value"><span class="string">"0.1.0"</span></span>,</span><br><span class="line">  "<span class="attribute">private</span>": <span class="value"><span class="literal">true</span></span>,</span><br><span class="line">  "<span class="attribute">dependencies</span>": <span class="value">&#123;</span><br><span class="line">    "<span class="attribute">react</span>": <span class="value"><span class="string">"^16.6.3"</span></span>,</span><br><span class="line">    "<span class="attribute">react-dom</span>": <span class="value"><span class="string">"^16.6.3"</span></span>,</span><br><span class="line">    "<span class="attribute">react-scripts</span>": <span class="value"><span class="string">"2.1.1"</span></span><br><span class="line">  </span>&#125;</span>,</span><br><span class="line">  "<span class="attribute">scripts</span>": <span class="value">&#123;</span><br><span class="line">    "<span class="attribute">start</span>": <span class="value"><span class="string">"react-scripts start"</span></span>,</span><br><span class="line">    "<span class="attribute">build</span>": <span class="value"><span class="string">"react-scripts build"</span></span>,</span><br><span class="line">    "<span class="attribute">test</span>": <span class="value"><span class="string">"react-scripts test"</span></span>,</span><br><span class="line">    "<span class="attribute">eject</span>": <span class="value"><span class="string">"react-scripts eject"</span></span><br><span class="line">  </span>&#125;</span>,</span><br><span class="line">  "<span class="attribute">eslintConfig</span>": <span class="value">&#123;</span><br><span class="line">    "<span class="attribute">extends</span>": <span class="value"><span class="string">"react-app"</span></span><br><span class="line">  </span>&#125;</span>,</span><br><span class="line">  "<span class="attribute">browserslist</span>": <span class="value">[</span><br><span class="line">    <span class="string">"&gt;0.2%"</span>,</span><br><span class="line">    <span class="string">"not dead"</span>,</span><br><span class="line">    <span class="string">"not ie &lt;= 11"</span>,</span><br><span class="line">    <span class="string">"not op_mini all"</span></span><br><span class="line">  ]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<p>node_modules: 第三方依赖包<br>public/favicon.ico: 网页浏览器上的小图标<br>public/index.html: 首页模板</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"shortcut icon"</span> <span class="attribute">href</span>=<span class="value">"%PUBLIC_URL%/favicon.ico"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"viewport"</span> <span class="attribute">content</span>=<span class="value">"width=device-width, initial-scale=1, shrink-to-fit=no"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"theme-color"</span> <span class="attribute">content</span>=<span class="value">"#000000"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"manifest"</span> <span class="attribute">href</span>=<span class="value">"%PUBLIC_URL%/manifest.json"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>React App<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">noscript</span>&gt;</span></span><br><span class="line">      You need to enable JavaScript to run this app.</span><br><span class="line">    <span class="tag">&lt;/<span class="title">noscript</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"root"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>src: 源代码目录<br>src/index.js: 整个程序运行的入口文件<br>其可以引入import React是因为package.json中dependencies引入了react</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'./index.css'</span>;</span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> serviceWorker <span class="keyword">from</span> <span class="string">'./serviceWorker'</span>;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(<span class="xml"><span class="tag">&lt;<span class="title">App</span> /&gt;</span>, document.getElementById('root'));</span><br><span class="line"></span><br><span class="line">serviceWorker.unregister();</span></span><br></pre></td></tr></table></figure>
+<p>src/logo.svg: 网页上旋转的那个图片</p>
+<p>public/manifest.json:  PWA serviceWorker情况下在APP桌面展示图标</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "<span class="attribute">short_name</span>": <span class="value"><span class="string">"React App"</span></span>,</span><br><span class="line">  "<span class="attribute">name</span>": <span class="value"><span class="string">"Create React App Sample"</span></span>,</span><br><span class="line">  "<span class="attribute">icons</span>": <span class="value">[</span><br><span class="line">    &#123;</span><br><span class="line">      "<span class="attribute">src</span>": <span class="value"><span class="string">"favicon.ico"</span></span>,</span><br><span class="line">      "<span class="attribute">sizes</span>": <span class="value"><span class="string">"64x64 32x32 24x24 16x16"</span></span>,</span><br><span class="line">      "<span class="attribute">type</span>": <span class="value"><span class="string">"image/x-icon"</span></span><br><span class="line">    </span>&#125;</span><br><span class="line">  ]</span>,</span><br><span class="line">  "<span class="attribute">start_url</span>": <span class="value"><span class="string">"."</span></span>,</span><br><span class="line">  "<span class="attribute">display</span>": <span class="value"><span class="string">"standalone"</span></span>,</span><br><span class="line">  "<span class="attribute">theme_color</span>": <span class="value"><span class="string">"#000000"</span></span>,</span><br><span class="line">  "<span class="attribute">background_color</span>": <span class="value"><span class="string">"#ffffff"</span></span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<p><em>网页上直接按F12可以进入开发者模式</em></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>主要内容：React16.4 开发简书项目<br>]]>
+    
+    </summary>
+    
+      <category term="React" scheme="http://www.bestzhangjin.com/tags/React/"/>
+    
+      <category term="React" scheme="http://www.bestzhangjin.com/categories/React/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[算法java版]]></title>
@@ -1530,33 +1568,6 @@
       <category term="软件工程师" scheme="http://www.bestzhangjin.com/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88/"/>
     
       <category term="常见问题" scheme="http://www.bestzhangjin.com/categories/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Myeclipse应用技巧]]></title>
-    <link href="http://www.bestzhangjin.com/2016/03/15/myeclipse_view/"/>
-    <id>http://www.bestzhangjin.com/2016/03/15/myeclipse_view/</id>
-    <published>2016-03-15T13:00:51.000Z</published>
-    <updated>2017-10-11T13:43:27.786Z</updated>
-    <content type="html"><![CDATA[<p>主要内容：<br><a id="more"></a></p>
-<h1 id="1-Myeclipse_u642D_u5EFA_u5B89_u5353_u73AF_u5883"><a href="#1-Myeclipse_u642D_u5EFA_u5B89_u5353_u73AF_u5883" class="headerlink" title="1.Myeclipse搭建安卓环境"></a>1.Myeclipse搭建安卓环境</h1><p>工具：Myeclipse,ADT,SDK<br>1.安装Myeclipse<br>2.ADT解压，将解压目录下的features与plugins文件夹放到Myeclipse安装目录的dropins目录下面<br>3.复制SDK，制定Myeclipse对应到这个SDK<br>  windows-&gt;perference-&gt;android-&gt;SDK目录</p>
-<h1 id="2-myeclipse_u5BFC_u5165_u9879_u76EE"><a href="#2-myeclipse_u5BFC_u5165_u9879_u76EE" class="headerlink" title="2.myeclipse导入项目"></a>2.myeclipse导入项目</h1><p>File-&gt;Import-&gt;General-&gt;Existing Projects into Workpace<br>点击next，选择”Browse…”,浏览工程所在目录，找到工程所在文件夹，确定。<br>此时projects里面会出现工程所在目录对应所有的工程，选择你需要的工程，选择”Finish”，即可！</p>
-<h1 id="3-javabean_u4E4B_u81EA_u52A8_u751F_u6210set_u3001get_u65B9_u6CD5"><a href="#3-javabean_u4E4B_u81EA_u52A8_u751F_u6210set_u3001get_u65B9_u6CD5" class="headerlink" title="3.javabean之自动生成set、get方法"></a>3.javabean之自动生成set、get方法</h1><p>java文件工作区右键-&gt;source-&gt;generate getting and setting…</p>
-<h1 id="4-myeclipse_u5BFC_u5165_u67B6_u5305"><a href="#4-myeclipse_u5BFC_u5165_u67B6_u5305" class="headerlink" title="4.myeclipse导入架包"></a>4.myeclipse导入架包</h1><p>将架包复制到项目的lib目录下，选中架包右键-&gt;Build Path-&gt;Add To Build Path</p>
-<hr>
-<p>更新中…………</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>主要内容：<br>]]>
-    
-    </summary>
-    
-      <category term="Myeclipse" scheme="http://www.bestzhangjin.com/tags/Myeclipse/"/>
-    
-      <category term="应用技巧" scheme="http://www.bestzhangjin.com/tags/%E5%BA%94%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    
-      <category term="Java" scheme="http://www.bestzhangjin.com/categories/Java/"/>
     
   </entry>
   
