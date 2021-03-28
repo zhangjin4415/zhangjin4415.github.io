@@ -58,7 +58,7 @@
 <meta name="description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能，站点地图sitemap插件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo用法讲解">
-<meta property="og:url" content="http://www.bestzhangjin.com/2016/01/07/hexo-use/index.html">
+<meta property="og:url" content="http://zhangjin4415.github.io/2016/01/07/hexo-use/index.html">
 <meta property="og:site_name" content="做最好的自己">
 <meta property="og:description" content="主要内容：新建页面，文章摘要，添加评论框，RSS订阅功能，站点地图sitemap插件">
 <meta property="og:updated_time" content="2016-01-27T08:27:16.000Z">
@@ -289,8 +289,8 @@
 <p>输入如下命令：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">g</span></span><br><span class="line">hexo <span class="literal">d</span></span><br></pre></td></tr></table></figure></p>
 <p>在你的github上可以看到文件sitemap.xml</p>
 <h2 id="3-_u5411google_u63D0_u4EA4sitemap"><a href="#3-_u5411google_u63D0_u4EA4sitemap" class="headerlink" title="3.向google提交sitemap"></a>3.向google提交sitemap</h2><p>google帐号登陆Webmaster Central:<br>英文入口：<a href="https://www.google.com/webmasters/verification/home?hl=en" target="_blank" rel="external">https://www.google.com/webmasters/verification/home?hl=en</a><br>中文入口：<a href="https://www.google.com/webmasters/verification/home?hl=zh" target="_blank" rel="external">https://www.google.com/webmasters/verification/home?hl=zh</a><br>我用中文入口<br>点击添加属性，输入你的网址URL，点击继续<br>点击备用方法，选中HTML标记，将提供的如下代码(每个人的应该不一样)：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta <span class="property">name</span>=<span class="string">"google-site-..................."</span> /&gt;</span><br></pre></td></tr></table></figure></p>
-<p>复制到blog\themes\hexo-theme-next\layout_partials\head.swig中(有的是对应目录下的head.ejs)<br>利用hexo g,hexo d布置上去<br>点击Webmaster Central网页中的验证<br>验证成功显示：恭喜！<a href="http://www.bestzhangjin.com/">http://www.bestzhangjin.com/</a> 现已通过验证！现在，您可以针对自己的资源使用 Search Console 等 Google 服务了。</p>
-<p>在站点地图中添加你刚刚在生成的站点地图sitemap.xml，并点击提交<br>网址：<a href="https://www.google.com/webmasters/tools/home?hl=zh-CN" target="_blank" rel="external">https://www.google.com/webmasters/tools/home?hl=zh-CN</a><br>在添加资源框内输入自己网址：我的<a href="http://www.bestzhangjin.com">http://www.bestzhangjin.com</a><br>之后点击添加资源，再弹出的页面上点击添加站点地图，输入：sitemap.xml<br>点击提交sitemap<br>提醒：<br>如果站点地图提示错误<a href="http://yoursite.com/....的话，说明你的_config.xml中默认的http://yoursite.com还没有改成你自己的网址，改过来再重新生成添加即可" target="_blank" rel="external">http://yoursite.com/....的话，说明你的_config.xml中默认的http://yoursite.com还没有改成你自己的网址，改过来再重新生成添加即可</a></p>
+<p>复制到blog\themes\hexo-theme-next\layout_partials\head.swig中(有的是对应目录下的head.ejs)<br>利用hexo g,hexo d布置上去<br>点击Webmaster Central网页中的验证<br>验证成功显示：恭喜！<a href="http://www.bestzhangjin.com/" target="_blank" rel="external">http://www.bestzhangjin.com/</a> 现已通过验证！现在，您可以针对自己的资源使用 Search Console 等 Google 服务了。</p>
+<p>在站点地图中添加你刚刚在生成的站点地图sitemap.xml，并点击提交<br>网址：<a href="https://www.google.com/webmasters/tools/home?hl=zh-CN" target="_blank" rel="external">https://www.google.com/webmasters/tools/home?hl=zh-CN</a><br>在添加资源框内输入自己网址：我的<a href="http://www.bestzhangjin.com" target="_blank" rel="external">http://www.bestzhangjin.com</a><br>之后点击添加资源，再弹出的页面上点击添加站点地图，输入：sitemap.xml<br>点击提交sitemap<br>提醒：<br>如果站点地图提示错误<a href="http://yoursite.com/....的话，说明你的_config.xml中默认的http://yoursite.com还没有改成你自己的网址，改过来再重新生成添加即可" target="_blank" rel="external">http://yoursite.com/....的话，说明你的_config.xml中默认的http://yoursite.com还没有改成你自己的网址，改过来再重新生成添加即可</a></p>
 <h2 id="4-_u5347_u7EA7_u4E0E_u5378_u8F7D_u63D2_u4EF6"><a href="#4-_u5347_u7EA7_u4E0E_u5378_u8F7D_u63D2_u4EF6" class="headerlink" title="4.升级与卸载插件"></a>4.升级与卸载插件</h2><p>命令如下：<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> update</span><br><span class="line"><span class="built_in">npm</span> uninstall hexo-generator-sitemap</span><br></pre></td></tr></table></figure></p>
 <h1 id="u516D-_u767E_u5EA6_u7AD9_u70B9_u5730_u56FEbaidusitemap_u63D2_u4EF6"><a href="#u516D-_u767E_u5EA6_u7AD9_u70B9_u5730_u56FEbaidusitemap_u63D2_u4EF6" class="headerlink" title="六.百度站点地图baidusitemap插件"></a>六.百度站点地图baidusitemap插件</h1><h2 id="1-_u5B89_u88C5"><a href="#1-_u5B89_u88C5" class="headerlink" title="1.安装"></a>1.安装</h2><p>国内用户需要安装插件 hexo-generator-baidu-sitemap, 是为百度量身打造的. 安装<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-generator-baidu-sitemap <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
 <p>根目录下_config.yml<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">baidusitemap</span>:</span><br><span class="line">  <span class="attribute">path</span>: baidusitemap.xml</span><br></pre></td></tr></table></figure></p>
@@ -322,8 +322,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/15/myeclipse_question/" rel="prev" title="Myeclipse常见问题与解决方法">
-                Myeclipse常见问题与解决方法 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/15/android_studio_question/" rel="prev" title="android studio（APP）常见问题与解决方法">
+                android studio（APP）常见问题与解决方法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -342,7 +342,7 @@
         <div class="ds-share flat" data-thread-key="2016/01/07/hexo-use/"
      data-title="hexo用法讲解"
      data-content=""
-     data-url="http://www.bestzhangjin.com/2016/01/07/hexo-use/">
+     data-url="http://zhangjin4415.github.io/2016/01/07/hexo-use/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -371,7 +371,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/01/07/hexo-use/"
-           data-title="hexo用法讲解" data-url="http://www.bestzhangjin.com/2016/01/07/hexo-use/">
+           data-title="hexo用法讲解" data-url="http://zhangjin4415.github.io/2016/01/07/hexo-use/">
       </div>
     
   </div>
@@ -489,7 +489,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
